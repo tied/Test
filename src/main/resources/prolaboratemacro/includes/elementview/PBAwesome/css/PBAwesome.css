@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: 'PBAwesome';
+    src: url('PBAwesome.eot');
+    src: url('PBAwesome.eot') format('embedded-opentype'),
+         url('PBAwesome.woff') format('woff'),
+         url('PBAwesome.ttf') format('truetype'),
+         url('PBAwesome.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa-mdg:before,
+.fa-review:before,
+.fa-approver:before,
+.fa-approvers:before,
+.fa-reviewer:before,
+.fa-reviewers:before,
+.fa-moderator:before,
+.fa-moderators:before,
+.fa-code-b:before,
+.fa-code-slash:before,
+.fa-comment-b:before,
+.fa-comment-slash:before,
+.fa-expand-box:before   { font-family: 'PBAwesome'; }
+
+.fa-mdg:before          { content: '\0041'; }
+.fa-review:before       { content: '\0042'; }
+.fa-approver:before     { content: '\0043'; }
+.fa-approvers:before    { content: '\0044'; }
+.fa-reviewer:before     { content: '\0045'; }
+.fa-reviewers:before    { content: '\0046'; }
+.fa-moderator:before    { content: '\0047'; }
+.fa-moderators:before   { content: '\0048'; }
+.fa-code-b:before       { content: '\0049'; }
+.fa-code-slash:before   { content: '\004a'; }
+.fa-comment-b:before    { content: '\004b'; }
+.fa-comment-slash:before{ content: '\004c'; }
+.fa-expand-box:before   { content: '\004d'; }

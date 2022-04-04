@@ -1,0 +1,42 @@
+﻿
+/* For General Icon */
+li[data-icon="pbicon-scenario"],
+li[data-icon="pbicon-scenarioStepUserAction"],
+li[data-icon="pbicon-scenarioStepSystemAction"] {
+    position:relative;
+}
+
+li[data-icon="pbicon-scenario"]:before,
+li[data-icon="pbicon-scenarioStepUserAction"]:before,
+li[data-icon="pbicon-scenarioStepSystemAction"]:before {
+    content:"";
+    width:20px;
+    height:16px;
+    display:inline-block;
+    overflow:hidden;
+    position:absolute;
+    top:9px; left:-44px;
+    /*background:url(img/iconset.png) no-repeat -540px 0 rgba(0,0,0,0);*/
+}
+
+li[data-icon="pbicon-scenario"]:before,
+.pbicon-scenario        { background-image: url(img/Set4/75.png); }
+.pbicon-scenario_Full   { background-image: url(img/full/Set4/75.png); }
+
+li[data-icon="pbicon-scenarioStepUserAction"]:before,
+.pbicon-scenarioStepUserAction      { background-image: url(img/Set2/46.png); }
+.pbicon-scenarioStepUserAction_Full { background-image: url(img/full/Set2/46.png); }
+
+li[data-icon="pbicon-scenarioStepSystemAction"]:before,
+.pbicon-scenarioStepSystemAction        { background-image: url(img/Set2/50.png); }
+.pbicon-scenarioStepSystemAction_Full   { background-image: url(img/full/Set2/50.png); }
+
+.pbicon-attributes      { background-image: url(img/Set1/27.png); }
+.pbicon-attributes_Full { background-image: url(img/full/Set1/27.png); }
+.pbicon-operations      { background-image: url(img/Set1/26.png); }
+.pbicon-operations_Full { background-image: url(img/full/Set1/26.png); }
+
+.jstree-default li[data-pbicon$='pbicon-review'] > a .jstree-themeicon,
+li[data-icon="pbicon-review"]:before,
+.pbicon-review         { background-image: url(img/Extended/2.png); } /*  */
+.pbicon-review_Full    { background-image: url(img/full/Extended/2.png); } /*  */

@@ -1,0 +1,613 @@
+{namespace Confluence.Templates.SoyTutorial}
+/**
+*/
+{template .listSelectedAjsParams}
+<section id="demo-dialog" class="aui-dialog2 aui-dialog2-small aui-layer custom-dialog" role="dialog" aria-hidden="true">
+   <header class="aui-dialog2-header">
+      <h2 class="aui-dialog2-header-main">
+         <span class="pro-logo"></span>
+      </h2>
+      <a class="aui-dialog2-header-close"><span class="aui-icon aui-icon-small aui-iconfont-close-dialog">Close</span></a>
+   </header>
+   <div class="aui-dialog2-content">
+      <div class="aui-tabs horizontal-tabs">
+         <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+               <a href="#tabs-example-second">Diagrams</a>
+            </li>
+            <li class="menu-item">
+               <a href="#tabs-example-third">Packages</a>
+            </li>
+            <li class="menu-item">
+               <a href="#tabs-example-first">Elements</a>
+            </li>
+         </ul>
+
+
+         <div class="tabs-pane item-filter-result" id="tabs-example-first">
+            <div class=""no-result>
+                   <img src="images/no-result.png" alt="no results">
+                   <h4>NO RESULTS</h4> 
+                  <p>We Searched Far and Wide and couldn’t Find any files Matching Your Search..!</p>
+            </div>
+         </div>
+
+
+         <div class="tabs-pane active-pane  item-filter-result" id="tabs-example-second">
+            <form class="aui">
+               <div class="field-group label-name">
+                  <input class="text" placeholder="Enter Diagram Name" type="text" name="text-input">
+               </div>
+               <div class="field-group">
+                  <select class="select" id="select-example" name="select-example">
+                     <option>Select Stereo Type </option>
+                     <option>Option 1</option>
+                     <option>Option 2</option>
+                     <optgroup label="Group 1">
+                        <option>Option one</option>
+                        <option>Option two</option>
+                     </optgroup>
+                     <option>Option 3</option>
+                     <option>Option 4</option>
+                  </select>
+               </div>
+               <div class="field-group">
+                  <select class="select" id="select-example" name="select-example">
+                     <option>Diagram Type</option>
+                     <option>Option 1</option>
+                     <option>Option 2</option>
+                     <optgroup label="Group 1">
+                        <option>Option one</option>
+                        <option>Option two</option>
+                     </optgroup>
+                     <option>Option 3</option>
+                     <option>Option 4</option>
+                  </select>
+               </div>
+               <button class="aui-button btn-primary">Find</button>
+            </form>
+            <div class="filter-item">
+               <p class="search-count">Displaying <span>12</span> of  <span>120</span>  Records </p>
+               <div class="filter-list">
+               <ul>
+                  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example01">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example01" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+                   
+                   <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example02">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example02" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+
+                  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example03">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example03" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+
+                  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+                  
+
+                     <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+
+                     <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+
+                     <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+
+                     <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>  <li>
+                       <p class="item-name">User Stories Session dialogdialog</p>
+                        <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> John </p>
+                        <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="inline-dialog-example05">
+                        Click me
+                        </button>
+                        <span class="selected"></span>
+                        <aui-inline-dialog id="inline-dialog-example05" class="info-wrap">
+                           <ul class="info-details">
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-document">Insert meaningful text here for accessibility</span> Name:</p> 
+                              
+                              <p class="label-info">User Stories Session dialog</span></p>
+                             <li>
+                              
+                              <p class="text-label"> <span class="aui-icon aui-icon-small aui-iconfont-branch">Insert meaningful text here for accessibility</span>FQ Path: </p>
+                              
+                              <p class="label-info">Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main Documents<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>confluenceplugin <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> prolaboratemacro <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> src <i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i> main</span></p>
+                              
+                              </li>
+
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-person">Insert meaningful text here for accessibility</span> Author: </p>
+                              
+                              <p class="label-info">John</p></li>
+                              <li><p class="text-label"><span class="aui-icon aui-icon-small aui-iconfont-calendar-filled">Insert meaningful text here for accessibility</span> Last modified:</p> 
+                              <p class="label-info">20/07/2018</span></p>
+                           </ul>
+                        </aui-inline-dialog>
+                  
+                  </li>
+               </ul>
+               <div class="item-more"> <button class="aui-button"><span class="aui-icon aui-icon-small aui-iconfont-cross-circle">Insert meaningful text here for accessibility</span> View More Diagrams</button> </div>
+            </div>   
+            </div>
+         </div>
+         <div class="tabs-pane item-filter-result" id="tabs-example-third">
+            <p>Package Items</p>
+         </div>
+      </div>
+   </div>
+   <footer class="aui-dialog2-footer">
+ 
+
+      <div class="aui-dialog2-footer-actions"><button id="dialog-submit-button" class="aui-button btn-primary">Insert Diagram</button><button id="dialog-cancel-button" class="aui-button btn-cancel">Cancel</button></div>
+   </footer>
+</section>
+{/template}
+
+
+ 

@@ -1,0 +1,650 @@
+﻿
+/* For BPMN Icon */
+
+.jstree-default li[data-pbicon$='pbicon-Model'].jstree-open > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Package'].jstree-open > a .jstree-themeicon
+                                            { background-image: url(img/Set1/24.png); } /* 024 */
+
+.jstree-default li[data-pbicon$='pbicon-Model'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Package'] > a .jstree-themeicon,
+.pbicon-Model,
+.pbicon-Package                             { background-image: url(img/Set1/25.png); } /* 025 */
+.pbicon-Model_Full,
+.pbicon-Package_Full                        { background-image: url(img/full/Set1/25.png); } /* 025 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Activity'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Activity'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Activity'] > a .jstree-themeicon,
+.pbicon-BPMN_Activity,
+.pbicon-BPMN1_1_Activity,
+.pbicon-BPMN2_0_Activity                    { background-image: url(img/Set1/23.png); } /* 023 */
+.pbicon-BPMN_Activity_Full,
+.pbicon-BPMN1_1_Activity_Full,
+.pbicon-BPMN2_0_Activity_Full               { background-image: url(img/full/Set1/23.png); } /* 023 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Assignment'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Assignment'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Assignment'] > a .jstree-themeicon,
+.pbicon-BPMN_Assignment ,
+.pbicon-BPMN1_1_Assignment,
+.pbicon-BPMN2_0_Assignment                  { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Assignment_Full,
+.pbicon-BPMN1_1_Assignment_Full,
+.pbicon-BPMN2_0_Assignment_Full             { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Association'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Association'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Association'] > a .jstree-themeicon,
+.pbicon-BPMN_Association,
+.pbicon-BPMN1_1_Association,
+.pbicon-BPMN2_0_Association                 { background-image: url(img/Set2/76.png); } /* 106 */
+.pbicon-BPMN_Association_Full,
+.pbicon-BPMN1_1_Association_Full,
+.pbicon-BPMN2_0_Association_Full            { background-image: url(img/full/Set2/76.png); } /* 106 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_BPELProcess'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_BPELProcess'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_BPELProcess'] > a .jstree-themeicon,
+.pbicon-BPMN_BPELProcess,
+.pbicon-BPMN1_1_BPELProcess,
+.pbicon-BPMN2_0_BPELProcess                 { background-image: url(img/Set2/66.png); } /* 096 */
+.pbicon-BPMN_BPELProcess_Full,
+.pbicon-BPMN1_1_BPELProcess_Full,
+.pbicon-BPMN2_0_BPELProcess_Full            { background-image: url(img/full/Set2/66.png); } /* 096 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_BusinessProcess'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_BusinessProcess'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_BusinessProcess'] > a .jstree-themeicon,
+.pbicon-BPMN_BusinessProcess,
+.pbicon-BPMN1_1_BusinessProcess,
+.pbicon-BPMN2_0_BusinessProcess             { background-image: url(img/Set2/66.png); } /* 096 */
+.pbicon-BPMN_BusinessProcess_Full,
+.pbicon-BPMN1_1_BusinessProcess_Full,
+.pbicon-BPMN2_0_BusinessProcess_Full        { background-image: url(img/full/Set2/66.png); } /* 096 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Category'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Category'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Category'] > a .jstree-themeicon,
+.pbicon-BPMN_Category,
+.pbicon-BPMN1_1_Category,
+.pbicon-BPMN2_0_Category                    { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Category_Full,
+.pbicon-BPMN1_1_Category_Full,
+.pbicon-BPMN2_0_Category_Full               { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_CategoryValue'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_CategoryValue'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_CategoryValue'] > a .jstree-themeicon,
+.pbicon-BPMN_CategoryValue,
+.pbicon-BPMN1_1_CategoryValue,
+.pbicon-BPMN2_0_CategoryValue               { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_CategoryValue_Full,
+.pbicon-BPMN1_1_CategoryValue_Full,
+.pbicon-BPMN2_0_CategoryValue_Full          { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Choreography'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Choreography'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Choreography'] > a .jstree-themeicon,
+.pbicon-BPMN_Choreography,
+.pbicon-BPMN1_1_Choreography,
+.pbicon-BPMN2_0_Choreography                { background-image: url(img/Set2/67.png); } /* 097 */
+.pbicon-BPMN_Choreography_Full,
+.pbicon-BPMN1_1_Choreography_Full,
+.pbicon-BPMN2_0_Choreography_Full           { background-image: url(img/full/Set2/67.png); } /* 097 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ChoreographyModel'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ChoreographyModel'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ChoreographyModel'] > a .jstree-themeicon,
+.pbicon-BPMN_ChoreographyModel,
+.pbicon-BPMN1_1_ChoreographyModel,
+.pbicon-BPMN2_0_ChoreographyModel           { background-image: url(img/Set2/66.png); } /* 096 */
+.pbicon-BPMN_ChoreographyModel_Full,
+.pbicon-BPMN1_1_ChoreographyModel_Full,
+.pbicon-BPMN2_0_ChoreographyModel_Full      { background-image: url(img/full/Set2/66.png); } /* 096 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_CollaborationModel'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_CollaborationModel'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_CollaborationModel'] > a .jstree-themeicon,
+.pbicon-BPMN_CollaborationModel,
+.pbicon-BPMN1_1_CollaborationModel,
+.pbicon-BPMN2_0_CollaborationModel          { background-image: url(img/Set2/66.png); } /* 096 */
+.pbicon-BPMN_CollaborationModel_Full,
+.pbicon-BPMN1_1_CollaborationModel_Full,
+.pbicon-BPMN2_0_CollaborationModel_Full     { background-image: url(img/full/Set2/66.png); } /* 096 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ComplexBehaviorDefinition'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ComplexBehaviorDefinition'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ComplexBehaviorDefinition'] > a .jstree-themeicon,
+.pbicon-BPMN_ComplexBehaviorDefinition,
+.pbicon-BPMN1_1_ComplexBehaviorDefinition,
+.pbicon-BPMN2_0_ComplexBehaviorDefinition   { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_ComplexBehaviorDefinition_Full,
+.pbicon-BPMN1_1_ComplexBehaviorDefinition_Full,
+.pbicon-BPMN2_0_ComplexBehaviorDefinition_Full { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Conversation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Conversation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Conversation'] > a .jstree-themeicon,
+.pbicon-BPMN_Conversation,
+.pbicon-BPMN1_1_Conversation,
+.pbicon-BPMN2_0_Conversation                { background-image: url(img/Set2/68.png); } /* 098 */
+.pbicon-BPMN_Conversation_Full,
+.pbicon-BPMN1_1_Conversation_Full,
+.pbicon-BPMN2_0_Conversation_Full           { background-image: url(img/full/Set2/68.png); } /* 098 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ConversationAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ConversationAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ConversationAssociation'] > a .jstree-themeicon,
+.pbicon-BPMN_ConversationAssociation,
+.pbicon-BPMN1_1_ConversationAssociation,
+.pbicon-BPMN2_0_ConversationAssociation     { background-image: url(img/Set1/27.png); } /* 027 */
+.pbicon-BPMN_ConversationAssociation_Full,
+.pbicon-BPMN1_1_ConversationAssociation_Full,
+.pbicon-BPMN2_0_ConversationAssociation_Full { background-image: url(img/full/Set1/27.png); } /* 027 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ConversationLink'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ConversationLink'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ConversationLink'] > a .jstree-themeicon,
+.pbicon-BPMN_ConversationLink,
+.pbicon-BPMN1_1_ConversationLink,
+.pbicon-BPMN2_0_ConversationLink            { background-image: url(img/Set2/75.png); } /* 105 */
+.pbicon-BPMN_ConversationLink_Full,
+.pbicon-BPMN1_1_ConversationLink_Full,
+.pbicon-BPMN2_0_ConversationLink_Full       { background-image: url(img/full/Set2/75.png); } /* 105 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ConversationModel'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ConversationModel'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ConversationModel'] > a .jstree-themeicon,
+.pbicon-BPMN_ConversationModel,
+.pbicon-BPMN1_1_ConversationModel,
+.pbicon-BPMN2_0_ConversationModel           { background-image: url(img/Set2/66.png); } /* 096 */
+.pbicon-BPMN_ConversationModel_Full,
+.pbicon-BPMN1_1_ConversationModel_Full,
+.pbicon-BPMN2_0_ConversationModel_Full      { background-image: url(img/full/Set2/66.png); } /* 096 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_CorrelationKey'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_CorrelationKey'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_CorrelationKey'] > a .jstree-themeicon,
+.pbicon-BPMN_CorrelationKey,
+.pbicon-BPMN1_1_CorrelationKey,
+.pbicon-BPMN2_0_CorrelationKey              { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_CorrelationKey_Full,
+.pbicon-BPMN1_1_CorrelationKey_Full,
+.pbicon-BPMN2_0_CorrelationKey_Full         { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_CorrelationProperty'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_CorrelationProperty'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_CorrelationProperty'] > a .jstree-themeicon,
+.pbicon-BPMN_CorrelationProperty,
+.pbicon-BPMN1_1_CorrelationProperty,
+.pbicon-BPMN2_0_CorrelationProperty         { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_CorrelationProperty_Full,
+.pbicon-BPMN1_1_CorrelationProperty_Full,
+.pbicon-BPMN2_0_CorrelationProperty_Full    { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_CorrelationPropertyBinding'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_CorrelationPropertyBinding'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_CorrelationPropertyBinding'] > a .jstree-themeicon,
+.pbicon-BPMN_CorrelationPropertyBinding,
+.pbicon-BPMN1_1_CorrelationPropertyBinding,
+.pbicon-BPMN2_0_CorrelationPropertyBinding  { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_CorrelationPropertyBinding_Full,
+.pbicon-BPMN1_1_CorrelationPropertyBinding_Full,
+.pbicon-BPMN2_0_CorrelationPropertyBinding_Full  { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_CorrelationPropertyRetrievalExpression'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_CorrelationPropertyRetrievalExpression'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_CorrelationPropertyRetrievalExpression'] > a .jstree-themeicon,
+.pbicon-BPMN_CorrelationPropertyRetrievalExpression,
+.pbicon-BPMN1_1_CorrelationPropertyRetrievalExpression,
+.pbicon-BPMN2_0_CorrelationPropertyRetrievalExpression { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_CorrelationPropertyRetrievalExpression_Full,
+.pbicon-BPMN1_1_CorrelationPropertyRetrievalExpression_Full,
+.pbicon-BPMN2_0_CorrelationPropertyRetrievalExpression_Full { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_CorrelationSubscription'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_CorrelationSubscription'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_CorrelationSubscription'] > a .jstree-themeicon,
+.pbicon-BPMN_CorrelationSubscription,
+.pbicon-BPMN1_1_CorrelationSubscription,
+.pbicon-BPMN2_0_CorrelationSubscription     { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_CorrelationSubscription_Full,
+.pbicon-BPMN1_1_CorrelationSubscription_Full,
+.pbicon-BPMN2_0_CorrelationSubscription_Full { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_DataAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_DataAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_DataAssociation'] > a .jstree-themeicon,
+.pbicon-BPMN_DataAssociation,
+.pbicon-BPMN1_1_DataAssociation,
+.pbicon-BPMN2_0_DataAssociation             { background-image: url(img/Set2/76.png); } /* 106 */
+.pbicon-BPMN_DataAssociation_Full,
+.pbicon-BPMN1_1_DataAssociation_Full,
+.pbicon-BPMN2_0_DataAssociation_Full        { background-image: url(img/full/Set2/76.png); } /* 106 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_DataInputAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_DataInputAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_DataInputAssociation'] > a .jstree-themeicon,
+.pbicon-BPMN_DataInputAssociation,
+.pbicon-BPMN1_1_DataInputAssociation,
+.pbicon-BPMN2_0_DataInputAssociation        {  } /*  */
+.pbicon-BPMN_DataInputAssociation_Full,
+.pbicon-BPMN1_1_DataInputAssociation_Full,
+.pbicon-BPMN2_0_DataInputAssociation_Full   {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_DataObject'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_DataObject'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_DataObject'] > a .jstree-themeicon,
+.pbicon-BPMN_DataObject,
+.pbicon-BPMN1_1_DataObject,
+.pbicon-BPMN2_0_DataObject                  { background-image: url(img/Set2/69.png); } /* 099 */
+.pbicon-BPMN_DataObject_Full,
+.pbicon-BPMN1_1_DataObject_Full,
+.pbicon-BPMN2_0_DataObject_Full             { background-image: url(img/full/Set2/69.png); } /* 099 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_DataOutputAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_DataOutputAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_DataOutputAssociation'] > a .jstree-themeicon,
+.pbicon-BPMN_DataOutputAssociation,
+.pbicon-BPMN1_1_DataOutputAssociation,
+.pbicon-BPMN2_0_DataOutputAssociation       {  } /*  */
+.pbicon-BPMN_DataOutputAssociation_Full,
+.pbicon-BPMN1_1_DataOutputAssociation_Full,
+.pbicon-BPMN2_0_DataOutputAssociation_Full  {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_DataStore'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_DataStore'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_DataStore'] > a .jstree-themeicon,
+.pbicon-BPMN_DataStore,
+.pbicon-BPMN1_1_DataStore,
+.pbicon-BPMN2_0_DataStore                   { background-image: url(img/Set2/70.png); } /* 100 */
+.pbicon-BPMN_DataStore_Full,
+.pbicon-BPMN1_1_DataStore_Full,
+.pbicon-BPMN2_0_DataStore_Full              { background-image: url(img/full/Set2/70.png); } /* 100 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_EndEvent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_EndEvent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_EndEvent'] > a .jstree-themeicon,
+.pbicon-BPMN_EndEvent,
+.pbicon-BPMN1_1_EndEvent,
+.pbicon-BPMN2_0_EndEvent                    { background-image: url(img/Set1/29.png); } /* 029 */
+.pbicon-BPMN_EndEvent_Full,
+.pbicon-BPMN1_1_EndEvent_Full,
+.pbicon-BPMN2_0_EndEvent_Full               { background-image: url(img/full/Set1/29.png); } /* 029 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_EndPoint'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_EndPoint'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_EndPoint'] > a .jstree-themeicon,
+.pbicon-BPMN_EndPoint,
+.pbicon-BPMN1_1_EndPoint,
+.pbicon-BPMN2_0_EndPoint                    { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_EndPoint_Full,
+.pbicon-BPMN1_1_EndPoint_Full,
+.pbicon-BPMN2_0_EndPoint_Full               { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Error'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Error'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Error'] > a .jstree-themeicon,
+.pbicon-BPMN_Error,
+.pbicon-BPMN1_1_Error,
+.pbicon-BPMN2_0_Error                       { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Error_Full,
+.pbicon-BPMN1_1_Error_Full,
+.pbicon-BPMN2_0_Error_Full                  { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Escalation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Escalation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Escalation'] > a .jstree-themeicon,
+.pbicon-BPMN_Escalation,
+.pbicon-BPMN1_1_Escalation,
+.pbicon-BPMN2_0_Escalation                  { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Escalation_Full,
+.pbicon-BPMN1_1_Escalation_Full,
+.pbicon-BPMN2_0_Escalation_Full             { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Gateway'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Gateway'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Gateway'] > a .jstree-themeicon,
+.pbicon-BPMN_Gateway,
+.pbicon-BPMN1_1_Gateway,
+.pbicon-BPMN2_0_Gateway                     { background-image: url(img/Set2/73.png); } /* 103 */
+.pbicon-BPMN_Gateway_Full,
+.pbicon-BPMN1_1_Gateway_Full,
+.pbicon-BPMN2_0_Gateway_Full                { background-image: url(img/full/Set2/73.png); } /* 103 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_GlobalTask'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_GlobalTask'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_GlobalTask'] > a .jstree-themeicon,
+.pbicon-BPMN_GlobalTask,
+.pbicon-BPMN1_1_GlobalTask,
+.pbicon-BPMN2_0_GlobalTask                  { background-image: url(img/Set1/23.png); } /* 023 */
+.pbicon-BPMN_GlobalTask_Full,
+.pbicon-BPMN1_1_GlobalTask_Full,
+.pbicon-BPMN2_0_GlobalTask_Full             { background-image: url(img/full/Set1/23.png); } /* 023 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Group'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Group'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Group'] > a .jstree-themeicon,
+.pbicon-BPMN_Group,
+.pbicon-BPMN1_1_Group,
+.pbicon-BPMN2_0_Group                       { background-image: url(img/Set2/79.png); } /* 109 */
+.pbicon-BPMN_Group_Full,
+.pbicon-BPMN1_1_Group_Full,
+.pbicon-BPMN2_0_Group_Full                  { background-image: url(img/full/Set2/79.png); } /* 109 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_IOSpecification'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_IOSpecification'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_IOSpecification'] > a .jstree-themeicon,
+.pbicon-BPMN_IOSpecification,
+.pbicon-BPMN1_1_IOSpecification,
+.pbicon-BPMN2_0_IOSpecification             { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_IOSpecification_Full,
+.pbicon-BPMN1_1_IOSpecification_Full,
+.pbicon-BPMN2_0_IOSpecification_Full        { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_InputOutputBinding'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_InputOutputBinding'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_InputOutputBinding'] > a .jstree-themeicon,
+.pbicon-BPMN_InputOutputBinding,
+.pbicon-BPMN1_1_InputOutputBinding,
+.pbicon-BPMN2_0_InputOutputBinding          { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_InputOutputBinding_Full,
+.pbicon-BPMN1_1_InputOutputBinding_Full,
+.pbicon-BPMN2_0_InputOutputBinding_Full     { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_InputSet'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_InputSet'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_InputSet'] > a .jstree-themeicon,
+.pbicon-BPMN_InputSet,
+.pbicon-BPMN1_1_InputSet,
+.pbicon-BPMN2_0_InputSet                    { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_InputSet_Full,
+.pbicon-BPMN1_1_InputSet_Full,
+.pbicon-BPMN2_0_InputSet_Full               { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Interface'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Interface'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Interface'] > a .jstree-themeicon,
+.pbicon-BPMN_Interface,
+.pbicon-BPMN1_1_Interface,
+.pbicon-BPMN2_0_Interface                   { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Interface_Full,
+.pbicon-BPMN1_1_Interface_Full,
+.pbicon-BPMN2_0_Interface_Full              { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_IntermediateEvent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_IntermediateEvent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_IntermediateEvent'] > a .jstree-themeicon,
+.pbicon-BPMN_IntermediateEvent,
+.pbicon-BPMN1_1_IntermediateEvent,
+.pbicon-BPMN2_0_IntermediateEvent           { background-image: url(img/Set2/71.png); } /* 101 */
+.pbicon-BPMN_IntermediateEvent_Full,
+.pbicon-BPMN1_1_IntermediateEvent_Full,
+.pbicon-BPMN2_0_IntermediateEvent_Full      { background-image: url(img/full/Set2/71.png); } /* 101 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ItemDefinition'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ItemDefinition'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ItemDefinition'] > a .jstree-themeicon,
+.pbicon-BPMN_ItemDefinition,
+.pbicon-BPMN1_1_ItemDefinition,
+.pbicon-BPMN2_0_ItemDefinition              { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_ItemDefinition_Full,
+.pbicon-BPMN1_1_ItemDefinition_Full,
+.pbicon-BPMN2_0_ItemDefinition_Full         { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Lane'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Lane'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Lane'] > a .jstree-themeicon,
+.pbicon-BPMN_Lane,
+.pbicon-BPMN1_1_Lane,
+.pbicon-BPMN2_0_Lane                        { background-image: url(img/Set1/28.png); } /* 028 */
+.pbicon-BPMN_Lane_Full,
+.pbicon-BPMN1_1_Lane_Full,
+.pbicon-BPMN2_0_Lane_Full                   { background-image: url(img/full/Set1/28.png); } /* 028 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Message'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Message'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Message'] > a .jstree-themeicon,
+.pbicon-BPMN_Message,
+.pbicon-BPMN1_1_Message,
+.pbicon-BPMN2_0_Message                     { background-image: url(img/Set2/72.png); } /* 102 */
+.pbicon-BPMN_Message_Full,
+.pbicon-BPMN1_1_Message_Full,
+.pbicon-BPMN2_0_Message_Full                { background-image: url(img/full/Set2/72.png); } /* 102 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_MessageFlow'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_MessageFlow'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_MessageFlow'] > a .jstree-themeicon,
+.pbicon-BPMN_MessageFlow,
+.pbicon-BPMN1_1_MessageFlow,
+.pbicon-BPMN2_0_MessageFlow                 { background-image: url(img/Set2/74.png); } /* 104 */
+.pbicon-BPMN_MessageFlow_Full,
+.pbicon-BPMN1_1_MessageFlow_Full,
+.pbicon-BPMN2_0_MessageFlow_Full            { background-image: url(img/full/Set2/74.png); } /* 104 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_MessageFlowAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_MessageFlowAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_MessageFlowAssociation'] > a .jstree-themeicon,
+.pbicon-BPMN_MessageFlowAssociation,
+.pbicon-BPMN1_1_MessageFlowAssociation,
+.pbicon-BPMN2_0_MessageFlowAssociation      {  } /*  */
+.pbicon-BPMN_MessageFlowAssociation_Full,
+.pbicon-BPMN1_1_MessageFlowAssociation_Full,
+.pbicon-BPMN2_0_MessageFlowAssociation_Full {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Operation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Operation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Operation'] > a .jstree-themeicon,
+.pbicon-BPMN_Operation,
+.pbicon-BPMN1_1_Operation,
+.pbicon-BPMN2_0_Operation                   { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Operation_Full,
+.pbicon-BPMN1_1_Operation_Full,
+.pbicon-BPMN2_0_Operation_Full              { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_OutputSet'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_OutputSet'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_OutputSet'] > a .jstree-themeicon,
+.pbicon-BPMN_OutputSet,
+.pbicon-BPMN1_1_OutputSet,
+.pbicon-BPMN2_0_OutputSet                   { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_OutputSet_Full,
+.pbicon-BPMN1_1_OutputSet_Full,
+.pbicon-BPMN2_0_OutputSet_Full              { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Participant'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Participant'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Participant'] > a .jstree-themeicon,
+.pbicon-BPMN_Participant,
+.pbicon-BPMN1_1_Participant,
+.pbicon-BPMN2_0_Participant                 { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Participant_Full,
+.pbicon-BPMN1_1_Participant_Full,
+.pbicon-BPMN2_0_Participant_Full            { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ParticipantAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ParticipantAssociation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ParticipantAssociation'] > a .jstree-themeicon,
+.pbicon-BPMN_ParticipantAssociation,
+.pbicon-BPMN1_1_ParticipantAssociation,
+.pbicon-BPMN2_0_ParticipantAssociation      { background-image: url(img/Set1/27.png); } /* 027 */
+.pbicon-BPMN_ParticipantAssociation_Full,
+.pbicon-BPMN1_1_ParticipantAssociation_Full,
+.pbicon-BPMN2_0_ParticipantAssociation_Full { background-image: url(img/full/Set1/27.png); } /* 027 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_PartnerEntity'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_PartnerEntity'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_PartnerEntity'] > a .jstree-themeicon,
+.pbicon-BPMN_PartnerEntity,
+.pbicon-BPMN1_1_PartnerEntity,
+.pbicon-BPMN2_0_PartnerEntity               { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_PartnerEntity_Full,
+.pbicon-BPMN1_1_PartnerEntity_Full,
+.pbicon-BPMN2_0_PartnerEntity_Full          { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_PartnerRole'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_PartnerRole'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_PartnerRole'] > a .jstree-themeicon,
+.pbicon-BPMN_PartnerRole,
+.pbicon-BPMN1_1_PartnerRole,
+.pbicon-BPMN2_0_PartnerRole                 { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_PartnerRole_Full,
+.pbicon-BPMN1_1_PartnerRole_Full,
+.pbicon-BPMN2_0_PartnerRole_Full            { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Pool'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Pool'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Pool'] > a .jstree-themeicon,
+.pbicon-BPMN_Pool,
+.pbicon-BPMN1_1_Pool,
+.pbicon-BPMN2_0_Pool                        { background-image: url(img/Set1/28.png); } /* 028 */
+.pbicon-BPMN_Pool_Full,
+.pbicon-BPMN1_1_Pool_Full,
+.pbicon-BPMN2_0_Pool_Full                   { background-image: url(img/full/Set1/28.png); } /* 028 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Property'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Property'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Property'] > a .jstree-themeicon,
+.pbicon-BPMN_Property,
+.pbicon-BPMN1_1_Property,
+.pbicon-BPMN2_0_Property                    { background-image: url(img/Set1/27.png); } /* 027 */
+.pbicon-BPMN_Property_Full,
+.pbicon-BPMN1_1_Property_Full,
+.pbicon-BPMN2_0_Property_Full               { background-image: url(img/full/Set1/27.png); } /* 027 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Resource'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Resource'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Resource'] > a .jstree-themeicon,
+.pbicon-BPMN_Resource,
+.pbicon-BPMN1_1_Resource,
+.pbicon-BPMN2_0_Resource                    { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Resource_Full,
+.pbicon-BPMN1_1_Resource_Full,
+.pbicon-BPMN2_0_Resource_Full               { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ResourceParameter'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ResourceParameter'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ResourceParameter'] > a .jstree-themeicon,
+.pbicon-BPMN_ResourceParameter,
+.pbicon-BPMN1_1_ResourceParameter,
+.pbicon-BPMN2_0_ResourceParameter           { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_ResourceParameter_Full,
+.pbicon-BPMN1_1_ResourceParameter_Full,
+.pbicon-BPMN2_0_ResourceParameter_Full      { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_ResourceRole'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_ResourceRole'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_ResourceRole'] > a .jstree-themeicon,
+.pbicon-BPMN_ResourceRole,
+.pbicon-BPMN1_1_ResourceRole,
+.pbicon-BPMN2_0_ResourceRole                { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_ResourceRole_Full,
+.pbicon-BPMN1_1_ResourceRole_Full,
+.pbicon-BPMN2_0_ResourceRole_Full           { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_SequenceFlow'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_SequenceFlow'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_SequenceFlow'] > a .jstree-themeicon,
+.pbicon-BPMN_SequenceFlow,
+.pbicon-BPMN1_1_SequenceFlow,
+.pbicon-BPMN2_0_SequenceFlow                { background-image: url(img/Set2/77.png); } /* 107 */
+.pbicon-BPMN_SequenceFlow_Full,
+.pbicon-BPMN1_1_SequenceFlow_Full,
+.pbicon-BPMN2_0_SequenceFlow_Full           { background-image: url(img/full/Set2/77.png); } /* 107 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Signal'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Signal'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Signal'] > a .jstree-themeicon,
+.pbicon-BPMN_Signal,
+.pbicon-BPMN1_1_Signal,
+.pbicon-BPMN2_0_Signal                      { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Signal_Full,
+.pbicon-BPMN1_1_Signal_Full,
+.pbicon-BPMN2_0_Signal_Full                 { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_StartEvent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_StartEvent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_StartEvent'] > a .jstree-themeicon,
+.pbicon-BPMN_StartEvent,
+.pbicon-BPMN1_1_StartEvent,
+.pbicon-BPMN2_0_StartEvent                  { background-image: url(img/Set1/30.png); } /* 030 */
+.pbicon-BPMN_StartEvent_Full,
+.pbicon-BPMN1_1_StartEvent_Full,
+.pbicon-BPMN2_0_StartEvent_Full             { background-image: url(img/full/Set1/30.png); } /* 030 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_TextAnnotation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_TextAnnotation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_TextAnnotation'] > a .jstree-themeicon,
+.pbicon-BPMN_TextAnnotation,
+.pbicon-BPMN1_1TextAnnotation,
+.pbicon-BPMN2_0_TextAnnotation              {  } /*  */
+.pbicon-BPMN_TextAnnotation_Full,
+.pbicon-BPMN1_1TextAnnotation_Full,
+.pbicon-BPMN2_0_TextAnnotation_Full         {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Condition'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Condition'] > a .jstree-themeicon,
+.pbicon-BPMN_Condition,
+.pbicon-BPMN1_1_Condition                   { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Condition_Full,
+.pbicon-BPMN1_1_Condition_Full              { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Transaction'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Transaction'] > a .jstree-themeicon,
+.pbicon-BPMN_Transaction,
+.pbicon-BPMN1_1_Transaction                 { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_Transaction_Full,
+.pbicon-BPMN1_1_Transaction_Full            { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_WebService'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_WebService'] > a .jstree-themeicon,
+.pbicon-BPMN_WebService,
+.pbicon-BPMN1_1_WebService                  { background-image: url(img/Set1/16.png); } /* 016 */
+.pbicon-BPMN_WebService_Full,
+.pbicon-BPMN1_1_WebService_Full             { background-image: url(img/full/Set1/16.png); } /* 016 */
+
+
+/* For BPMN Diagram Icon */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_BPMN_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_BPMN_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_BPMN_Diagram'] > a .jstree-themeicon,
+.pbicon-BPMN_BPMN_Diagram,
+.pbicon-BPMN1_1_BPMN_Diagram,
+.pbicon-BPMN2_0_BPMN_Diagram                { background-image: url(img/Set1/15.png); } /* 015 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_BPEL_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_BPEL_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_BPEL_Diagram'] > a .jstree-themeicon,
+.pbicon-BPMN_BPEL_Diagram,
+.pbicon-BPMN1_1_BPEL_Diagram,
+.pbicon-BPMN2_0_BPEL_Diagram                { background-image: url(img/Set1/15.png); } /* 015 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_BusinessProcess_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_BusinessProcess_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_BusinessProcess_Diagram'] > a .jstree-themeicon,
+.pbicon-BPMN_BusinessProcess_Diagram,
+.pbicon-BPMN1_1_BusinessProcess_Diagram,
+.pbicon-BPMN2_0_BusinessProcess_Diagram     { background-image: url(img/Set1/15.png); } /* 015 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Choreography_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Choreography_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Choreography_Diagram'] > a .jstree-themeicon,
+.pbicon-BPMN_Choreography_Diagram,
+.pbicon-BPMN1_1_Choreography_Diagram,
+.pbicon-BPMN2_0_Choreography_Diagram        { background-image: url(img/Set1/15.png); } /* 015 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Collaboration_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Collaboration_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Collaboration_Diagram'] > a .jstree-themeicon,
+.pbicon-BPMN_Collaboration_Diagram,
+.pbicon-BPMN1_1_Collaboration_Diagram,
+.pbicon-BPMN2_0_Collaboration_Diagram       { background-image: url(img/Set1/15.png); } /* 015 */
+
+.jstree-default li[data-pbicon$='pbicon-BPMN_Conversation_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN1_1_Conversation_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-BPMN2_0_Conversation_Diagram'] > a .jstree-themeicon,
+.pbicon-BPMN_Conversation_Diagram,
+.pbicon-BPMN1_1_Conversation_Diagram,
+.pbicon-BPMN2_0_Conversation_Diagram        { background-image: url(img/Set1/15.png); } /* 015 */
+

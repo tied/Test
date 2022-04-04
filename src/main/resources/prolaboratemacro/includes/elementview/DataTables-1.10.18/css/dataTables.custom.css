@@ -1,0 +1,126 @@
+﻿
+/* Table Theme
+/* --------------------------------------------------------- */
+
+.dataListWrap       {  }
+.dataList           { width: 100% !important; border-bottom-color:#E9EAED !important; }
+
+.dataListHeader     { background-color:#FFF; }
+.dataListBody       { background-color:#FFF; }
+
+.dataListItemWrap   {  }
+.dataListItem       { background-color:#FFF; margin:2px 0; }
+.dataListItem tr    {  }
+.dataListItem tr + tr { border-top:1px solid #E9EAED; }
+.dataListItem td    { padding:8px !important; text-align:left; }
+
+.dataItemDrag       { padding-right: 0 !important; border-left:3px solid #9F9F9F !important; }
+.dataItemDrag i     { color:#CCC; display: inline-block; opacity:0;  font-size: 14px; margin: 0 0 0 -3px; vertical-align: middle; }
+
+.dataListHeader .dataListItem .dataItemDrag { border-left-color:#08A2EE; }
+.dataListBody .dataListItem .dataItemDrag   { }
+        
+.dataListHeader .dataListItem       { box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15); }
+.dataListHeader .dataListItem td,
+.dataListHeader .dataListItem th    { background-color:#fcfcfc; color:#08A2EE; border-top:1px solid #E9EAED; }
+.dataListHeader .dataListItem td,
+.dataListHeader .dataListItem th    { width: auto !important; font-weight:bold; padding: 8px 26px 8px 8px !important; }
+.dataListHeader .dataListItem td:after,
+.dataListHeader .dataListItem th:after,
+.dataListHeader .dataListItem td:before,
+.dataListHeader .dataListItem th:before { bottom: 0.9em !important; }
+.dataListHeader .dataListItem .dataItemDrag   { width: 1px !important;  padding-right: 8px !important; }
+
+.dataListBody .dataListItem:hover,
+.dataListBody .dataListItem:focus                   { background-color:#fcfcfc; }
+.dataListBody .dataListItem:hover .dataItemDrag i,
+.dataListBody .dataListItem:focus .dataItemDrag i   { opacity:1; }
+
+.dataHeightFix          { height: calc(100% - 74px); margin-top: 6px; }
+.dataHeightFix > div    { height: 100%; }
+.dataHeightFixIn        { height: 100%; overflow: auto; border-bottom: 2px solid #DDD; /*border-top: 1px solid rgba(0,0,0,0.075);*/ }
+.dataHeightFixIn table  { margin:0; }
+
+/* Table Theme :: Updated from Original
+/* --------------------------------------------------------- */
+
+.custom-select.form-control { padding: 4px 28px 4px 8px !important; }
+
+.pagination > li > a,
+.pagination > li > span { padding: 6px 12px; }
+
+div.dataTables_wrapper div.dataTables_paginate,
+div.dataTables_wrapper div.dataTables_paginate ul.pagination    { line-height: 14px; }
+div.dataTables_wrapper div.dataTables_paginate                  { margin-bottom: -3px; } 
+div.dataTables_wrapper div.dataTables_paginate ul.pagination    { margin: 0; }
+div.dataTables_wrapper div.dataTables_paginate li.paginate_button { display: inline-block; overflow: hidden; }
+
+div.dataTables_scrollBody           { border-bottom: 2px solid #DDD; margin-bottom: 12px; }
+div.dataTables_scrollBody table.dataTable { border: none; }
+div.dataTables_scrollBody thead     {  }
+div.dataTables_scrollBody thead tr,
+div.dataTables_scrollBody thead th,
+div.dataTables_scrollBody thead td  { padding: 0 8px !important; }
+
+table.dataTable th, table.dataTable td				{ padding: 5px 7px; }
+table.dataTable tbody th, table.dataTable tbody td	{ border-bottom: 1px solid #EEE; }
+table.dataTable thead th, table.dataTable thead td,
+table.dataTable tfoot th, table.dataTable tfoot td	{ color: #777; border: 0; background: #EEE; text-shadow: 1px 1px 0 #ffffff; }
+table.dataTable thead input, table.dataTable tfoot input { width: 100%; }
+table.dataTable thead .sorting::before,
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting_asc::before,
+table.dataTable thead .sorting_asc::after,
+table.dataTable thead .sorting_desc::before,
+table.dataTable thead .sorting_desc::after,
+table.dataTable thead .sorting_asc_disabled::before,
+table.dataTable thead .sorting_asc_disabled::after,
+table.dataTable thead .sorting_desc_disabled::before,
+table.dataTable thead .sorting_desc_disabled::after	{ bottom: 0.5em; }
+
+table.dataTable tbody tr.shown { background: #08a2ee none repeat scroll 0 0; color: #ffffff; }
+table.dataTable tbody tr.shown td { border-bottom: none; }
+table.dataTable tbody tr.shown + tr { background-color: #fbfdfe; margin-top: -1px; position: relative; z-index: 1; }
+table.dataTable tbody tr.shown + tr td { border-width: 0 1px 5px; border-style: solid; border-color: #08a2ee; padding: 0 12px; }
+table.dataTable tbody tr td.rowInfo { color: #25a825; cursor: pointer; }
+table.dataTable tbody tr.shown td.rowInfo .fa.fa-arrow-circle-down:before { content: '\f0aa'; color: #FFF; }
+table.dataTable tbody tr.shown .DelRecord,
+table.dataTable tbody tr.shown .DelUserRecord { margin: -2px 0; border-radius: 50%; height: 24px; line-height: 24px; width: 24px; background: #ffffff none repeat scroll 0 0; }
+
+table.dataTable.no-footer { border-bottom: 2px solid #EEE; }
+
+#ADUserTable .checkStyle,
+#ADGroupTable .checkStyle,
+#UserTable .checkStyle,
+#ReviewProcessTable .checkStyle { margin: 0; padding-top: 0 !important; }
+
+
+/* Table Theme :: Impact Analysis Profile
+/* --------------------------------------------------------- */
+#TraceViewList_length,
+#TraceViewList_info { display: inline; }
+#TraceViewList_info { margin-left: 20px; }
+
+td.TraceViewItemDrag        { width: 10px; }
+/*td.TraceViewItemCheck       { width: 40px; text-align:center !important; }*/
+td.TraceViewItemCheck label { margin: 0; padding-top: 2px; }
+td.TraceViewItemName        { padding-right: 30px !important; }
+td.TraceViewItemType        { padding-right: 30px !important; }
+td.TraceViewItemAction      { width:140px; text-align:center !important; }
+td.TraceViewItemAction a,
+td.TraceViewItemAction a + div + a  { display: inline-block; width: 24px; height: 18px; }
+td.TraceViewItemfixed-Size    { table-layout: fixed; word-wrap: break-word; }
+
+
+/* Table Theme :: Dashboard [Read more]
+/* --------------------------------------------------------- */
+.tdMore { color: #9197a3; cursor: pointer; }
+.tdMore:hover,
+.tdMore:focus { color: #08a2ee; }
+
+
+/* Data tables download buttons
+/* --------------------------------------------------------- */
+button.dt-button, div.dt-button, a.dt-button { font-size: 13px; padding: 0.35em 0.8em; }
+
+.dataRows { cursor: pointer; }

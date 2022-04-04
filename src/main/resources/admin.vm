@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>$i18n.getText("prolaborate.admin.title")</title>
+    <meta name="decorator" content="atl.admin" />
+    $webResourceManager.requireResource("com.prolaborate.macros.prolaborate-macro:prolaboratemacro-resources")
+  </head>
+  <body>
+  <h2>Link Macro to Prolaborate Server</h2><br>
+  <aside><strong>Note:</strong><span> If HTTPS connection is enabled in Confluence site, your Prolaborate site should mandatorily be hosted over HTTPS. If no, you will face issue when showing content from Prolaborate.</span></aside>
+    <form id="admin" class="aui">
+      <div class="field-group">
+        <label for="protocol">$i18n.getText("prolaborate.admin.protocol.label")*</label>
+        <select id="protocol" name="protocol" class="text">
+        <option value="https">HTTPS</option>
+        <option value="http">HTTP</option>
+        </select>&nbsp;
+		<input type="button" id="editButton" value="Edit" class="button editButton">
+      </div>
+      <div class="field-group">
+        <label for="name">$i18n.getText("prolaborate.admin.server.label")*</label>
+        <input type="text" id="server" name="server" class="text">
+      </div>
+      <div class="field-group">
+        <label for="time">$i18n.getText("prolaborate.admin.port.label")</label>
+        <input type="text" id="port" name="port" class="text">
+      </div>
+	  <div class="field-group">
+        <label for="token">$i18n.getText("prolaborate.admin.token.label")</label>
+        <input type="text" id="token" name="token" class="text">
+      </div>
+	  <div class="field-group">
+        <label for="userid">$i18n.getText("prolaborate.admin.userid.label") <span><a href="https://prolaborate.sparxsystems.com/faq/confluence-integration/configuring-the-macro#relevance-of-user-id" target="_blank"><i class="fa fa-info-circle"></i></a></span></label>
+        <input type="text" id="userid" name="userid" class="text">
+      </div>
+	  <div class="field-group" id="cancelBlock" style="display:none;">
+        <input type="button" id="connectButton" value="$i18n.getText("prolaborate.admin.connect.label")" class="button connectButton">
+      </div>
+      <div class="field-group" style="display:none;">
+        <label for="repository">$i18n.getText("prolaborate.admin.repository.label")</label>
+		
+      </div>
+	  <div class="field-group" id="defaultRepostiory" style="display:none;">
+	  <label for="defaultRepostiory">$i18n.getText("prolaborate.admin.defaultRepostiory.label")</label>
+        <input type="button" id="defaultRepostiory" name="defaultRepostiory" disabled class="text defaultRepostiory">
+      </div>
+      <div class="field-group" id="saveBlock" style="display:none;">
+        <input type="submit" value="$i18n.getText("prolaborate.admin.save.label")" class="button">
+      </div>
+    </form>
+	<div id="chooseRepBlock" style="display:none;">
+	<h2>Manage Repositories</h2>
+		<div class="RepositoryList">
+				
+		</div>
+	</div
+  </body>
+</html>

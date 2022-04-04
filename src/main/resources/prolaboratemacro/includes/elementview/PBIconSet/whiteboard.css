@@ -1,0 +1,116 @@
+﻿
+/* For Whiteboard Icon */
+
+/*.jstree-default li[data-pbicon$='pbicon-Whiteboard_'] > a .jstree-themeicon,
+.pbicon-Whiteboard_,*/
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_circle'] > a .jstree-themeicon,
+.pbicon-Whiteboard_circle                           { background-image: url(img/Set3/1.png); } /* 110 */
+.pbicon-Whiteboard_circle_Full                      { background-image: url(img/full/Set3/1.png); } /* 110 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_oval'] > a .jstree-themeicon,
+.pbicon-Whiteboard_oval                             { background-image: url(img/Set3/10.png); } /* 119 */
+.pbicon-Whiteboard_oval_Full                        { background-image: url(img/full/Set3/10.png); } /* 119 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_square'] > a .jstree-themeicon,
+.pbicon-Whiteboard_square                           { background-image: url(img/Set3/15.png); } /* 124 */
+.pbicon-Whiteboard_square_Full                      { background-image: url(img/full/Set3/15.png); } /* 124 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_rectangle'] > a .jstree-themeicon,
+.pbicon-Whiteboard_rectangle                        { background-image: url(img/Set3/11.png); } /* 120 */
+.pbicon-Whiteboard_rectangle_Full                   { background-image: url(img/full/Set3/11.png); } /* 120 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_roundrect'] > a .jstree-themeicon,
+.pbicon-Whiteboard_roundrect                        { background-image: url(img/Set3/14.png); } /* 123 */
+.pbicon-Whiteboard_roundrect_Full                   { background-image: url(img/full/Set3/14.png); } /* 123 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_triangle'] > a .jstree-themeicon,
+.pbicon-Whiteboard_triangle                         { background-image: url(img/Set3/16.png); } /* 125 */
+.pbicon-Whiteboard_triangle_Full                    { background-image: url(img/full/Set3/16.png); } /* 125 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_cloud'] > a .jstree-themeicon,
+.pbicon-Whiteboard_cloud                            { background-image: url(img/Set3/2.png); } /* 111 */
+.pbicon-Whiteboard_cloud_Full                       { background-image: url(img/full/Set3/2.png); } /* 111 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_diamond'] > a .jstree-themeicon,
+.pbicon-Whiteboard_diamond                          { background-image: url(img/Set3/5.png); } /* 114 */
+.pbicon-Whiteboard_diamond_Full                     { background-image: url(img/full/Set3/5.png); } /* 114 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_cube'] > a .jstree-themeicon,
+.pbicon-Whiteboard_cube                             { background-image: url(img/Set3/3.png); } /* 112 */
+.pbicon-Whiteboard_cube_Full                        { background-image: url(img/full/Set3/3.png); } /* 112 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_cylinder'] > a .jstree-themeicon,
+.pbicon-Whiteboard_cylinder                         { background-image: url(img/Set3/4.png); } /* 113 */
+.pbicon-Whiteboard_cylinder_Full                    { background-image: url(img/full/Set3/4.png); } /* 113 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_uparrow'] > a .jstree-themeicon,
+.pbicon-Whiteboard_uparrow                          { background-image: url(img/Set3/18.png); } /* 127 */
+.pbicon-Whiteboard_uparrow_Full                     { background-image: url(img/full/Set3/18.png); } /* 127 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_downarrow'] > a .jstree-themeicon,
+.pbicon-Whiteboard_downarrow                        { background-image: url(img/Set3/7.png); } /* 116 */
+.pbicon-Whiteboard_downarrow_Full                   { background-image: url(img/full/Set3/7.png); } /* 116 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_leftarrow'] > a .jstree-themeicon,
+.pbicon-Whiteboard_leftarrow                        { background-image: url(img/Set3/9.png); } /* 118 */
+.pbicon-Whiteboard_leftarrow_Full                   { background-image: url(img/full/Set3/9.png); } /* 118 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_rightarrow'] > a .jstree-themeicon,
+.pbicon-Whiteboard_rightarrow                       { background-image: url(img/Set3/13.png); } /* 122 */
+.pbicon-Whiteboard_rightarrow_Full                  { background-image: url(img/full/Set3/13.png); } /* 122 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_uparrowthin'] > a .jstree-themeicon,
+.pbicon-Whiteboard_uparrowthin                      { background-image: url(img/Set3/17.png); } /* 126 */
+.pbicon-Whiteboard_uparrowthin_Full                 { background-image: url(img/full/Set3/17.png); } /* 126 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_downarrowthin'] > a .jstree-themeicon,
+.pbicon-Whiteboard_downarrowthin                    { background-image: url(img/Set3/6.png); } /* 115 */
+.pbicon-Whiteboard_downarrowthin_Full               { background-image: url(img/full/Set3/6.png); } /* 115 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_leftarrowthin'] > a .jstree-themeicon,
+.pbicon-Whiteboard_leftarrowthin                    { background-image: url(img/Set3/8.png); } /* 117 */
+.pbicon-Whiteboard_leftarrowthin_Full               { background-image: url(img/full/Set3/8.png); } /* 117 */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_rightarrowthin'] > a .jstree-themeicon,
+.pbicon-Whiteboard_rightarrowthin                   { background-image: url(img/Set3/12.png); } /* 121 */
+.pbicon-Whiteboard_rightarrowthin_Full              { background-image: url(img/full/Set3/12.png); } /* 121 */
+
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_callout'] > a .jstree-themeicon,
+.pbicon-Whiteboard_callout                          {  } /*  */
+.pbicon-Whiteboard_callout_Full                     {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_line'] > a .jstree-themeicon,
+.pbicon-Whiteboard_line                             {  } /*  */
+.pbicon-Whiteboard_line_Full                        {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_directedLine'] > a .jstree-themeicon,
+.pbicon-Whiteboard_directedLine                     {  } /*  */
+.pbicon-Whiteboard_directedLine_Full                {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_dashedLine'] > a .jstree-themeicon,
+.pbicon-Whiteboard_dashedLine                       {  } /*  */
+.pbicon-Whiteboard_dashedLine_Full                  {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_directedDashedLine'] > a .jstree-themeicon,
+.pbicon-Whiteboard_directedDashedLine               {  } /*  */
+.pbicon-Whiteboard_directedDashedLine_Full          {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_curve'] > a .jstree-themeicon,
+.pbicon-Whiteboard_curve                            {  } /*  */
+.pbicon-Whiteboard_curve_Full                       {  } /*  */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_directedCurve'] > a .jstree-themeicon,
+.pbicon-Whiteboard_directedCurve                    {  } /*  */
+.pbicon-Whiteboard_directedCurve_Full               {  } /*  */
+
+
+/* For Archimate Diagram Icon */
+
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_WhiteboardDiagram_Diagram'] > a .jstree-themeicon,
+.pbicon-Whiteboard_WhiteboardDiagram_Diagram        { background-image: url(img/Set1/1.png); } /* 001 */
+                                                                                           
+.jstree-default li[data-pbicon$='pbicon-Whiteboard_Hand-drawnDiagram_Diagram'] > a .jstree-themeicon,
+.pbicon-Whiteboard_Hand-drawnDiagram_Diagram        { background-image: url(img/Set1/1.png); } /* 001 */
+

@@ -1,0 +1,3 @@
+
+    $webResourceManager.requireResource("com.prolaborate.macros.prolaboratemacro:prolaboratemacro-resources")
+ 

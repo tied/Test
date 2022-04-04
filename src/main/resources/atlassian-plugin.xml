@@ -1,0 +1,141 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="Prolaborate" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+	    <param name="plugin-banner">images/1120x548.png</param>
+        <param name="vendor-icon">images/pluginIcon.png</param>
+        <param name="vendor-logo">images/pluginLogo.png</param>
+		<param name="configure.url">/plugins/servlet/prolaborate/admin</param>
+		<param name="post.install.url">/plugins/servlet/prolaborate/admin</param>
+		<param name="atlassian-data-center-status">compatible</param>
+		<param name="atlassian-data-center-compatible">true</param>
+		<param name="read-only-access-mode-compatible">true</param>
+		<param name="plugin-type">both</param>
+    </plugin-info>
+    
+	<xhtml-macro name="prolaborate" class="com.prolaborate.macros.Integration" key="prolaborate-integration">
+    <category name="formatting"/>
+    <parameters>
+	<parameter name="Name" type="string" >
+		<option key="showNameInPlaceholder" value="false" />
+		<option key="showValueInPlaceholder" value="true" />
+	</parameter>
+	<parameter name="Type" type="enum">
+    <value name="Element"/>
+    <value name="Diagram"/>
+    <value name="Discussions"/>
+	<option key="showNameInPlaceholder" value="false" />
+	<option key="showValueInPlaceholder" value="true" />
+	</parameter>
+	<parameter name="Guid" type="string" >
+	<option key="showValueInPlaceholder" value="false" />
+	</parameter>
+	</parameters>
+</xhtml-macro>
+
+	<servlet key="admin-servlet" class="com.prolaborate.configureui.AdminServlet">
+  <url-pattern>/prolaborate/admin</url-pattern>
+</servlet>
+
+	<rest key="rest" path="/prolaborate-admin" version="1.0">
+  <description>Provides REST resources for the prolaborate configuration UI.</description>
+</rest>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="prolaboratemacro"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="prolaboratemacro-resources" name="prolaboratemacro 
+Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>        
+        <dependency>com.atlassian.auiplugin:aui-tooltips</dependency>        
+        <resource type="download" name="prolaboratemacro.css" location="/css/prolaboratemacro.css"/>
+		<resource type="download" name="font-awesome.min.css" location="prolaboratemacro/includes/diagramview/font-awesome-4.7.0/css/font-awesome.min.css"/>		
+		<resource type="download" name="fontawesome-webfont.woff2" location="prolaboratemacro/includes/diagramview/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2"/>
+		<resource type="download" name="fontawesome-webfont.woff" location="prolaboratemacro/includes/diagramview/font-awesome-4.7.0/fonts/fontawesome-webfont.woff"/>
+		<resource type="download" name="fontawesome-webfont.ttf" location="prolaboratemacro/includes/diagramview/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf"/>
+		<resource type="download" name="fontawesome-webfont.svg" location="prolaboratemacro/includes/diagramview/font-awesome-4.7.0/fonts/fontawesome-webfont.svg"/>
+		<resource type="download" name="switchery.min.css" location="prolaboratemacro/includes/elementview/switchery-master/switchery.min.css"/>
+		<resource type="download" name="switchery.min.js" location="prolaboratemacro/includes/elementview/switchery-master/switchery.min.js"/>
+        <resource type="download" name="prolaboratemacro.js" location="/js/prolaboratemacro.js"/>
+        <resource type="download" name="images/" location="/images"/>
+        <context>prolaboratemacro</context>
+    </web-resource>
+    
+    <web-resource key="prolaboratemacro-displayresources" name="prolaboratemacrodisplay 
+Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>        
+        <dependency>com.atlassian.auiplugin:aui-tooltips</dependency>        
+        <resource type="download" name="images/" location="/images"/>
+        <context>prolaboratemacro</context>
+    </web-resource>
+    
+	<web-resource key="prolaboratemacro-diagramresources" name="prolaboratemacrodisplay diagram Resources">
+		<context>com.prolaborate.macros.prolaborate-macro:prolaboratemacro-diagramresources</context>
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.auiplugin:aui-tooltips</dependency>
+    <resource type="download" name="prolaboratemacro.css" location="/css/prolaboratemacro.css"/>
+    <resource type="download" name="diagramview/" location="prolaboratemacro/includes/diagramview/"/>
+		<resource type="download" name="diagram_view.js" location="/js/diagram_view.js" />    
+    <resource type="download" name="img/" location="prolaboratemacro/includes/elementview/PBIconSet/img"/>		
+		<resource type="download" name="images/" location="/images"/>
+		<resource type="download" name="View/" location="/View"/>
+	</web-resource>
+	
+	<web-resource key="prolaboratemacro-elementresources" name="prolaboratemacrodisplay element Resources">
+	<context>com.prolaborate.macros.prolaborate-macro:prolaboratemacro-elementresources</context>
+        <dependency>com.atlassian.auiplugin:aui-tooltips</dependency>
+    <resource type="download" name="prolaboratemacro.css" location="/css/prolaboratemacro.css"/>
+		 <resource type="download" name="elementview/" location="prolaboratemacro/includes/elementview/"/> 
+		<resource type="download" name="element_custom.js" location="/js/element_custom.js"/>
+    <resource type="download" name="img/" location="prolaboratemacro/includes/elementview/PBIconSet/img"/>
+        <resource type="download" name="images/" location="/images"/>
+    <resource type="download" name="View/" location="/View"/>
+        <context>prolaboratemacro</context>
+    </web-resource>
+	
+    <web-resource key="editorWebResource" name="Editor Web Resource">      
+      	<context>editor</context>
+      	<dependency>com.atlassian.confluence.tinymceplugin:editor-resources</dependency>
+      	<resource name="images/" type="download" location="prolaboratemacro/includes/editor/images"/>
+      	<resource type="download" name="editor.css" location="prolaboratemacro/includes/editor/css/editor.css"/>
+		<resource type="download" name="switchery.min.css" location="prolaboratemacro/includes/elementview/switchery-master/switchery.min.css"/>
+		<resource type="download" name="switchery.min.js" location="prolaboratemacro/includes/elementview/switchery-master/switchery.min.js"/>
+	</web-resource>
+	
+	<web-resource name="Resources - handle macros with JS" key="macroeditor-resources">
+	    <description>Prolaborate Macro related JS resources</description>
+	    <context>editor</context>
+	<!-- transform calls to AJS.getText() inside JS files -->
+        <transformation extension="js">
+            <transformer key="jsI18n"/>
+        </transformation>
+
+        <!-- transform Soy templates into JS -->
+        <transformation extension="soy">
+            <transformer key="soyTransformer">
+                <functions>com.atlassian.confluence.plugins.soy:soy-core-functions</functions>
+            </transformer>
+        </transformation>
+	    <!-- JS for custom macro gui without using macro browser (for prolaborate macro) -->
+	    <resource name="template-soy.js" type="download" location="soytemplate/prolaboratemacro.soy"/>
+	    <resource type="download" name="macroeditor.js" location="js/macroeditor.js" />
+	    <dependency>com.atlassian.auiplugin:ajs</dependency>
+		<dependency>com.atlassian.auiplugin:dialog2</dependency>
+		<dependency>com.atlassian.auiplugin:tabs</dependency>
+	</web-resource>
+	
+    <web-item key="conf-menu-item" name="Prolaborate Configuration" section="system.admin/marketplace_confluence" weight="10"> 
+  		<description>Link to prolaborate configuration page.</description> 
+  		<label key="prolaborate.admin.title" /> 
+  		<link linkId="xproduct-admin-link">/plugins/servlet/prolaborate/admin</link> 
+	</web-item>
+	
+	<web-item key="editor-prolaboratemacrolinkkey" name="Prolaborate" section="system.editor.featured.macros.default" weight="11">
+	    <label key="Prolaborate"/>      
+	    <link linkId="prolaborate"/>
+	</web-item> 
+</atlassian-plugin>

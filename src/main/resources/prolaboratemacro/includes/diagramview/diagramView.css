@@ -1,0 +1,7 @@
+﻿/*!
+ *  Styles required for Diagram View.
+ */
+
+ .dataHeightFix { overflow: auto; }
+
+.ProlaborateImageClass{ background: url(images/prolaborate.png) no-repeat  left transparent;background-size: 72px 72px; }

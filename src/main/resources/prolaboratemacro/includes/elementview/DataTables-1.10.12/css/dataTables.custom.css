@@ -1,0 +1,74 @@
+﻿/* Table Theme
+/* --------------------------------------------------------- */
+
+.dataListWrap       { }
+.dataList           { font-size: 13px; width: 100% !important; border-bottom-color:#E9EAED !important; border-right: 1px solid rgba(0,0,0,0.1); }
+
+.dataListHeader     { background-color:#FFF; }
+.dataListBody       { background-color:#FFF; }
+
+.dataListItemWrap   {  }
+.dataListItem       { background-color:#FFF; margin:2px 0; }
+.dataListItem tr    {  }
+.dataListItem tr + tr { border-top:1px solid #E9EAED; }
+.dataListItem th,
+.dataListItem td    { padding: 8px !important; text-align:left; }
+
+.dataItemDrag       { padding-right: 0 !important; border-left:3px solid #9F9F9F !important; }
+.dataItemDrag i     { color:#CCC; display: inline-block; opacity:0;  font-size: 14px; margin: 0 0 0 -3px; vertical-align: middle; }
+
+.dataListHeader .dataListItem .dataItemDrag { border-left-color:#08A2EE !important; }
+.dataListBody .dataListItem .dataItemDrag   { }
+        
+.dataListHeader .dataListItem       {  }
+.dataListHeader .dataListItem td,
+.dataListHeader .dataListItem th    { background-color:#fcfcfc; color:#08A2EE; border-top:1px solid #E9EAED; border-bottom:1px solid #E9EAED; }
+.dataListHeader .dataListItem td,
+.dataListHeader .dataListItem th    { width: auto !important; font-weight:bold; padding-right: 26px !important; }
+.dataListHeader .dataListItem td:after,
+.dataListHeader .dataListItem th:after  { bottom: 8px !important; }
+.dataListHeader .dataListItem .dataItemDrag { width: 1px !important;  padding-right: 8px !important; }
+.dataListHeader .dataListItem:hover .dataItemDrag i,
+.dataListHeader .dataListItem:focus .dataItemDrag i   { opacity:1; color:#08A2EE; }
+
+.dataListBody .dataListItem:hover,
+.dataListBody .dataListItem:focus                   { background-color:#fcfcfc; }
+.dataListBody .dataListItem:hover .dataItemDrag i,
+.dataListBody .dataListItem:focus .dataItemDrag i   { opacity:1; }
+
+/* Table Theme :: Updated from Original
+/* --------------------------------------------------------- */
+
+.pagination > li > a,
+.pagination > li > span     { padding: 4px 12px; }
+
+div.dataTables_wrapper div.dataTables_paginate,
+div.dataTables_wrapper div.dataTables_paginate ul.pagination    { line-height: 14px; }
+div.dataTables_wrapper div.dataTables_paginate                  { margin-bottom: -3px; } 
+div.dataTables_wrapper div.dataTables_paginate ul.pagination    { margin: 0; }
+div.dataTables_wrapper div.dataTables_paginate li.paginate_button { display: inline-block; overflow: hidden; }
+
+div.dataTables_scrollBody           { border-bottom: 2px solid #DDD; margin-bottom: 12px; }
+div.dataTables_scrollBody table.dataTable { border: none; }
+div.dataTables_scrollBody thead     {  }
+div.dataTables_scrollBody thead tr,
+div.dataTables_scrollBody thead th,
+div.dataTables_scrollBody thead td  { padding: 0 8px !important; }
+
+
+/* Table Theme :: Impact Analysis Profile
+/* --------------------------------------------------------- */
+
+#TraceViewList_length,
+#TraceViewList_info { display: inline; }
+#TraceViewList_info { margin-left: 20px; }
+
+td.TraceViewItemDrag        { width: 10px; }
+td.TraceViewItemCheck       { width: 40px; text-align:center !important; }
+td.TraceViewItemCheck label { margin: 0; padding-top: 2px; }
+td.TraceViewItemName        { padding-right: 30px !important; }
+td.TraceViewItemType        { padding-right: 30px !important; }
+td.TraceViewItemAction      { width:140px; text-align:center !important; }
+td.TraceViewItemAction a,
+td.TraceViewItemAction a + div + a  { display: inline-block; width: 24px; height: 18px; }
+td.TraceViewItemfixed-Size    { table-layout: fixed; word-wrap: break-word; }

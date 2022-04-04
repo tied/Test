@@ -1,0 +1,886 @@
+
+//Macro panel buttons , remove edit button.
+AJS.Confluence.PropertyPanel.Macro.registerInitHandler(function(macroPlaceholder, buttons) {
+ buttons[0].html = '<i></i>';
+ $(window).once('created.property-panel', function () {
+//Incase of event handler required.
+});
+}, 'prolaborate');
+
+AJS.toInit(function() { 
+   try{
+		var $pageMetadata = AJS.$('#content.page.view .page-metadata:first');
+		
+		//Load template for Custom dialog.
+		var template = Confluence.Templates.SoyTutorial.listSelectedAjsParams(); 
+		AJS.$('body').append(template);
+	    
+		AJS.tabs.setup();
+   
+		getProlaborateDiagramStereotypes();
+		getProlaborateElementStereotypes();
+		
+	}
+	catch(e){alert(e);}
+	
+});
+
+AJS.bind("init.rte", function() { 
+
+	var macroName = 'prolaborate';
+	
+
+   //To Override default macro editor dialog.
+   	AJS.MacroBrowser.setMacroJsOverride('prolaborate', {opener: function(macro) { 
+		
+		var url = AJS.contextPath() + "/rest/prolaborate-admin/1.0/";
+		$.ajax({
+				url: url,
+				dataType: "json"
+			}).done(function(config) { // when the configuration is returned...
+        	if(typeof(config) != "undefined" && typeof(config.protocol) != "undefined" && typeof(config.server) != "undefined" && config.protocol != "" && config.server != ""){ 
+			
+		
+			var macro = $('#wysiwygTextarea_ifr').contents().find("img[data-macro-name=prolaborate]");
+			var macroFlag = false; //Default value is false.
+			//Check if any macro available on the ediotr with macro name : prolaborate
+			if(macro.length>0)
+			{macroFlag=true;}
+	
+			if(macroFlag == false){
+				//open custom dialog
+				AJS.dialog2("#demo-dialog").show();
+			}
+			else{
+			 //SHOW WARNING MESSAGE. MACRO ALREADY AVAILABLE.
+			 var ErrorFlag = AJS.flag({
+						type: 'info',
+						title: 'Prolaborate macro already exists',
+						body: 'You can add the Prolaborate macro only once in a page',
+					});
+			
+				setTimeout(function(){ ErrorFlag.close(); }, 5000);
+	}
+			
+			}
+			else
+			{
+			AJS.dialog2($('<section id="config-warning-dialog" class="aui-dialog2 aui-dialog2-small aui-layer" role="dialog" aria-hidden="true"><header class="aui-dialog2-header"><h2 class="aui-dialog2-header-main">Macro not configured!</h2><a class="aui-dialog2-header-close"><span class="aui-icon aui-icon-small aui-iconfont-close-dialog">Close</span></a></header><div class="aui-dialog2-content"><p>Please click on <b>Configure</b> to add details of Prolaborate repository.</p></div><footer class="aui-dialog2-footer"><div class="aui-dialog2-footer-actions"><a href="'+AJS.contextPath()+'/plugins/servlet/prolaborate/admin" id="dialog-submit-button" class="aui-button aui-button-primary">Configure</a><button id="config-warning-dialog-cancel" class="aui-button aui-button-link">Cancel</button></div></footer></section>')).show();
+			}
+			});
+   	}});     
+});
+
+AJS.$(document).on("click", "#config-warning-dialog-cancel", function (e) {
+    e.preventDefault();
+    AJS.dialog2("#config-warning-dialog").hide();
+});
+
+
+
+
+
+// For filter item List selection
+$(document).ready(function(){ 
+   
+   //Prevent Enter keypress
+
+ $('#diagram-name').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) { 
+    e.preventDefault();
+    return false;
+  }
+});
+ $('#package-name').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) { 
+    e.preventDefault();
+    return false;
+  }
+});
+$('#element-name').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) { 
+    e.preventDefault();
+    return false;
+  }
+});
+   
+	//For List Selection
+	$(document).on('click',".filter-list > ul > li .filter-item-wrap",function() {   
+	    $(this).closest('ul').find('.dialog-active').removeClass('dialog-active');
+	    $(this).addClass('dialog-active');
+	  });
+
+	//lightbox Cancel and Deselect  
+	  $(".btn-cancel,.menu-item a").click(function() {  
+	    $('.filter-item-wrap').removeClass('dialog-active'); 
+	  });
+
+	// aui inline dialog tooltip trigger close
+	$(".filter-list").scroll(function(){
+		$('aui-inline-dialog').hide();    
+	});
+
+ // Diagram Filter Section
+		var DiagramName;
+		var DiagramType;
+		var DiagramStreotype;
+		var PackageName;
+		var ElementName;
+		var ElementType;
+		var ElementStreotype;
+		
+	//Event for Find button on diagram tab
+    $('#btn-diagram').click(function () { 
+
+        $('.info-wrap').remove();
+		$('.Diag-count').hide();
+		$('#Diag-Detail').hide();
+        $('.diag-loader').show()
+		$('#diagram-filter-item').html("");//Reset List	
+		
+		DiagramName=$('#diagram-name').val();
+		DiagramType=$("#diagram-type").val();
+		DiagramStreotype=$("#diagram-stereo-type").val();
+
+		var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabDiagramsList";
+		AJS.$.ajax({
+		url: url1,
+		type:"POST",
+		data: '{"DiagramName": "' +DiagramName+ '", "Author":"", "DiagramType": "' +DiagramType+ '", "Stereotype":"' +DiagramStreotype+ '", "StartIndex":0}',
+		dataType: "json",
+		contentType: "application/json"	 
+		}).done(function(response) { // when the configuration is returned...
+		if(response.d.status == "success"){
+			
+			$('#totalCount').text(response.d.DiagramCount);
+			$('#offsetCount').text(response.d.DiagramList.length);
+			
+			
+			$('.Diag-count').show();
+			
+			if($('#totalCount').text()==$('#offsetCount').text())
+			{
+				$('.diag-more').hide();
+			}
+			else{$('.diag-more').show();}
+			
+		var DiagramStreoTypesJSON= response.d.DiagramList;
+		if(response.d.DiagramList.length>0){
+				$.each(DiagramStreoTypesJSON, function(i, value) {
+				
+				var FQPath='';
+				var arrow = '<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>';
+				if(value.PackageQualifiedName!='')
+				{FQPath = replaceAll(value.PackageQualifiedName,'->',arrow);}
+				if(value.ElementQualifiedName!='')
+				{
+					FQPath +=arrow;
+					FQPath += replaceAll(value.ElementQualifiedName,'->',arrow);
+				}				
+				if(value.PackageQualifiedName=='' & value.ElementQualifiedName=='')
+				{
+					arrow ='';
+				}
+				FQPath +=arrow+value.Name;
+				//Generate
+				var itemDiagram =$(
+
+		'<li id="diag_' +value.Guid+ '" class ="DiagListItem"> '+
+				' <div class="filter-item-wrap diagramItem" data-guid="' +value.Guid+ '">'+
+				'<span class="icon-thumb icon-diagram"></span>'+
+				'<div class="list-content"><p class="item-name">'  +value.Name+ '</p> <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> '+value.Author+' </p> </div>' +
+			  '<span class="selected">Selected</span> '+
+			'</div>'+
+		   ' <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="pop_' +value.Guid+ '">Click me</button>'+
+				'<aui-inline-dialog id="pop_' +value.Guid+ '" class="info-wrap">'+
+					'<ul class="info-details"> '+
+						'<li>'+
+								'<p class="text-label">Name:</p><p class="label-info">' +value.Name+ '</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Path:</p> <p class="label-info">' +FQPath+ ' </p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Stereotype:</p><p class="label-info">'+value.Stereotype+'</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Author:</p><p class="label-info">'+value.Author+'</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Last Modified:</p><p class="label-info">'+moment(value.Modified).format("DD/MM/YYYY")+'</p> '+
+						'</li>'+
+					'<ul> '+
+			'</aui-inline-dialog> ' );  
+		$('#diagram-filter-item').append(itemDiagram);
+				
+				});
+		}
+		else
+		{
+			$('.Diag-count').hide();
+			var NoResult = '<div class="no-result"><figure class="graphy-nosearch"></figure><h3>No Results</h3><p>We searched far and wide but couldn’t find any objects matching your search.</p></div>'
+		$('#diagram-filter-item').append(NoResult);
+		}
+		
+			$('.diag-loader').hide()
+		}
+
+		else{
+			$('.diag-loader').hide();
+			$('.Diag-count').hide();
+			var NoResult = '<div class="no-result"><figure class="graphy-nosearch"></figure><h3>No Results</h3><p>We searched far and wide but couldn’t find any objects matching your search.</p></div>';
+			$('#diagram-filter-item').append(NoResult);
+		}
+		});   
+	});
+	
+	//Event for Find button on Package tab
+	$('#btn-package').click(function(){
+        $('.info-wrap').remove();
+		$('.pkg-count').hide();
+		$('#Pkg-Detail').hide();
+        $('.pkg-loader').show()
+		$('#package-filter-item').html("");//Reset List	
+		
+		PackageName=$('#package-name').val();
+
+		var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabPackageList";
+		AJS.$.ajax({
+		url: url1,
+		type:"POST",
+		data: '{"PackageName": "' +PackageName+ '", "Author":"", "StartIndex":0}',
+		dataType: "json",
+		contentType: "application/json"	 
+		}).done(function(response) { // when the configuration is returned...
+		if(response.d.status == "success"){
+			
+			$('#pkgTotalCount').text(response.d.PackageCount);
+			$('#pkgOffsetCount').text(response.d.Packages.length);
+			
+			$('.pkg-more').show();
+			$('.pkg-count').show();
+			
+			if($('#pkgTotalCount').text()==$('#pkgOffsetCount').text())
+			{$('.pkg-more').hide();}
+			else{$('.pkg-more').show();}
+			
+		var PackagesJSON= response.d.Packages;
+		if(response.d.Packages.length>0){
+				$.each(PackagesJSON, function(i, value) {
+				
+				var FQPath='';
+				var arrow = '<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>';
+				if(value.PackageQualifiedName!='')
+				{FQPath = replaceAll(value.PackageQualifiedName,'->',arrow);}
+				if(value.ElementQualifiedName!='')
+				{
+					FQPath +=arrow;
+					FQPath += replaceAll(value.ElementQualifiedName,'->',arrow);
+				}				
+				if(value.PackageQualifiedName=='' & value.ElementQualifiedName=='')
+				{
+					arrow ='';
+				}
+				//FQPath +=arrow+value.Name;
+				//Generate
+				console.log(value);
+				var itemPackage = $(
+
+		'<li id="pkg_' +value.Guid+ '" class ="PkgListItem"> '+
+				' <div class="filter-item-wrap packageItem" data-guid="' +value.Guid+ '">'+
+				'<span class="icon-thumb icon-folder"></span>'+
+				'<div class="list-content"> <p class="item-name">' +value.Name+ '</p> <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span>'+value.Author+'</p></div>'+'<span class="selected">Selected</span>'+
+			'</div>'+
+		   ' <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="pop_' +value.Guid+ '">Click me</button>'+
+				'<aui-inline-dialog id="pop_' +value.Guid+ '" class="info-wrap">'+
+					'<ul class="info-details"> '+
+						'<li>'+
+								'<p class="text-label">Name:</p><p class="label-info">info-details</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Path:</p> <p class="label-info">'+FQPath+' </p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Author:</p><p class="label-info">'+value.Author+'</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Last Modified:</p><p class="label-info">'+moment(value.Modified).format("DD/MM/YYYY")+'</p> '+
+						'</li>'+
+					'<ul> '+
+			'</aui-inline-dialog> ' );  
+		$('#package-filter-item').append(itemPackage);
+				
+				});
+		}
+		else
+		{
+			$('.pkg-count').hide();
+			var NoResult = '<div class="no-result"><figure class="graphy-nosearch"></figure><h3>No Results</h3><p>We searched far and wide but couldn’t find any objects matching your search.</p></div>'
+		$('#package-filter-item').append(NoResult);
+		}
+			$('.pkg-loader').hide()
+		}
+
+		else{
+			$('.pkg-count').hide();
+			$('.pkg-loader').hide()
+			var NoResult = '<div class="no-result"><figure class="graphy-nosearch"></figure><h3>No Results</h3><p>We searched far and wide but couldn’t find any objects matching your search.</p></div>';
+			$('#package-filter-item').append(NoResult);
+		}
+		});
+
+    });
+
+	//Event for Find button on Element tab
+	$('#btn-element').click(function(){
+        $('.info-wrap').remove();
+		$('.Elm-count').hide();
+		$('#Elm-Detail').hide();
+        $('.Elm-loader').show()
+		$('#element-filter-item').html("");//Reset List	
+		
+		ElementName=$('#element-name').val();
+		ElementType=$("#element-type").val();
+		ElementStreotype=$("#element-stereo-type").val();
+
+		var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabElementList";
+		AJS.$.ajax({
+		url: url1,
+		type:"POST",
+		data: '{"ElementName": "' +ElementName+ '", "Author":"", "ElementType": "' +ElementType+ '", "Stereotype":"' +ElementStreotype+ '", "StartIndex":0}',
+		dataType: "json",
+		contentType: "application/json"	 
+		}).done(function(response) { // when the configuration is returned...
+		if(response.d.status == "success"){
+			$('#ElmTotalCount').text(response.d.ElementCount);
+			$('#ElmOffsetCount').text(response.d.Elements.length);
+			
+			
+			$('.Elm-count').show();
+			
+			 $('.Diag-count').show();
+			 $('#Diag-Detail').hide();
+			 
+			 if($('#ElmTotalCount').text()==$('#ElmOffsetCount').text())
+			 {
+				 $('.Elm-more').hide();
+			 }
+			else{$('.Elm-more').show();}
+
+		var ElementsJSON= response.d.Elements;
+		if(response.d.Elements.length>0){
+				$.each(ElementsJSON, function(i, value) {
+				
+				var FQPath='';
+				var arrow = '<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>';
+				if(value.PackageQualifiedName!='')
+				{FQPath = replaceAll(value.PackageQualifiedName,'->',arrow);}
+				if(value.ElementQualifiedName!='')
+				{
+					FQPath +=arrow;
+					FQPath += replaceAll(value.ElementQualifiedName,'->',arrow);
+				}				
+				if(value.PackageQualifiedName=='' & value.ElementQualifiedName=='')
+				{
+					arrow ='';
+				}
+				FQPath +=arrow+value.Name;
+				//Generate
+				var itemElement = $(
+
+		'<li id="pkg_' +value.Guid+ '" class ="ElmListItem"> '+
+				' <div class="filter-item-wrap elementItem" data-guid="' +value.Guid+ '">'+
+				'<span class="icon-thumb icon-element"></span>'+
+				'<div class="list-content"><p class="item-name">' +value.Name+ '</p> <p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> '+value.Author+' </p> </div>'+
+			  '<span class="selected">Selected</span> '+
+			'</div>'+
+		   ' <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="pop_' +value.Guid+ '">Click me</button>'+
+				'<aui-inline-dialog id="pop_' +value.Guid+ '" class="info-wrap">'+
+					'<ul class="info-details"> '+
+						'<li>'+
+								'<p class="text-label">Name:</p><p class="label-info">' +value.Name+ '</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Path:</p> <p class="label-info">'+FQPath+' </p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Stereotype:</p><p class="label-info">'+value.Stereotype+'</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Author:</p><p class="label-info">' +value.Author+ '</p> '+
+						'</li>'+
+						'<li>'+
+								'<p class="text-label">Last Modified:</p><p class="label-info">'+moment(value.Modified).format("DD/MM/YYYY")+'</p> '+
+						'</li>'+
+					'<ul> '+
+			'</aui-inline-dialog> ' );  
+		$('#element-filter-item').append(itemElement);
+				
+				});
+		}
+		else
+		{
+			$('.Elm-count').hide();
+			var NoResult = '<div class="no-result"><figure class="graphy-nosearch"></figure><h3>No Results</h3><p>We searched far and wide but couldn’t find any objects matching your search.</p></div>'
+		$('#element-filter-item').append(NoResult);
+		}
+			$('.Elm-loader').hide()
+		}
+
+		else{
+			$('.Elm-count').hide();
+			$('.Elm-loader').hide()
+			var NoResult = '<div class="no-result"><figure class="graphy-nosearch"></figure><h3>No Results</h3><p>We searched far and wide but couldn’t find any objects matching your search.</p></div>';
+			$('#element-filter-item').append(NoResult);
+		}
+		});   
+			
+    });
+	
+	
+	//Diagram tab view more event
+	$('#Diag-ViewMore').click(function(){
+	
+		var len = $('.DiagListItem').length;
+		if ( $('.DiagListItem').length > 0 ) {
+		
+			var offsetCount = $('.DiagListItem').length;
+			
+			var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabDiagramsList";
+			AJS.$.ajax({
+			url: url1,
+			type:"POST",
+			data: '{"DiagramName": "' +DiagramName+ '", "Author":"", "DiagramType": "' +DiagramType+ '", "Stereotype":"' +DiagramStreotype+ '", "StartIndex":"' +offsetCount+ '"}',
+			dataType: "json",
+			contentType: "application/json"	 
+			}).done(function(response) { // when the configuration is returned...
+			if(response.d.status == "success"){
+				
+				$('#totalCount').text(response.d.DiagramCount);
+				$('#offsetCount').text(Number(offsetCount)+Number(response.d.DiagramList.length));
+				
+				$('.Diag-count').show();
+				$('#Diag-Detail').hide();
+				
+				if($('#totalCount').text()==$('#offsetCount').text())
+				{
+					$('.diag-more').hide();
+				}
+				else{$('.diag-more').show();}
+				
+			var DiagramStreoTypesJSON= response.d.DiagramList;
+					$.each(DiagramStreoTypesJSON, function(i, value) {
+					
+				var FQPath='';
+				var arrow = '<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>';
+				if(value.PackageQualifiedName!='')
+				{FQPath = replaceAll(value.PackageQualifiedName,'->',arrow);}
+				if(value.ElementQualifiedName!='')
+				{
+					FQPath +=arrow;
+					FQPath += replaceAll(value.ElementQualifiedName,'->',arrow);
+				}				
+				if(value.PackageQualifiedName=='' & value.ElementQualifiedName=='')
+				{
+					arrow ='';
+				}
+				FQPath +=arrow+value.Name;
+					//Generate
+					var itemDiagram = $(
+
+			'<li id="diag_' +value.Guid+ '" class ="DiagListItem"> '+
+					' <div class="filter-item-wrap diagramItem" data-guid="' +value.Guid+ '">'+
+					'<span class="icon-thumb icon-diagram"></span>'+
+					'<div class="list-content"><p class="item-name">' +value.Name+ '</p><p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> '+value.Author+' </p> </div>'+
+				  '<span class="selected">Selected</span> '+
+				'</div>'+
+			   ' <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="pop_' +value.Guid+ '">Click me</button>'+
+					'<aui-inline-dialog id="pop_' +value.Guid+ '" class="info-wrap">'+
+						'<ul class="info-details"> '+
+							'<li>'+
+									'<p class="text-label">Name:</p><p class="label-info">info-details</p> '+
+							'</li>'+
+							'<li>'+
+									'<p class="text-label">Path:</p> <p class="label-info">' +FQPath+ '</p> '+
+							'</li>'+
+							'<li>'+
+								'<p class="text-label">Stereotype:</p><p class="label-info">'+value.Stereotype+'</p> '+
+							'</li>'+
+							'<li>'+
+									'<p class="text-label">Author:</p><p class="label-info">'+value.Author+'</p> '+
+							'</li>'+
+							'<li>'+
+									'<p class="text-label">Last Modified:</p><p class="label-info">'+moment(value.Modified).format("DD/MM/YYYY")+'</p> '+
+							'</li>'+
+						'<ul> '+
+				'</aui-inline-dialog> ' );  
+			$('#diagram-filter-item').append(itemDiagram);
+					
+					});
+					
+				
+			}
+
+			else{
+				
+			}
+			});
+
+
+		}
+
+		
+	});
+	
+	$('#Pkg-ViewMore').click(function(){
+	
+	var len = $('.PkgListItem').length;
+	if ( $('.PkgListItem').length > 0 ) {
+	
+	var offsetCount = $('.PkgListItem').length;
+    
+		
+	 var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabPackageList";
+   AJS.$.ajax({
+    url: url1,
+    type:"POST",
+    data: '{"PackageName": "' +PackageName+ '", "Author":"", "StartIndex":"' +offsetCount+ '"}',
+    dataType: "json",
+    contentType: "application/json"	 
+}).done(function(response) { // when the configuration is returned...
+	if(response.d.status == "success"){		
+		
+		$('#pkgTotalCount').text(response.d.PackageCount);
+		$('#pkgOffsetCount').text(Number(offsetCount)+Number(response.d.Packages.length));
+		
+		$('.pkg-count').show();
+		$('#Pkg-Detail').hide();
+		
+		if($('#pkgTotalCount').text()==$('#pkgOffsetCount').text())
+		{$('.pkg-more').hide();}
+		else{$('.pkg-more').show();}
+		
+	var PackagesJSON= response.d.Packages;
+			$.each(PackagesJSON, function(i, value) {
+           
+				var FQPath='';
+				var arrow = '<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>';
+				if(value.PackageQualifiedName!='')
+				{FQPath = replaceAll(value.PackageQualifiedName,'->',arrow);}
+				if(value.ElementQualifiedName!='')
+				{
+					FQPath +=arrow;
+					FQPath += replaceAll(value.ElementQualifiedName,'->',arrow);
+				}				
+				if(value.PackageQualifiedName=='' & value.ElementQualifiedName=='')
+				{
+					arrow ='';
+				}
+				FQPath +=arrow+value.Name;
+		   //Generate
+			var itemPackage = $(
+ 
+    '<li id="pkg_' +value.Guid+ '" class ="PkgListItem"> '+
+            ' <div class="filter-item-wrap packageItem" data-guid="' +value.Guid+ '">'+
+				'<span class="icon-thumb icon-folder"></span>'+
+          '<div class="list-content"> <p class="item-name">' +value.Name+ '</p><p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> '+value.Author+' </p><span class="selected">Selected</span> '+
+        '</div>'+
+       ' <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="pop_' +value.Guid+ '">Click me</button>'+
+            '<aui-inline-dialog id="pop_' +value.Guid+ '" class="info-wrap">'+
+                '<ul class="info-details"> '+
+                    '<li>'+
+                            '<p class="text-label">Name:</p><p class="label-info">info-details</p> '+
+                    '</li>'+
+                    '<li>'+
+                            '<p class="text-label">Path:</p> <p class="label-info">' +FQPath+ '</p> '+
+                    '</li>'+
+                    '<li>'+
+                            '<p class="text-label">Author:</p><p class="label-info">'+value.Author+'</p> '+
+                    '</li>'+
+                    '<li>'+
+                            '<p class="text-label">Last Modified:</p><p class="label-info">'+moment(value.Modified).format("DD/MM/YYYY")+'</p> '+
+                    '</li>'+
+                '<ul> '+
+        '</aui-inline-dialog> ' );  
+    $('#package-filter-item').append(itemPackage);
+			
+			});
+			
+		
+	}
+	
+	else{
+		
+	}
+});
+   
+	
+	}
+	
+});
+
+	$('#Elm-ViewMore').click(function(){
+	
+	if ( $('.ElmListItem').length > 0 ) {
+	
+	var offsetCount = $('.ElmListItem').length;
+    
+		
+	 var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabElementList";
+   AJS.$.ajax({
+    url: url1,
+    type:"POST",
+    data: '{"ElementName": "' +ElementName+ '", "Author":"", "ElementType": "' +ElementType+ '", "Stereotype":"' +ElementStreotype+ '", "StartIndex":"' +offsetCount+ '"}',
+    dataType: "json",
+    contentType: "application/json"	 
+}).done(function(response) { // when the configuration is returned...
+	if(response.d.status == "success"){
+		
+		$('#ElmTotalCount').text(response.d.ElementCount);
+		$('#ElmOffsetCount').text(Number(offsetCount)+Number(response.d.Elements.length));
+		
+		$('.Elm-count').show();
+		$('#Elm-Detail').hide();
+		
+		 if($('#ElmTotalCount').text()==$('#ElmOffsetCount').text())
+		 {
+			 $('.Elm-more').hide();
+		 }
+		else{$('.Elm-more').show();}
+		
+	var ElementsJSON= response.d.Elements;
+			$.each(ElementsJSON, function(i, value) {
+            
+			var FQPath='';
+			var arrow = '<i class="aui-icon aui-icon-small aui-iconfont-arrow-down-small"></i>';
+				if(value.PackageQualifiedName!='')
+				{FQPath = replaceAll(value.PackageQualifiedName,'->',arrow);}
+				if(value.ElementQualifiedName!='')
+				{
+					FQPath +=arrow;
+					FQPath += replaceAll(value.ElementQualifiedName,'->',arrow);
+				}				
+				if(value.PackageQualifiedName=='' & value.ElementQualifiedName=='')
+				{
+					arrow ='';
+				}
+				FQPath +=arrow+value.Name;
+				
+			//Generate
+			var itemElement = $(
+ 
+    '<li id="pkg_' +value.Guid+ '" class ="ElmListItem"> '+
+            ' <div class="filter-item-wrap elementItem" data-guid="' +value.Guid+ '">'+
+				'<span class="icon-thumb icon-element"></span>'+
+				'<div class="list-content"><p class="item-name">' +value.Name+ '</p><p class="item-author"><span class="aui-icon aui-icon-small aui-iconfont-person"></span> '+value.Author+' </p><span class="selected">Selected</span> '+
+        '</div>'+
+       ' <button class="item-info aui-icon aui-icon-small aui-iconfont-info-filled" data-aui-trigger aria-controls="pop_' +value.Guid+ '">Click me</button>'+
+            '<aui-inline-dialog id="pop_' +value.Guid+ '" class="info-wrap">'+
+                '<ul class="info-details"> '+
+                    '<li>'+
+                            '<p class="text-label">Name:</p><p class="label-info">' +value.Name+ '</p> '+
+                    '</li>'+
+                    '<li>'+
+                            '<p class="text-label">Path:</p> <p class="label-info">'+FQPath+'</p> '+
+                    '</li>'+
+					'<li>'+
+							'<p class="text-label">Stereotype:</p><p class="label-info">'+value.Stereotype+'</p> '+
+					'</li>'+
+                    '<li>'+
+                            '<p class="text-label">Author:</p><p class="label-info">'+value.Author+'</p> '+
+                    '</li>'+
+                    '<li>'+
+                            '<p class="text-label">Last Modified:</p><p class="label-info">'+moment(value.Modified).format("DD/MM/YYYY")+'</p> '+
+                    '</li>'+
+                '<ul> '+
+        '</aui-inline-dialog> ' );  
+    $('#element-filter-item').append(itemElement);
+			
+			});
+			
+		
+	}
+	
+	else{
+		
+	}
+});
+   
+	
+	}
+	
+});
+
+});
+
+
+	//Event for Insert Diagram button.
+	$(document).on('click', '#diagram-submit-button', function(e){ 
+		//check if any diagram is selected
+		if($('.diagramItem.dialog-active').length > 0){
+			
+			var selection = AJS.Rte.getEditor().selection.getNode();
+			var diagramName = $('.diagramItem.dialog-active').find('p.item-name').text();
+			var selectedGuid = $('.diagramItem.dialog-active').attr('data-guid');
+			selectedGuid = selectedGuid.substring(1, 37);
+			var ShowChildrenVal = "1";
+			if($("#showDiagramObjects").is(':checked')){
+				ShowChildrenVal = "1";
+			}
+			else{
+				ShowChildrenVal = "0";
+			}
+			var enableProlaborateLink = "1";
+			if($("#enableDiagramLink").is(':checked')){
+				enableProlaborateLink = "1";
+			}
+			else{
+				enableProlaborateLink = "0";
+			}
+			var macro = {
+				"name": "prolaborate",
+				"body": "<H1>Demo Text</H1>",
+				"params": {
+					"Name":diagramName,
+					"Type":"Diagram",
+					"Guid":selectedGuid,
+					"ShowChildren":ShowChildrenVal,
+					"EnableLink":enableProlaborateLink
+				}
+				};console.log(macro);
+			tinymce.confluence.macrobrowser.macroBrowserComplete(macro);
+			AJS.dialog2("#demo-dialog").hide();
+		}
+		else{
+			
+		}
+	});
+	//Event for Insert Element button.
+	$(document).on('click', '#element-submit-button', function(e){
+		//Check if any element is selected
+		if($('.elementItem.dialog-active').length > 0){
+			var selection = AJS.Rte.getEditor().selection.getNode();
+			var elementName = $('.elementItem.dialog-active').find('p.item-name').text();
+			var selectedGuid = $('.elementItem.dialog-active').attr('data-guid');
+			selectedGuid = selectedGuid.substring(1, 37);
+			
+			var ShowChildrenVal = "1";
+			if($("#showElementChildren").is(':checked')){
+				ShowChildrenVal = "1";
+			}
+			else{
+				ShowChildrenVal = "0";
+			}
+			var enableProlaborateLink = "1";
+			if($("#enableElementChildLink").is(':checked')){
+				enableProlaborateLink = "1";
+			}
+			else{
+				enableProlaborateLink = "0";
+			}
+			
+			var macro = {
+				"name": "prolaborate",
+				"body": "<H1>Demo Text</H1>",
+				"params":{
+					"Name": elementName,
+					"Type": "Element",
+					"Guid": selectedGuid,
+					"ShowChildren":ShowChildrenVal,
+					"EnableLink":enableProlaborateLink
+			}};
+			tinymce.confluence.macrobrowser.macroBrowserComplete(macro);
+			AJS.dialog2("#demo-dialog").hide();
+		}
+		else{
+			
+		}
+	});
+	//Event for Insert Package button.
+	$(document).on('click', '#package-submit-button', function(e){
+		//Check if any package is selected.
+		if($('.packageItem.dialog-active').length > 0){
+			var selection = AJS.Rte.getEditor().selection.getNode();
+			var packageName = $('.packageItem.dialog-active').find('p.item-name').text();
+			var selectedGuid = $('.packageItem.dialog-active').attr('data-guid');
+			selectedGuid = selectedGuid.substring(1, 37);
+			var ShowChildrenVal = "1";
+			if($("#showPackageChildren").is(':checked')){
+				ShowChildrenVal = "1";
+			}
+			else{
+				ShowChildrenVal = "0";
+			}
+			var enableProlaborateLink = "1";
+			if($("#enablePackageChildLink").is(':checked')){
+				enableProlaborateLink = "1";
+			}
+			else{
+				enableProlaborateLink = "0";
+			}
+			
+			var macro = {
+				"name": "prolaborate",
+				"body": "<H1>Demo Text</H1>",
+				"params":{
+					"Name": packageName,
+					"Type": "Package",
+					"Guid": selectedGuid,
+					"ShowChildren":ShowChildrenVal,
+					"EnableLink":enableProlaborateLink
+			}};;
+			tinymce.confluence.macrobrowser.macroBrowserComplete(macro);
+			AJS.dialog2("#demo-dialog").hide();
+		}
+		else{
+			
+		}
+	});
+	
+//To retrieve diagram stereotypes list.
+function getProlaborateDiagramStereotypes(){
+
+var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabDiagramStereotypes";
+AJS.$.ajax({
+    url: url1,
+    type:"GET",
+    dataType: "json",
+    contentType: "application/json",
+	 
+}).done(function(response) { // when the configuration is returned...
+	if(response != null && response.d != null && response.d.DiagramStereoTypes != null){
+	var DiagramStreoTypesJSON= response.d.DiagramStereoTypes;
+			$.each(DiagramStreoTypesJSON, function(i, value) {
+            $('#diagram-stereo-type').append($('<option>').text(value).attr('value', value));
+			});
+			
+	}
+});
+}
+
+//To retrieve Element stereotypes list.
+function getProlaborateElementStereotypes(){
+
+var url1 = AJS.contextPath() + "/rest/prolaborate-admin/1.0/ProlabElementStereotypes";
+AJS.$.ajax({
+    url: url1,
+    type:"GET",
+    dataType: "json",
+    contentType: "application/json",
+	 
+}).done(function(response) { // when the configuration is returned...
+	if(response != null && response.d != null && response.d.ElementStreoTypes != null){
+	var ElementStreoTypesJSON= response.d.ElementStreoTypes;
+			$.each(ElementStreoTypesJSON, function(i, value) {
+            $('#element-stereo-type').append($('<option>').text(value).attr('value', value));
+			});
+	}
+});
+}
+
+function replaceAll(str, find, replace) {
+    return str.replace(new RegExp(find, 'g'), replace);
+}

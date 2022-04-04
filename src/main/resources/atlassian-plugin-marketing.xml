@@ -1,0 +1,27 @@
+<atlassian-plugin-marketing>
+       
+      <!--Describe names and versions of compatible applications -->
+      <compatibility>
+        <product name="jira" min="4.0" max="4.4.1"/>
+        <product name="Prolaborate" min="3.0" max="3.1"/>
+      </compatibility>
+       
+      <!-- Describe your app logo and banner. The banner is only displayed in the UPM. -->
+      <logo image="images/144x144.png"/>
+      <banner image="images/screen3.png"/>
+       
+      <!-- Describe highlight and cropped highlight image assets, in order. -->
+      <highlights>
+        <highlight image="images/screen1.png" cropped="images/screen2.png"/>
+        <highlight image="images/screen1.png" cropped="images/screen2.png"/>
+		<highlight image="images/screen1.png" cropped="images/screen2.png"/>
+      </highlights>
+       
+      <!-- Describe additional screenshots you'd like listed on your app listing. -->
+      <screenshots>
+        <screenshot image="images/11.png"/>
+        <screenshot image="images/12.png"/>
+		<screenshot image="images/21.png"/>
+      </screenshots>
+  
+</atlassian-plugin-marketing>

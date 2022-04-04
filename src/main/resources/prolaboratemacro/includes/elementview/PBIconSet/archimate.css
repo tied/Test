@@ -1,0 +1,488 @@
+﻿
+/* For Archimate Icon */
+
+/*.jstree-default li[data-pbicon$='pbicon-Archimate_'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_'] > a .jstree-themeicon,
+.pbicon-Archimate_,*/
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessActor'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessActor'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessActor,
+.pbicon-Archimate2_ArchiMate_BusinessActor              { background-image: url(img/Set2/10.png); } /* 040 */
+.pbicon-Archimate_ArchiMate_BusinessActor_Full,
+.pbicon-Archimate2_ArchiMate_BusinessActor_Full         { background-image: url(img/full/Set2/10.png); } /* 040 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessRole'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessRole'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessRole,
+.pbicon-Archimate2_ArchiMate_BusinessRole               { background-image: url(img/Set2/18.png); } /* 048 */
+.pbicon-Archimate_ArchiMate_BusinessRole_Full,
+.pbicon-Archimate2_ArchiMate_BusinessRole_Full          { background-image: url(img/full/Set2/18.png); } /* 048 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessCollaboration'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessCollaboration'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessCollaboration,
+.pbicon-Archimate2_ArchiMate_BusinessCollaboration      { background-image: url(img/Set2/11.png); } /* 041 */
+.pbicon-Archimate_ArchiMate_BusinessCollaboration_Full,
+.pbicon-Archimate2_ArchiMate_BusinessCollaboration_Full { background-image: url(img/full/Set2/11.png); } /* 041 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessInterface'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessInterface'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessInterface,
+.pbicon-Archimate2_ArchiMate_BusinessInterface          { background-image: url(img/Set2/15.png); } /* 045 */
+.pbicon-Archimate_ArchiMate_BusinessInterface_Full,
+.pbicon-Archimate2_ArchiMate_BusinessInterface_Full     { background-image: url(img/full/Set2/15.png); } /* 045 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Location'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Location'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Location,
+.pbicon-Archimate2_ArchiMate_Location                   { background-image: url(img/Set2/32.png); } /* 062 */	
+.pbicon-Archimate_ArchiMate_Location_Full,
+.pbicon-Archimate2_ArchiMate_Location_Full              { background-image: url(img/full/Set2/32.png); } /* 062 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessObject'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessObject'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessObject,
+.pbicon-Archimate2_ArchiMate_BusinessObject             { background-image: url(img/Set2/16.png); } /* 046 */
+.pbicon-Archimate_ArchiMate_BusinessObject_Full,
+.pbicon-Archimate2_ArchiMate_BusinessObject_Full        { background-image: url(img/full/Set2/16.png); } /* 046 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessProcess'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessProcess'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessProcess,
+.pbicon-Archimate2_ArchiMate_BusinessProcess            { background-image: url(img/Set2/17.png); } /* 047 */
+.pbicon-Archimate_ArchiMate_BusinessProcess_Full,
+.pbicon-Archimate2_ArchiMate_BusinessProcess_Full       { background-image: url(img/full/Set2/17.png); } /* 047 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessFunction'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessFunction'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessFunction,
+.pbicon-Archimate2_ArchiMate_BusinessFunction           { background-image: url(img/Set2/13.png); } /* 043 */
+.pbicon-Archimate_ArchiMate_BusinessFunction_Full,
+.pbicon-Archimate2_ArchiMate_BusinessFunction_Full      { background-image: url(img/full/Set2/13.png); } /* 043 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessInteraction'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessInteraction'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessInteraction,
+.pbicon-Archimate2_ArchiMate_BusinessInteraction        { background-image: url(img/Set2/14.png); } /* 044 */
+.pbicon-Archimate_ArchiMate_BusinessInteraction_Full,
+.pbicon-Archimate2_ArchiMate_BusinessInteraction_Full   { background-image: url(img/full/Set2/14.png); } /* 044 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessEvent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessEvent'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessEvent,
+.pbicon-Archimate2_ArchiMate_BusinessEvent              { background-image: url(img/Set2/12.png); } /* 042 */
+.pbicon-Archimate_ArchiMate_BusinessEvent_Full,
+.pbicon-Archimate2_ArchiMate_BusinessEvent_Full         { background-image: url(img/full/Set2/12.png); } /* 042 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_BusinessService'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_BusinessService'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_BusinessService,
+.pbicon-Archimate2_ArchiMate_BusinessService            { background-image: url(img/Set2/19.png); } /* 049 */
+.pbicon-Archimate_ArchiMate_BusinessService_Full,
+.pbicon-Archimate2_ArchiMate_BusinessService_Full       { background-image: url(img/full/Set2/19.png); } /* 049 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Representation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Representation'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Representation,
+.pbicon-Archimate2_ArchiMate_Representation             { background-image: url(img/Set2/39.png); } /* 069 */
+.pbicon-Archimate_ArchiMate_Representation_Full,
+.pbicon-Archimate2_ArchiMate_Representation_Full        { background-image: url(img/full/Set2/39.png); } /* 069 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Meaning'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Meaning'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Meaning,
+.pbicon-Archimate2_ArchiMate_Meaning                    { background-image: url(img/Set2/33.png); } /* 063 */
+.pbicon-Archimate_ArchiMate_Meaning_Full,
+.pbicon-Archimate2_ArchiMate_Meaning_Full               { background-image: url(img/full/Set2/33.png); } /* 063 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Value'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Value'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Value,
+.pbicon-Archimate2_ArchiMate_Value                      { background-image: url(img/Set2/43.png); } /* 073 */
+.pbicon-Archimate_ArchiMate_Value_Full,
+.pbicon-Archimate2_ArchiMate_Value_Full                 { background-image: url(img/full/Set2/43.png); } /* 073 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Product'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Product'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Product,
+.pbicon-Archimate2_ArchiMate_Product                    { background-image: url(img/Set2/38.png); } /* 068 */
+.pbicon-Archimate_ArchiMate_Product_Full,
+.pbicon-Archimate2_ArchiMate_Product_Full               { background-image: url(img/full/Set2/38.png); } /* 068 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Contract'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Contract'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Contract,
+.pbicon-Archimate2_ArchiMate_Contract                   { background-image: url(img/Set2/22.png); } /* 052 */
+.pbicon-Archimate_ArchiMate_Contract_Full,
+.pbicon-Archimate2_ArchiMate_Contract_Full              { background-image: url(img/full/Set2/22.png); } /* 052 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Composition'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Composition'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Composition,
+.pbicon-Archimate2_ArchiMate_Composition                { background-image: url(img/Set2/78.png); } /* 108 */
+.pbicon-Archimate_ArchiMate_Composition_Full,
+.pbicon-Archimate2_ArchiMate_Composition_Full           { background-image: url(img/full/Set2/78.png); } /* 108 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Aggregation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Aggregation'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Aggregation,
+.pbicon-Archimate2_ArchiMate_Aggregation                { background-image: url(img/Set2/78.png); } /* 108 */	
+.pbicon-Archimate_ArchiMate_Aggregation_Full,
+.pbicon-Archimate2_ArchiMate_Aggregation_Full           { background-image: url(img/full/Set2/78.png); } /* 108 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Assignment'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Assignment'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Assignment,
+.pbicon-Archimate2_ArchiMate_Assignment                 {  } /*  */	
+.pbicon-Archimate_ArchiMate_Assignment_Full,
+.pbicon-Archimate2_ArchiMate_Assignment_Full            {  } /*  */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Realisation'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Realization'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Realisation,
+.pbicon-Archimate2_ArchiMate_Realization                { background-image: url(img/Set2/74.png); } /* 104 */
+.pbicon-Archimate_ArchiMate_Realisation_Full,
+.pbicon-Archimate2_ArchiMate_Realization_Full           { background-image: url(img/full/Set2/74.png); } /* 104 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_UsedBy'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_UsedBy'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_UsedBy,
+.pbicon-Archimate2_ArchiMate_UsedBy                     {  } /*  */	
+.pbicon-Archimate_ArchiMate_UsedBy_Full,
+.pbicon-Archimate2_ArchiMate_UsedBy_Full                {  } /*  */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Access'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Access'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Access,
+.pbicon-Archimate2_ArchiMate_Access                     { background-image: url(img/Set2/76.png); } /* 106 */	
+.pbicon-Archimate_ArchiMate_Access_Full,
+.pbicon-Archimate2_ArchiMate_Access_Full                { background-image: url(img/full/Set2/76.png); } /* 106 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Association'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Association'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Association,
+.pbicon-Archimate2_ArchiMate_Association                { background-image: url(img/Set2/75.png); } /* 105 */
+.pbicon-Archimate_ArchiMate_Association_Full,
+.pbicon-Archimate2_ArchiMate_Association_Full           { background-image: url(img/full/Set2/75.png); } /* 105 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Triggering'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Triggering'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Triggering,
+.pbicon-Archimate2_ArchiMate_Triggering                 { background-image: url(img/Set2/77.png); } /* 107 */
+.pbicon-Archimate_ArchiMate_Triggering_Full,
+.pbicon-Archimate2_ArchiMate_Triggering_Full            { background-image: url(img/full/Set2/77.png); } /* 107 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Flow'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Flow'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Flow,
+.pbicon-Archimate2_ArchiMate_Flow                       { background-image: url(img/Set2/74.png); } /* 104 */
+.pbicon-Archimate_ArchiMate_Flow_Full,
+.pbicon-Archimate2_ArchiMate_Flow_Full                  { background-image: url(img/full/Set2/74.png); } /* 104 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Grouping'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Grouping'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Grouping,
+.pbicon-Archimate2_ArchiMate_Grouping                   { background-image: url(img/Set2/53.png); } /* 083 */
+.pbicon-Archimate_ArchiMate_Grouping_Full,
+.pbicon-Archimate2_ArchiMate_Grouping_Full              { background-image: url(img/full/Set2/53.png); } /* 083 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Junction'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Junction'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Junction,
+.pbicon-Archimate2_ArchiMate_Junction                   { background-image: url(img/Set2/1.png); } /* 031 */
+.pbicon-Archimate_ArchiMate_Junction_Full,
+.pbicon-Archimate2_ArchiMate_Junction_Full              { background-image: url(img/full/Set2/1.png); } /* 031 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Specialization'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Specialization'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Specialization,
+.pbicon-Archimate2_ArchiMate_Specialization             { background-image: url(img/Set2/77.png); } /* 107 */
+.pbicon-Archimate_ArchiMate_Specialization_Full,
+.pbicon-Archimate2_ArchiMate_Specialization_Full        { background-image: url(img/full/Set2/77.png); } /* 107 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_ApplicationComponent'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_ApplicationComponent'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_ApplicationComponent,
+.pbicon-Archimate2_ArchiMate_ApplicationComponent       { background-image: url(img/Set2/3.png); } /* 033 */
+.pbicon-Archimate_ArchiMate_ApplicationComponent_Full,
+.pbicon-Archimate2_ArchiMate_ApplicationComponent_Full  { background-image: url(img/full/Set2/3.png); } /* 033 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_ApplicationCollaboration'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_ApplicationCollaboration'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_ApplicationCollaboration,
+.pbicon-Archimate2_ArchiMate_ApplicationCollaboration   { background-image: url(img/Set2/2.png); } /* 032 */	
+.pbicon-Archimate_ArchiMate_ApplicationCollaboration_Full,
+.pbicon-Archimate2_ArchiMate_ApplicationCollaboration_Full { background-image: url(img/full/Set2/2.png); } /* 032 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_DataObject'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_DataObject'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_DataObject,
+.pbicon-Archimate2_ArchiMate_DataObject                 { background-image: url(img/Set2/23.png); } /* 053 */
+.pbicon-Archimate_ArchiMate_DataObject_Full,
+.pbicon-Archimate2_ArchiMate_DataObject_Full            { background-image: url(img/full/Set2/23.png); } /* 053 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_ApplicationFunction'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_ApplicationFunction'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_ApplicationFunction,
+.pbicon-Archimate2_ArchiMate_ApplicationFunction        { background-image: url(img/Set2/4.png); } /* 034 */	
+.pbicon-Archimate_ArchiMate_ApplicationFunction_Full,
+.pbicon-Archimate2_ArchiMate_ApplicationFunction_Full   { background-image: url(img/full/Set2/4.png); } /* 034 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_ApplicationInteraction'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_ApplicationInteraction'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_ApplicationInteraction,
+.pbicon-Archimate2_ArchiMate_ApplicationInteraction     { background-image: url(img/Set2/5.png); } /* 035 */	
+.pbicon-Archimate_ArchiMate_ApplicationInteraction_Full,
+.pbicon-Archimate2_ArchiMate_ApplicationInteraction_Full{ background-image: url(img/full/Set2/5.png); } /* 035 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_ApplicationService'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_ApplicationService'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_ApplicationService,
+.pbicon-Archimate2_ArchiMate_ApplicationService         { background-image: url(img/Set2/7.png); } /* 037 */
+.pbicon-Archimate_ArchiMate_ApplicationService_Full,
+.pbicon-Archimate2_ArchiMate_ApplicationService_Full    { background-image: url(img/full/Set2/7.png); } /* 037 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Node'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Node'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Node,
+.pbicon-Archimate2_ArchiMate_Node                       { background-image: url(img/Set2/35.png); } /* 065 */	
+.pbicon-Archimate_ArchiMate_Node_Full,
+.pbicon-Archimate2_ArchiMate_Node_Full                  { background-image: url(img/full/Set2/35.png); } /* 065 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Device'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Device'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Device,
+.pbicon-Archimate2_ArchiMate_Device                     { background-image: url(img/Set2/25.png); } /* 055 */
+.pbicon-Archimate_ArchiMate_Device_Full,
+.pbicon-Archimate2_ArchiMate_Device_Full                { background-image: url(img/full/Set2/25.png); } /* 055 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_SystemSoftware'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_SystemSoftware'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_SystemSoftware,
+.pbicon-Archimate2_ArchiMate_SystemSoftware             { background-image: url(img/Set2/42.png); } /* 072 */	
+.pbicon-Archimate_ArchiMate_SystemSoftware_Full,
+.pbicon-Archimate2_ArchiMate_SystemSoftware_Full        { background-image: url(img/full/Set2/42.png); } /* 072 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_InfrastructureInterface'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_InfrastructureInterface'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_InfrastructureInterface,
+.pbicon-Archimate2_ArchiMate_InfrastructureInterface    { background-image: url(img/Set2/30.png); } /* 060 */	
+.pbicon-Archimate_ArchiMate_InfrastructureInterface_Full,
+.pbicon-Archimate2_ArchiMate_InfrastructureInterface_Full { background-image: url(img/full/Set2/30.png); } /* 060 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Network'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Network'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Network,
+.pbicon-Archimate2_ArchiMate_Network                    { background-image: url(img/Set2/34.png); } /* 064 */	
+.pbicon-Archimate_ArchiMate_Network_Full,
+.pbicon-Archimate2_ArchiMate_Network_Full               { background-image: url(img/full/Set2/34.png); } /* 064 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_CommunicationPath'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_CommunicationPath'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_CommunicationPath,
+.pbicon-Archimate2_ArchiMate_CommunicationPath          { background-image: url(img/Set2/20.png); } /* 050 */	
+.pbicon-Archimate_ArchiMate_CommunicationPath_Full,
+.pbicon-Archimate2_ArchiMate_CommunicationPath_Full     { background-image: url(img/full/Set2/20.png); } /* 050 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_InfrastructureFunction'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_InfrastructureFunction'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_InfrastructureFunction,
+.pbicon-Archimate2_ArchiMate_InfrastructureFunction     { background-image: url(img/Set2/29.png); } /* 059 */
+.pbicon-Archimate_ArchiMate_InfrastructureFunction_Full,
+.pbicon-Archimate2_ArchiMate_InfrastructureFunction_Full{ background-image: url(img/full/Set2/29.png); } /* 059 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_InfrastructureService'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_InfrastructureService'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_InfrastructureService,
+.pbicon-Archimate2_ArchiMate_InfrastructureService      { background-image: url(img/Set2/31.png); } /* 061 */
+.pbicon-Archimate_ArchiMate_InfrastructureService_Full,
+.pbicon-Archimate2_ArchiMate_InfrastructureService_Full { background-image: url(img/full/Set2/31.png); } /* 061 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Artifact'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Artifact'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Artifact,
+.pbicon-Archimate2_ArchiMate_Artifact                   { background-image: url(img/Set2/8.png); } /* 038 */
+.pbicon-Archimate_ArchiMate_Artifact_Full,
+.pbicon-Archimate2_ArchiMate_Artifact_Full              { background-image: url(img/full/Set2/8.png); } /* 038 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Stakeholder'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Stakeholder'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Stakeholder,
+.pbicon-Archimate2_ArchiMate_Stakeholder                { background-image: url(img/Set2/41.png); } /* 071 */	
+.pbicon-Archimate_ArchiMate_Stakeholder_Full,
+.pbicon-Archimate2_ArchiMate_Stakeholder_Full           { background-image: url(img/full/Set2/41.png); } /* 071 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Driver'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Driver'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Driver,
+.pbicon-Archimate2_ArchiMate_Driver                     { background-image: url(img/Set2/26.png); } /* 056 */	
+.pbicon-Archimate_ArchiMate_Driver_Full,
+.pbicon-Archimate2_ArchiMate_Driver_Full                { background-image: url(img/full/Set2/26.png); } /* 056 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Assessment'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Assessment'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Assessment,
+.pbicon-Archimate2_ArchiMate_Assessment                 { background-image: url(img/Set2/9.png); } /* 039 */	
+.pbicon-Archimate_ArchiMate_Assessment_Full,
+.pbicon-Archimate2_ArchiMate_Assessment_Full            { background-image: url(img/full/Set2/9.png); } /* 039 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Goal'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Goal'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Goal,
+.pbicon-Archimate2_ArchiMate_Goal                       { background-image: url(img/Set2/28.png); } /* 058 */
+.pbicon-Archimate_ArchiMate_Goal_Full,
+.pbicon-Archimate2_ArchiMate_Goal_Full                  { background-image: url(img/full/Set2/28.png); } /* 058 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Requirement'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Requirement'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Requirement,
+.pbicon-Archimate2_ArchiMate_Requirement                { background-image: url(img/Set2/40.png); } /* 070 */	
+.pbicon-Archimate_ArchiMate_Requirement_Full,
+.pbicon-Archimate2_ArchiMate_Requirement_Full           { background-image: url(img/full/Set2/40.png); } /* 070 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Constraint'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Constraint'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Constraint,
+.pbicon-Archimate2_ArchiMate_Constraint                 { background-image: url(img/Set2/21.png); } /* 051 */	
+.pbicon-Archimate_ArchiMate_Constraint_Full,
+.pbicon-Archimate2_ArchiMate_Constraint_Full            { background-image: url(img/full/Set2/21.png); } /* 051 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Principle'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Principle'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Principle,
+.pbicon-Archimate2_ArchiMate_Principle                  { background-image: url(img/Set2/37.png); } /* 067 */
+.pbicon-Archimate_ArchiMate_Principle_Full,
+.pbicon-Archimate2_ArchiMate_Principle_Full             { background-image: url(img/Set2/37.png); } /* 067 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_WorkPackage'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_WorkPackage'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_WorkPackage,
+.pbicon-Archimate2_ArchiMate_WorkPackage                { background-image: url(img/Set2/44.png); } /* 074 */
+.pbicon-Archimate_ArchiMate_WorkPackage_Full,
+.pbicon-Archimate2_ArchiMate_WorkPackage_Full           { background-image: url(img/full/Set2/44.png); } /* 074 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Deliverable'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Deliverable'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Deliverable,
+.pbicon-Archimate2_ArchiMate_Deliverable                { background-image: url(img/Set2/24.png); } /* 054 */
+.pbicon-Archimate_ArchiMate_Deliverable_Full,
+.pbicon-Archimate2_ArchiMate_Deliverable_Full           { background-image: url(img/full/Set2/24.png); } /* 054 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Influence'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Influence'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Influence,
+.pbicon-Archimate2_ArchiMate_Influence                  { background-image: url(img/Set2/74.png); } /* 104 */	
+.pbicon-Archimate_ArchiMate_Influence_Full,
+.pbicon-Archimate2_ArchiMate_Influence_Full             { background-image: url(img/full/Set2/74.png); } /* 104 */	
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Plateau'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Plateau'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Plateau,
+.pbicon-Archimate2_ArchiMate_Plateau                    { background-image: url(img/Set2/36.png); } /* 066 */
+.pbicon-Archimate_ArchiMate_Plateau_Full,
+.pbicon-Archimate2_ArchiMate_Plateau_Full               { background-image: url(img/full/Set2/36.png); } /* 066 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Gap'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_Gap'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Gap,
+.pbicon-Archimate2_ArchiMate_Gap                        { background-image: url(img/Set2/27.png); } /* 057 */
+.pbicon-Archimate_ArchiMate_Gap_Full,
+.pbicon-Archimate2_ArchiMate_Gap_Full                   { background-image: url(img/full/Set2/27.png); } /* 057 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_ApplicationInterface'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_ArchiMate_ApplicationInterface'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_ApplicationInterface,
+.pbicon-Archimate2_ArchiMate_ApplicationInterface       { background-image: url(img/Set2/30.png); } /* 060 */
+.pbicon-Archimate_ArchiMate_ApplicationInterface_Full,
+.pbicon-Archimate2_ArchiMate_ApplicationInterface_Full  { background-image: url(img/full/Set2/30.png); } /* 060 */
+
+
+/* For Archimate 1 Icon */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Object'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Object              { background-image: url(img/Set2/59.png); } /* 089 */
+.pbicon-Archimate_ArchiMate_Object_Full         { background-image: url(img/full/Set2/59.png); } /* 089 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Process'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Process             { background-image: url(img/Set2/60.png); } /* 090 */
+.pbicon-Archimate_ArchiMate_Process_Full        { background-image: url(img/full/Set2/60.png); } /* 090 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Function'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Function            { background-image: url(img/Set2/52.png); } /* 082 */
+.pbicon-Archimate_ArchiMate_Function_Full       { background-image: url(img/full/Set2/52.png); } /* 082 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Interaction'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Interaction         { background-image: url(img/Set2/54.png); } /* 084 */
+.pbicon-Archimate_ArchiMate_Interaction_Full    { background-image: url(img/full/Set2/54.png); } /* 084 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Service'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Service             { background-image: url(img/Set2/64.png); } /* 094 */
+.pbicon-Archimate_ArchiMate_Service_Full        { background-image: url(img/full/Set2/64.png); } /* 094 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Event'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Event               { background-image: url(img/Set2/51.png); } /* 081 */
+.pbicon-Archimate_ArchiMate_Event_Full          { background-image: url(img/full/Set2/51.png); } /* 081 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Actor'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Actor               { background-image: url(img/Set2/46.png); } /* 076 */
+.pbicon-Archimate_ArchiMate_Actor_Full          { background-image: url(img/full/Set2/46.png); } /* 076 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Role'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Role                { background-image: url(img/Set2/63.png); } /* 093 */
+.pbicon-Archimate_ArchiMate_Role_Full           { background-image: url(img/full/Set2/63.png); } /* 093 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Collaboration'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Collaboration       { background-image: url(img/Set2/48.png); } /* 078 */
+.pbicon-Archimate_ArchiMate_Collaboration_Full  { background-image: url(img/full/Set2/48.png); } /* 078 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Interface'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Interface           { background-image: url(img/Set2/55.png); } /* 085 */
+.pbicon-Archimate_ArchiMate_Interface_Full      { background-image: url(img/full/Set2/55.png); } /* 085 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Component'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Component           { background-image: url(img/Set2/49.png); } /* 079 */
+.pbicon-Archimate_ArchiMate_Component_Full      { background-image: url(img/full/Set2/49.png); } /* 079 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Software'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Software            { background-image: url(img/Set2/65.png); } /* 095 */
+.pbicon-Archimate_ArchiMate_Software_Full       { background-image: url(img/full/Set2/65.png); } /* 095 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_Specialisation'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_Specialisation      { background-image: url(img/Set2/77.png); } /* 107 */
+.pbicon-Archimate_ArchiMate_Specialisation_Full { background-image: url(img/full/Set2/77.png); } /* 107 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_ArchiMate_NetworkConnector'] > a .jstree-themeicon,
+.pbicon-Archimate_ArchiMate_NetworkConnector    {  } /*  */
+.pbicon-Archimate_ArchiMate_NetworkConnector_Full {  } /*  */
+
+
+/* For Archimate Diagram Icon */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_Business_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_Business_Diagram'] > a .jstree-themeicon,
+.pbicon-Archimate_Business_Diagram,
+.pbicon-Archimate2_Business_Diagram             { background-image: url(img/Set1/1.png); } /* 001 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_Application_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_Application_Diagram'] > a .jstree-themeicon,
+.pbicon-Archimate_Application_Diagram,
+.pbicon-Archimate2_Application_Diagram          { background-image: url(img/Set1/1.png); } /* 001 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_Technology_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_Technology_Diagram'] > a .jstree-themeicon,
+.pbicon-Archimate_Technology_Diagram,
+.pbicon-Archimate2_Technology_Diagram           { background-image: url(img/Set1/1.png); } /* 001 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_Motivation_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_Motivation_Diagram'] > a .jstree-themeicon,
+.pbicon-Archimate_Motivation_Diagram,
+.pbicon-Archimate2_Motivation_Diagram           { background-image: url(img/Set1/1.png); } /* 001 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_Implementation_Diagram'] > a .jstree-themeicon,
+.jstree-default li[data-pbicon$='pbicon-Archimate2_Implementation_Diagram'] > a .jstree-themeicon,
+.pbicon-Archimate_Implementation_Diagram,
+.pbicon-Archimate2_Implementation_Diagram       { background-image: url(img/Set1/1.png); } /* 001 */
+
+.jstree-default li[data-pbicon$='pbicon-Archimate_Archimate_Diagram'] > a .jstree-themeicon,
+.pbicon-Archimate_Archimate_Diagram             { background-image: url(img/Set1/1.png); } /* 001 */

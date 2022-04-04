@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title></title>
+    <meta name="decorator" content="atl.admin" />
+	<style type="text/css">
+		.pdDiagram { height: 100%;font-size: 13px;font-family: Arial, Helvetica, sans-serif; }
+		.noDataAvailable { position: absolute; left: 0; top: 0; height: 90%; width: auto; background-color: #FFF; }
+		.noDataAvailable > table { position: relative; top: 43%; margin: -45px auto 0; width: auto; height: auto; }
+		.noDataAvailable td > i { display: block; font-size: 50px; width: 76px; height: 76px; line-height: 76px; text-align: center; }
+		.noDataAvailable td > i {margin-right: 20px; }
+		.noDataAvailable h4 { font: 22px "colaborate-thinregular"; font-weight: 600; text-transform: capitalize; margin-top: 0; }
+		.noDataAvailable p { color: #777777; }
+
+		.noDataAvailable h4,
+		.noDataAvailable td > i { color: #ff8400; }
+		.noDataAvailable td > i { border-color: #ff8400; }
+
+		.noDataAvailable.DataSuccess h4,
+		.noDataAvailable.DataSuccess td > i { color: #5CB85C; }
+		.noDataAvailable.DataSuccess td > i { border-color: #5CB85C; }
+		
+		.warningIcon { content: "\26A0";font-size: 100px;color: orange;padding: 0px 20px 0px 20px; }
+	</style>	
+  </head>
+  <body>
+	<div class="pdDiagramWrap">
+		<div class="pdDiagram">
+			<div id="ErrorMessage" class="noDataAvailable" style="posistion:inherit !important;border:8px solid #f2f3f4;">
+				<table>
+					<tbody>
+						<tr>
+							<td><span class="warningIcon">&#9888;</span></td>
+											
+							<td>
+								<h4 id="ErrorMessageHeading">Browser Not Supported!</h4>
+												
+								<p id="ErrorMessageDesc">Internet Explorer does not support this macro. Please use a supported browser. Learn more <a href="https://prolaborate.sparxsystems.com/resources/documentation/installation-guide?articles=Browsers" target="_blank">here</a>.
+								</p>
+							</td>                                        
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

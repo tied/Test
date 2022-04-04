@@ -1,0 +1,688 @@
+#macro-insert-list .macro-prolaborate .icon {
+   background: transparent url("images/nofill.png") 0 0 no-repeat;
+   margin-top: 0px;
+}
+#insert-menu .aui-dropdown #prolaborate .icon {
+    background: url(images/nofill.png) no-repeat scroll left center transparent;
+}
+ 
+
+/*Custom dialog 2 */
+
+.custom-dialog {
+    width: 922px;
+}
+.custom-dialog form.aui .field-group.label-name{
+    width:480px;
+}
+    .custom-dialog form.aui .label-name input.text {
+        max-width: 100%;
+        border: 1px solid #1f8ceb94;
+        vertical-align: unset;
+    }
+.custom-dialog .pro-logo{
+    background: url(images/dialog2-prolaborate-head-logo.png) no-repeat  left transparent;
+    width: 140px;
+    display: inline-block;
+    height: 50px;
+    background-size: 100%;
+}
+.custom-dialog .aui-dialog2-header-close { 
+    color: #ffffff; 
+}
+.custom-dialog .aui-dialog2-header{
+    background-color: #1f8ceb;
+}
+.custom-dialog  .aui-dialog2-content { 
+    padding: 10px; 
+}
+.custom-dialog form.aui .field-group {
+    display: inline-block;
+    width: inherit;
+    padding: 0;
+    margin-right:6px;
+    min-width: 18.8%;
+}
+
+.custom-dialog form.aui .field-group label {
+    margin: 0;
+    width: inherit;
+    text-align: left;
+}
+
+.custom-dialog input.text {
+    vertical-align: top;
+}
+
+.item-filter-result .aui-avatar {
+    margin: 9px;
+}
+
+
+.item-filter-result  button.aui-button {
+    vertical-align: text-top;padding: 4px 10px;
+    text-align: center;
+}
+
+.aui-avatar-project.aui-avatar-xxxlarge .aui-avatar-inner {
+    border-radius: 4px;
+}
+
+ 
+
+.filter-item ul {
+    padding: 0;
+}
+
+.item-name,.search-count{ 
+    font-weight: 500;
+}
+
+span.item-info {
+    vertical-align: middle;
+}
+button.item-info{
+    background-color: transparent;
+}
+.filter-item li{
+    position: relative;
+}
+
+.filter-item li .filter-item-wrap{
+    margin: 8px 0;
+    border-radius: 4px;
+    padding:4px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 3px 1px #bfbfbf00;
+    background-color: #f7f7f7;
+    list-style: none;
+    position: relative; 
+    z-index: initial;
+    border: 1px solid #eaeaea;
+    border-left: 4px solid  #d7dde2;
+   }
+   .filter-item li .filter-item-wrap.dialog-active{
+    border: 1px solid #58cb0fa1;
+    border-left: 4px solid #58cb0f;
+    background-color: #f0f8ff!important;
+    box-shadow: 1px 1px 7px 1px #83d754b5;
+  }
+
+   .filter-item ul li .filter-item-wrap:hover {
+    transition-duration:.5s;
+    transition-timing-function: cubic-bezier(0.63, 0.43, 0.21, 0.94);
+    background-color: #d7dde2;
+}
+
+button.item-info,.dialog-active .selected {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    cursor: pointer;
+}
+ 
+button.item-info:before {
+    font-size: 20px;color: #aaafb3;
+}
+.filter-item {
+    margin: 10px 0 0;
+}
+
+.search-count {
+    text-align: right;
+}
+.item-more {
+    text-align: center;
+}
+
+.info-details li {
+    border-bottom: 1px solid #e4e4e4a6;
+    padding: 7px 0;
+     list-style: none;
+     float: left;
+    width: 100%;
+}
+
+ .info-details li span {
+    font-weight: 500;
+    padding-left:  4px;
+}
+.info-details {
+    padding: 0;
+}
+ 
+.filter-item .aui-icon,.info-details .aui-icon::before {
+    color: #9c9c9c;
+}
+.info-details span i {
+    transform: rotate(270deg);
+    vertical-align: bottom;
+}
+.text-label {
+    width: 120px;
+    float: left;
+    vertical-align: baseline;
+    color: #717171;
+}
+
+.label-info {
+    padding-left:120px;
+    margin: 0;
+    color: #000000;
+}
+.info-details i.aui-icon {
+    transform: rotate(270deg);
+    vertical-align: text-bottom;
+}
+.info-wrap{
+    max-width:576px;
+}
+.info-wrap .aui-inline-dialog-contents{
+    border: 2px solid #1f8ceb;
+    border-right: 6px solid #1f8ceb;
+    padding: 10px;
+}
+
+.trigger-warp .aui-inline-dialog-contents{
+    border: 1px solid #1f8ceb;
+    border-left: 2px solid #1f8ceb;
+    padding:4px;
+}
+aui-inline-dialog:before,aui-inline-dialog:after {
+    border-bottom-color: #1f8ceb;
+}
+.diagram-filter-item aui-inline-dialog:before,.diagram-filter-item aui-inline-dialog:after,
+aui-inline-dialog.trigger-warp:before,aui-inline-dialog.trigger-warp:after{
+    border-bottom: 8px solid #1f8ceb;
+}
+
+  .dialog-active button.item-info:before {
+    font-size: 20px;
+    color: #4aa3f1;
+}
+.item-more button span{
+    vertical-align: middle;
+    color: #fff;
+}
+.item-more  .aui-icon::before{
+    color: #fff;
+}
+.item-more button {
+    margin: 0 0 6px;
+} 
+form.aui .select{
+    padding:0;
+}
+.filter-list > ul .selected{
+    display:none;
+}
+
+@-webkit-keyframes opacityLevel {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+@keyframes opacityLevel {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+.dialog-active .selected{
+    right: 30px;
+    display: block !important;
+    height: 20px;
+    text-transform: capitalize;
+    background-color: #5bb95b;
+    background-size: 100%;
+    -webkit-animation-name: test;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    animation-name: opacityLevel;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+.custom-dialog .aui-dialog2-content { 
+    overflow: inherit; 
+    max-height: calc(100vh - 218px); 
+}
+.filter-item .filter-list {
+    overflow: auto;
+    max-height: calc(100vh - 400px);
+    padding: 0;
+}
+ 
+.aui-dialog2-footer-actions .btn-cancel {
+    background-color: transparent;
+    border: 1px solid #babab9;
+    min-width: 70px;
+    min-height: 30px;
+    display: inline-block;
+    color:#42526e;
+}
+ 
+.no-result{
+    text-align: center;
+}
+.no-result h3{
+    color: #1f8ceb;
+    margin: 0;
+    text-transform: uppercase;
+}
+.graphy-nosearch{
+    display: inline-block;
+    height: 216px;
+    width: 220px;
+    margin: 0;
+    background: url(images/no-result.png) no-repeat  center  transparent;
+}
+.dialog-loader{
+    text-align: center;
+}
+.dialog-loader figure{
+    display: inline-block;
+    height:104px;
+    width: 104px;
+    margin: 0 auto;
+    background: url(images/loader.gif) no-repeat  center center transparent;
+  
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block!important;
+}
+.check-item {
+    display: inline-block;
+}
+
+/* The container */
+.check-wrap {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top:2px;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border: 1px solid #dadada;
+}
+
+/* On mouse-over, add a grey background color */
+.check-wrap:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-wrap input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check-wrap input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-wrap .checkmark:after {
+    left:4px;
+    top: 0px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn{
+    box-sizing: border-box;
+    transition: background-color 0.1s ease-out;
+    border-radius: 3.01px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: normal;
+    background-image: none;
+    background-color: rgba(9, 30, 66, 0.04);
+    border-color: transparent;
+    color: #42526e;
+    text-decoration: none;
+    display: inline-block;
+    height: 2.14285714em;
+    line-height: 1.36363636em;
+    margin: 0;
+    padding: 4px 10px;
+    vertical-align: text-top;
+    white-space: nowrap;
+}
+.btn-primary{
+    background-color: #1f8ceb;
+    color: #fff;
+   }
+   .btn-primary:hover {
+       background-color: #1473c5;
+       color: #fff;
+   }
+#ProlCustomDialog .aui-pbtabs.aui-tabs.horizontal-tabs .item-filter-result form .select {
+    max-width: 166px;
+    vertical-align: unset;
+}
+#ProlCustomDialog .aui-pbtabs.aui-tabs.horizontal-tabs .item-filter-result form input[type="button"] {
+    vertical-align: unset;
+}
+#ProlCustomDialogClose span.aui-icon.aui-icon-small.aui-iconfont-close-dialog, #ProlWaringDialogClose {
+    cursor: pointer;
+}
+.text-package {
+    width: calc(100% - 58px) !important;
+}
+.all-item {
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid rgba(224, 193, 0, 0.65);
+    border-radius: 4px;
+    padding: 6px;
+    padding-left: 30px;
+}
+.all-item h4 {
+    position: relative;
+}
+.all-item h4 span{
+    position: absolute;
+    left: -28px;
+   
+}
+.all-item h4 span.aui-icon-small:before {
+    margin-top: -8px;
+    font-size: 22px;
+    color: rgb(224, 193, 0);
+}
+.check-item-content{
+    margin-right:24px;
+    display:inline-block
+}
+.check-info {
+    vertical-align: middle;
+    color: #8c8c8c;
+    margin-left: 2px;
+}
+
+/* Tooltip css style Start*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    width: 20px;
+    height:18px;
+    background-size: 16px;
+    background-position: right bottom;
+    background: url(images/icon-tooltip.png) no-repeat  left transparent; 
+    background-size: 14px;
+    background-position: right center;
+    vertical-align: bottom; 
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    min-width: 140px;
+    max-width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+  top: -6px;
+  left: 125%;  
+}
+.tooltip-right.dia-obj{
+    top: -17px;
+    min-width: 260px;
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip-bottom {
+    top: 135%;
+    left: 50%;  
+    margin-left: -60px;
+  }
+  
+  .tooltip-bottom::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #555 transparent;
+  }
+  
+  .tooltip-top {
+    bottom: 125%;
+    left: 50%;  
+    margin-left: -60px;
+  }
+  
+  .tooltip-top::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip-left {
+    top: -5px;
+    bottom:auto;
+    right: 128%;  
+  }
+  .tooltip-left::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent transparent #555;
+  }
+  .aui-button:focus{
+    outline:0;
+    background-color: #1f8ceb;
+    color: #fff;
+  }
+/* Tooltip css style end*/
+.aui-dialog2[data-aui-modal="true"] .aui-dialog2-header-close {
+    display: initial;
+}
+.item-filter-result .aui-dialog2-footer{
+    padding-right: 0px;
+}
+.tabs-menu span.aui-iconfont-folder {
+    margin-right: 4px;
+}
+.list-content {
+    margin-left: 54px;
+}
+.list-content .item-author{
+    margin: 4px 0 0;
+}
+
+.icon-thumb {
+    width: 46px;
+    height: 100%;
+    margin-right: 4px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-right: 1px solid #d7dde2;
+    left: 0;
+    opacity: 0.7;
+}
+.icon-folder { 
+    background: url(images/icon-folder.png) no-repeat center center; 
+    background-size: 30px;
+}
+.icon-diagram { 
+    background: url(images/icon-diagram.png) no-repeat center center; 
+    background-size: 26px;
+    
+}
+.icon-element { 
+    background: url(images/icon-element.png) no-repeat center center; 
+    background-size: 26px;
+}
+
+.active-tab a .icon-folder{
+    background: url(images/icon-active-folder.png) no-repeat center bottom; 
+}
+.active-tab a .icon-diagram{
+    background: url(images/icon-active-diagram.png) no-repeat center bottom; 
+    background-size: 66%;
+}
+.active-tab a .icon-element{
+    background: url(images/icon-active-element.png) no-repeat center bottom; 
+    background-size: 66%;
+}
+.menu-item a span {
+    height: 16px;
+    width: 16px;
+}
+.menu-item a span {
+    height: 20px;
+    width: 24px;
+    display: inline-block;
+    background-size: 66%;
+    background-position: center bottom;
+    background-color: transparent;
+}
+.menu-item a span.icon-folder {
+    background-size: 74%;
+}
+
+@media all and (-ms-high-contrast:none) {
+    .footer-confluence .aui-button.btn-cancel { display: inline-block; } 
+    .custom-dialog .aui-dialog2-content { overflow: inherit; max-height: calc(100vh - 210px); }
+    .filter-list ul li .aui-icon-small { height: 20px; width: 20px; }
+    .btn-find{position:relative;top:-6px;}
+}
+
+@media (max-width: 992px) { 
+    .graphy-nosearch {
+        height: 170px;
+        width: 170px;
+        background-size: 100%;
+    } 
+ }
+ 
+ .field-repository {
+	position: absolute;
+	top: 77px;
+	left: 20px;
+	z-index: 10;
+	min-width: 350px;
+ }
+ .field-repository label {
+	font-weight: 500;
+	color: #42526e;
+ }
+ .field-repository select {
+	border: 1px solid #cccccc;
+    border-radius: 3.01px;
+    box-sizing: border-box;
+    font-size: inherit;
+    margin: 0 0 0 8px;
+    max-width: 250px;
+    vertical-align: baseline;
+    width: 100%;
+	height: 2.14285714em;
+    line-height: 1.4285714285714;
+  }
+  
+  .field-repository + .aui-tabs {
+	margin-top: 0px;
+  }
+  
+  .field-repository + .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a {
+	padding-bottom: 15px;
+  }
+ 
+ .aui-pbtabs.horizontal-tabs > .tabs-menu {
+	justify-content: flex-end;
+ }
+ 
+ #repository option[value=""] { background-color: #f5f5f5; color: #999; }
+ 
+ .tabs-pane.no-repo{pointer-events: none; opacity: 0.4;}

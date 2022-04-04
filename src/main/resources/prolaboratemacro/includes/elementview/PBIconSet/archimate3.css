@@ -1,0 +1,319 @@
+﻿
+/* For ArchiMate 3 Icon */
+
+/*
+.jstree-default li[data-pbicon$='pbicon-ArchiMate3_ArchiMate_'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_               { background-image: url(img/); } 
+.pbicon-ArchiMate3_ArchiMate__Full          { background-image: url(img/full/); }
+*/
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationComponent'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationComponent { background-image: url(img/Set6/1.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationComponent_Full { background-image: url(img/full/Set6/1.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationCollaboration'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationCollaboration { background-image: url(img/Set6/2.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationCollaboration_Full { background-image: url(img/full/Set6/2.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationInterface'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationInterface { background-image: url(img/Set6/3.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationInterface_Full { background-image: url(img/full/Set6/3.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationProcess'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationProcess { background-image: url(img/Set6/4.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationProcess_Full { background-image: url(img/full/Set6/4.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationFunction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationFunction { background-image: url(img/Set6/5.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationFunction_Full { background-image: url(img/full/Set6/5.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationInteraction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationInteraction { background-image: url(img/Set6/6.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationInteraction_Full { background-image: url(img/full/Set6/6.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationService'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationService { background-image: url(img/Set6/7.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationService_Full { background-image: url(img/full/Set6/7.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ApplicationEvent'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ApplicationEvent { background-image: url(img/Set6/8.png); }
+.pbicon-ArchiMate3_ArchiMate_ApplicationEvent_Full { background-image: url(img/full/Set6/8.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_DataObject'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_DataObject { background-image: url(img/Set6/9.png); }
+.pbicon-ArchiMate3_ArchiMate_DataObject_Full { background-image: url(img/full/Set6/9.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessActor'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessActor { background-image: url(img/Set6/10.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessActor_Full { background-image: url(img/full/Set6/10.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessRole'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessRole { background-image: url(img/Set6/11.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessRole_Full { background-image: url(img/full/Set6/11.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessCollaboration'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessCollaboration { background-image: url(img/Set6/12.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessCollaboration_Full { background-image: url(img/full/Set6/12.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessInterface'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessInterface { background-image: url(img/Set6/13.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessInterface_Full { background-image: url(img/full/Set6/13.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessProcess'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessProcess { background-image: url(img/Set6/14.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessProcess_Full { background-image: url(img/full/Set6/14.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessFunction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessFunction { background-image: url(img/Set6/15.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessFunction_Full { background-image: url(img/full/Set6/15.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessInteraction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessInteraction { background-image: url(img/Set6/16.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessInteraction_Full { background-image: url(img/full/Set6/16.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessService'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessService { background-image: url(img/Set6/17.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessService_Full { background-image: url(img/full/Set6/17.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessEvent'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessEvent { background-image: url(img/Set6/18.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessEvent_Full { background-image: url(img/full/Set6/18.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_BusinessObject'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_BusinessObject { background-image: url(img/Set6/19.png); }
+.pbicon-ArchiMate3_ArchiMate_BusinessObject_Full { background-image: url(img/full/Set6/19.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Contract'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Contract { background-image: url(img/Set6/20.png); }
+.pbicon-ArchiMate3_ArchiMate_Contract_Full { background-image: url(img/full/Set6/20.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Representation'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Representation { background-image: url(img/Set6/21.png); }
+.pbicon-ArchiMate3_ArchiMate_Representation_Full { background-image: url(img/full/Set6/21.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Product'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Product { background-image: url(img/Set6/22.png); }
+.pbicon-ArchiMate3_ArchiMate_Product_Full { background-image: url(img/full/Set6/22.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_WorkPackage'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_WorkPackage { background-image: url(img/Set6/23.png); }
+.pbicon-ArchiMate3_ArchiMate_WorkPackage_Full { background-image: url(img/full/Set6/23.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_ImplementationEvent'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_ImplementationEvent { background-image: url(img/Set6/24.png); }
+.pbicon-ArchiMate3_ArchiMate_ImplementationEvent_Full { background-image: url(img/full/Set6/24.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Deliverable'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Deliverable { background-image: url(img/Set6/25.png); }
+.pbicon-ArchiMate3_ArchiMate_Deliverable_Full { background-image: url(img/full/Set6/25.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Plateau'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Plateau { background-image: url(img/Set6/26.png); }
+.pbicon-ArchiMate3_ArchiMate_Plateau_Full { background-image: url(img/full/Set6/26.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Gap'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Gap { background-image: url(img/Set6/27.png); }
+.pbicon-ArchiMate3_ArchiMate_Gap_Full { background-image: url(img/full/Set6/27.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Stakeholder'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Stakeholder { background-image: url(img/Set6/28.png); }
+.pbicon-ArchiMate3_ArchiMate_Stakeholder_Full { background-image: url(img/full/Set6/28.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Driver'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Driver { background-image: url(img/Set6/29.png); }
+.pbicon-ArchiMate3_ArchiMate_Driver_Full { background-image: url(img/full/Set6/29.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Assessment'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Assessment { background-image: url(img/Set6/30.png); }
+.pbicon-ArchiMate3_ArchiMate_Assessment_Full { background-image: url(img/full/Set6/30.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Value'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Value { background-image: url(img/Set6/31.png); }
+.pbicon-ArchiMate3_ArchiMate_Value_Full { background-image: url(img/full/Set6/31.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Meaning'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Meaning { background-image: url(img/Set6/32.png); }
+.pbicon-ArchiMate3_ArchiMate_Meaning_Full { background-image: url(img/full/Set6/32.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Goal'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Goal { background-image: url(img/Set6/33.png); }
+.pbicon-ArchiMate3_ArchiMate_Goal_Full { background-image: url(img/full/Set6/33.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Outcome'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Outcome { background-image: url(img/Set6/34.png); }
+.pbicon-ArchiMate3_ArchiMate_Outcome_Full { background-image: url(img/full/Set6/34.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Principle'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Principle { background-image: url(img/Set6/35.png); }
+.pbicon-ArchiMate3_ArchiMate_Principle_Full { background-image: url(img/full/Set6/35.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Requirement'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Requirement { background-image: url(img/Set6/36.png); }
+.pbicon-ArchiMate3_ArchiMate_Requirement_Full { background-image: url(img/full/Set6/36.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Constraint'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Constraint { background-image: url(img/Set6/37.png); }
+.pbicon-ArchiMate3_ArchiMate_Constraint_Full { background-image: url(img/full/Set6/37.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Resource'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Resource { background-image: url(img/Set6/38.png); }
+.pbicon-ArchiMate3_ArchiMate_Resource_Full { background-image: url(img/full/Set6/38.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Capability'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Capability { background-image: url(img/Set6/39.png); }
+.pbicon-ArchiMate3_ArchiMate_Capability_Full { background-image: url(img/full/Set6/39.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_CourseOfAction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_CourseOfAction { background-image: url(img/Set6/40.png); }
+.pbicon-ArchiMate3_ArchiMate_CourseOfAction_Full { background-image: url(img/full/Set6/40.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Node'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Node { background-image: url(img/Set6/41.png); }
+.pbicon-ArchiMate3_ArchiMate_Node_Full { background-image: url(img/full/Set6/41.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Device'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Device { background-image: url(img/Set6/42.png); }
+.pbicon-ArchiMate3_ArchiMate_Device_Full { background-image: url(img/full/Set6/42.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_SystemSoftware'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_SystemSoftware { background-image: url(img/Set6/43.png); }
+.pbicon-ArchiMate3_ArchiMate_SystemSoftware_Full { background-image: url(img/full/Set6/43.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyCollaboration'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyCollaboration { background-image: url(img/Set6/44.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyCollaboration_Full { background-image: url(img/full/Set6/44.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyInterface'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyInterface { background-image: url(img/Set6/45.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyInterface_Full { background-image: url(img/full/Set6/45.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Path'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Path { background-image: url(img/Set6/46.png); }
+.pbicon-ArchiMate3_ArchiMate_Path_Full { background-image: url(img/full/Set6/46.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_CommunicationNetwork'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_CommunicationNetwork { background-image: url(img/Set6/47.png); }
+.pbicon-ArchiMate3_ArchiMate_CommunicationNetwork_Full { background-image: url(img/full/Set6/47.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyProcess'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyProcess { background-image: url(img/Set6/48.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyProcess_Full { background-image: url(img/full/Set6/48.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyFunction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyFunction { background-image: url(img/Set6/49.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyFunction_Full { background-image: url(img/full/Set6/49.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyInteraction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyInteraction { background-image: url(img/Set6/50.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyInteraction_Full { background-image: url(img/full/Set6/50.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyService'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyService { background-image: url(img/Set6/51.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyService_Full { background-image: url(img/full/Set6/51.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyEvent'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyEvent { background-image: url(img/Set6/52.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyEvent_Full { background-image: url(img/full/Set6/52.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_TechnologyObject'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_TechnologyObject { background-image: url(img/Set6/53.png); }
+.pbicon-ArchiMate3_ArchiMate_TechnologyObject_Full { background-image: url(img/full/Set6/53.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Artifact'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Artifact { background-image: url(img/Set6/54.png); }
+.pbicon-ArchiMate3_ArchiMate_Artifact_Full { background-image: url(img/full/Set6/54.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Facility'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Facility { background-image: url(img/Set6/55.png); }
+.pbicon-ArchiMate3_ArchiMate_Facility_Full { background-image: url(img/full/Set6/55.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Equipment'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Equipment { background-image: url(img/Set6/56.png); }
+.pbicon-ArchiMate3_ArchiMate_Equipment_Full { background-image: url(img/full/Set6/56.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_DistributionNetwork'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_DistributionNetwork { background-image: url(img/Set6/57.png); }
+.pbicon-ArchiMate3_ArchiMate_DistributionNetwork_Full { background-image: url(img/full/Set6/57.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Material'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Material { background-image: url(img/Set6/58.png); }
+.pbicon-ArchiMate3_ArchiMate_Material_Full { background-image: url(img/full/Set6/58.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Location'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Location { background-image: url(img/Set6/59.png); }
+.pbicon-ArchiMate3_ArchiMate_Location_Full { background-image: url(img/full/Set6/59.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Composition'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Composition { background-image: url(img/Arrows/40.png); }
+.pbicon-ArchiMate3_ArchiMate_Composition_Full { background-image: url(img/full/Arrows/40.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Aggregation'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Aggregation { background-image: url(img/Arrows/39.png); }
+.pbicon-ArchiMate3_ArchiMate_Aggregation_Full { background-image: url(img/full/Arrows/39.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Realization'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Realization { background-image: url(img/Set2/74.png); }
+.pbicon-ArchiMate3_ArchiMate_Realization_Full { background-image: url(img/full/Set2/74.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Assignment'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Assignment { background-image: url(img/Set6/60.png); }
+.pbicon-ArchiMate3_ArchiMate_Assignment_Full { background-image: url(img/full/Set6/60.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Serving'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Serving { background-image: url(img/Arrows/21.png); }
+.pbicon-ArchiMate3_ArchiMate_Serving_Full { background-image: url(img/full/Arrows/21.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Access'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Access { background-image: url(img/Arrows/2.png); }
+.pbicon-ArchiMate3_ArchiMate_Access_Full { background-image: url(img/full/Arrows/2.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Association'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Association { background-image: url(img/Set2/75.png); }
+.pbicon-ArchiMate3_ArchiMate_Association_Full { background-image: url(img/full/Set2/75.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Influence'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Influence { background-image: url(img/Arrows/4.png); }
+.pbicon-ArchiMate3_ArchiMate_Influence_Full { background-image: url(img/full/Arrows/4.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Triggering'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Triggering { background-image: url(img/Arrows/33.png); }
+.pbicon-ArchiMate3_ArchiMate_Triggering_Full { background-image: url(img/full/Arrows/33.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Flow'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Flow { background-image: url(img/Arrows/2.png); }
+.pbicon-ArchiMate3_ArchiMate_Flow_Full { background-image: url(img/full/Arrows/2.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Specialization'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Specialization { background-image: url(img/Arrows/30.png); }
+.pbicon-ArchiMate3_ArchiMate_Specialization_Full { background-image: url(img/full/Arrows/30.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Junction'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Junction { background-image: url(img/Set2/1.png); }
+.pbicon-ArchiMate3_ArchiMate_Junction_Full { background-image: url(img/full/Set2/1.png); }
+
+.jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_Grouping'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_ArchiMate_Grouping { background-image: url(img/Set2/53.png); }
+.pbicon-ArchiMate3_ArchiMate_Grouping_Full { background-image: url(img/full/Set2/53.png); }
+
+
+/* For ArchiMate 3 Diagram Icon */
+
+/*
+.jstree-default li[data-pbicon$='pbicon-ArchiMate3__Diagram'] > a .jstree-themeicon,
+.pbicon-ArchiMate3__Diagram                 { background-image: url(img/); }
+*/
+
+.jstree-default li[data-pbicon$='pbicon-ArchiMate3_Business_Diagram'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_Business_Diagram         { background-image: url(img/Set1/1.png); }
+
+.jstree-default li[data-pbicon$='pbicon-ArchiMate3_Application_Diagram'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_Application_Diagram      { background-image: url(img/Set1/1.png); }
+
+.jstree-default li[data-pbicon$='pbicon-ArchiMate3_Technology_Diagram'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_Technology_Diagram       { background-image: url(img/Set1/1.png); }
+
+.jstree-default li[data-pbicon$='pbicon-ArchiMate3_Motivation_Diagram'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_Motivation_Diagram       { background-image: url(img/Set1/1.png); }
+
+.jstree-default li[data-pbicon$='pbicon-ArchiMate3_Implementation_Diagram'] > a .jstree-themeicon,
+.pbicon-ArchiMate3_Implementation_Diagram   { background-image: url(img/Set1/1.png); }

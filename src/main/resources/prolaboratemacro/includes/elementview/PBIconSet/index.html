@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Prolaborate Icon Set</title>
+        
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+        <link rel="stylesheet" type="text/css" href="bpmn.css"/>
+        <link rel="stylesheet" type="text/css" href="archimate.css"/>
+        <link rel="stylesheet" type="text/css" href="whiteboard.css" />
+        
+        <style type="text/css">			
+			.main           { max-width: 1180px; margin:50px auto; }
+            .pbicon         { width:40px; height:24px; }
+			.baseSet        { text-align:center; }
+			.baseSet span   { float:left; width:10%; height:60px; }
+			.baseSet i      { margin-bottom:8px; }
+			.baseSet label  { display:block; font:bold 12px "Arial", Helvetica, sans-serif; color:#bbb; }
+		</style>
+        
+    </head>
+
+    <body>
+    	<div class="main">
+
+            <h1>UML Set</h1>
+            <div class="baseSet umlSet">
+            </div>
+            <div style="clear:both"></div>
+
+            <h1>Custom Set</h1>
+            <div class="baseSet customSet">
+            </div>
+            <div style="clear:both"></div>
+
+            <h1>Archimate</h1>
+            <div class="baseSet archimateSet">
+            </div>
+            <div style="clear:both"></div>
+
+            <h1>Archimate 3</h1>
+            <div class="baseSet archimateSet3">
+            </div>
+            <div style="clear:both"></div>
+
+            <h1>Base Set</h1>
+            <div class="baseSet bpmnSet">
+            </div>
+            <div style="clear:both"></div>
+
+            <h1>Whiteboard</h1>
+            <div class="baseSet whiteboardSet">
+            </div>
+            <div style="clear:both"></div>
+
+            <h1>Arrow</h1>
+            <div class="baseSet arrowSet">
+            </div>
+            <div style="clear:both"></div>
+            
+        </div>
+    </body>
+    
+    <script type="text/javascript" src="../jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var umlSet = "", customSet = "", archimateSet = "", archimateSet3 = "", bpmnSet = "", whiteboardSet = "", arrowSet = "";
+            var j;
+
+            j = 1;
+			for (i = 1; i <= 23; i++) {
+			    tmp = i;
+			    tmp = buildIconString(tmp);
+			    umlSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set1/'+ j + '.png</label></span>';
+			    j++;
+			}
+			for (i = 24; i <= 30; i++) {
+				tmp = i;
+			    tmp = buildIconString(tmp);
+			    customSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set1/' + j + '.png</label></span>';
+			    j++;
+			}
+
+			j = 1;
+			for (i = 31; i <= 95; i++) {
+				tmp = i;
+			    tmp = buildIconString(tmp);
+			    archimateSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set2/' + j + '.png</label></span>';
+			    j++;
+			}
+			for (i = 96; i <= 109; i++) {
+				tmp = i;
+			    tmp = buildIconString(tmp);
+			    bpmnSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set2/' + j + '.png</label></span>';
+			    j++;
+			}
+
+            j = 1;
+			for (i = 110; i <= 127; i++) {
+				tmp = i;
+			    tmp = buildIconString(tmp);
+			    whiteboardSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set3/' + j + '.png</label></span>';
+			    j++;
+			}
+
+			j = 1;
+			for (i = 128; i <= 215; i++) {
+			    tmp = i;
+			    tmp = buildIconString(tmp);
+			    umlSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set4/' + j + '.png</label></span>';
+			    j++;
+			}
+
+			j = 1;
+			for (i = 216; i <= 256; i++) {
+			    tmp = i;
+			    tmp = buildIconString(tmp);
+			    arrowSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Arrows/' + j + '.png</label></span>';
+			    j++;
+			}
+
+			j = 1;
+			for (i = 257; i <= 274; i++) {
+			    tmp = i;
+			    tmp = buildIconString(tmp);
+			    umlSet += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set5/' + j + '.png</label></span>';
+			    j++;
+			}
+
+			j = 1;
+			for (i = 275; i <= 334; i++) {
+			    tmp = i;
+			    tmp = buildIconString(tmp);
+			    archimateSet3 += '<span><i class="pbicon pbicon-' + tmp + '"></i><label>Set6/' + j + '.png</label></span>';
+			    j++;
+			}
+
+			$('.umlSet').html(umlSet);
+			$('.customSet').html(customSet);
+			$('.archimateSet').html(archimateSet);
+			$('.archimateSet3').html(archimateSet3);
+			$('.bpmnSet').html(bpmnSet);
+			$('.whiteboardSet').html(whiteboardSet);
+			$('.arrowSet').html(arrowSet);
+			
+			function buildIconString(tmp) {
+			    if (tmp.toString().length < 3) {
+			        if (tmp.toString().length == 1) { tmp = '00' + tmp; }
+			        else if (tmp.toString().length == 2) { tmp = '0' + tmp; }
+			    }
+			    return tmp;
+			}
+		});
+	</script>
+
+</html>

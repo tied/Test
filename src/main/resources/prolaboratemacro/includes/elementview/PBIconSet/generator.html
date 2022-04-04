@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Untitled Document</title>
+    </head>
+    
+    <body>
+    
+    	<div class="main">
+        	<p></p>
+        </div>
+    
+    </body>
+    
+    <script type="text/javascript" src="../jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+			
+			var dataJSON = [{"Name":"Abstraction","Icon":"Arrows/3.png"},
+{"Name":"Action","Icon":"Set4/25.png"},
+{"Name":"Activity","Icon":"Set2/45.png"},
+{"Name":"Actor","Icon":"Set1/17.png"},
+{"Name":"AddDiagramExtension","Icon":"Set1/25.png"},
+{"Name":"AddStereotype","Icon":"Set1/25.png"},
+{"Name":"AddToolboxPage","Icon":"Set1/25.png"},
+{"Name":"Aggregate","Icon":"Arrows/39.png"},
+{"Name":"Any","Icon":"Set1/16.png"},
+{"Name":"AnyAttribute","Icon":"Set1/16.png"},
+{"Name":"Architectural","Icon":"Set1/20.png"},
+{"Name":"Artifact","Icon":"Set4/51.png"},
+{"Name":"Assembly","Icon":"Arrows/41.png"},
+{"Name":"Associate","Icon":"Set2/75.png"},
+{"Name":"Association","Icon":"Set4/10.png"},
+{"Name":"AssociationClass","Icon":"Arrows/18.png"},
+{"Name":"Attribute","Icon":"Set1/16.png"},
+{"Name":"AttributeGroup","Icon":"Set1/16.png"},
+{"Name":"AuditedChecklist","Icon":"Set4/51.png"},
+{"Name":"BasicActivity","Icon":"Set4/16.png"},
+{"Name":"BasicDeployment","Icon":"Set4/16.png"},
+{"Name":"BasicUseCase","Icon":"Set4/16.png"},
+{"Name":"Binding","Icon":"Set4/7.png"},
+{"Name":"Boundary","Icon":"Set2/79.png"},
+{"Name":"Business","Icon":"Set1/20.png"},
+{"Name":"BusinessActor","Icon":"Set1/17.png"},
+{"Name":"BusinessBoundary","Icon":"Set4/7.png"},
+{"Name":"BusinessControl","Icon":"Set4/7.png"},
+{"Name":"BusinessEntity","Icon":"Set4/7.png"},
+{"Name":"BusinessUseCase","Icon":"Set1/18.png"},
+{"Name":"BusinessUseCaseRealization","Icon":"Set4/11.png"},
+{"Name":"BusinessWorker","Icon":"Set4/7.png"},
+{"Name":"Button","Icon":"Set4/5.png"},
+{"Name":"Call","Icon":"Arrows/36.png"},
+{"Name":"CaseWorker","Icon":"Set4/7.png"},
+{"Name":"CentralBufferNode","Icon":"Set1/16.png"},
+{"Name":"Change","Icon":"Set4/82.png"},
+{"Name":"Changes","Icon":"Set1/16.png"},
+{"Name":"Checkbox","Icon":"Set4/5.png"},
+{"Name":"CheckboxLeft","Icon":"Set4/5.png"},
+{"Name":"Checklist","Icon":"Set4/51.png"},
+{"Name":"Choice","Icon":"Set2/73.png"},
+{"Name":"Class","Icon":"Set1/16.png"},
+{"Name":"Collaboration","Icon":"Set4/11.png"},
+{"Name":"CollaborationUse","Icon":"Set4/11.png"},
+{"Name":"Combobox","Icon":"Set4/5.png"},
+{"Name":"CommunicationPath","Icon":"Arrows/22.png"},
+{"Name":"ComplexType","Icon":"Set1/16.png"},
+{"Name":"Component","Icon":"Set1/19.png"},
+{"Name":"Compose","Icon":"Arrows/40.png"},
+{"Name":"Connector","Icon":"Arrows/19.png"},
+{"Name":"Constraint","Icon":"Set5/2.png"},
+{"Name":"Control","Icon":"Set5/8.png"},
+{"Name":"ControlFlow","Icon":"Arrows/21.png"},
+{"Name":"CreateCustomToolbox","Icon":"Set1/25.png"},
+{"Name":"DataStore","Icon":"Set4/50.png"},
+{"Name":"DataType","Icon":"Set4/57.png"},
+{"Name":"Decision","Icon":"Set2/73.png"},
+{"Name":"Defect","Icon":"Set4/87.png"},
+{"Name":"Defects","Icon":"Set1/16.png"},
+{"Name":"Delegate","Icon":"Arrows/23.png"},
+{"Name":"Dependancy","Icon":"Arrows/2.png"},
+{"Name":"Deployment","Icon":"Arrows/24.png"},
+{"Name":"DeploymentSpecification","Icon":"Set4/75.png"},
+{"Name":"Device","Icon":"Set4/2.png"},
+{"Name":"DiagramGate","Icon":"Set4/76.png"},
+{"Name":"DiagramLegend","Icon":"Set5/4.png"},
+{"Name":"DiagramNotes","Icon":"Set5/5.png"},
+{"Name":"Document","Icon":"Set4/74.png"},
+{"Name":"DocumentArtifact","Icon":"Set4/74.png"},
+{"Name":"Element","Icon":"Set1/16.png"},
+{"Name":"ElementsbyAuthor","Icon":"Set1/16.png"},
+{"Name":"ElementsbyPhase","Icon":"Set1/16.png"},
+{"Name":"ElementsbyPriority","Icon":"Set1/16.png"},
+{"Name":"ElementsbyStatus","Icon":"Set1/16.png"},
+{"Name":"EncryptedDocument","Icon":"Set4/73.png"},
+{"Name":"Endpoint","Icon":"Set2/1.png"},
+{"Name":"Entity","Icon":"Set1/16.png"},
+{"Name":"Entry","Icon":"Set4/76.png"},
+{"Name":"Enum","Icon":"Set4/58.png"},
+{"Name":"Enumeration","Icon":"Set4/58.png"},
+{"Name":"Event","Icon":"Set4/6.png"},
+{"Name":"Exception","Icon":"Set4/31.png"},
+{"Name":"ExecutableStateMachine","Icon":"Set4/51.png"},
+{"Name":"ExecutionEnvironment","Icon":"Set4/2.png"},
+{"Name":"Exit","Icon":"Set4/77.png"},
+{"Name":"ExposeInterface","Icon":"Set5/10.png"},
+{"Name":"Extend","Icon":"Arrows/25.png"},
+{"Name":"Extension","Icon":"Arrows/33.png"},
+{"Name":"FailedTests","Icon":"Set1/16.png"},
+{"Name":"Feature","Icon":"Set4/83.png"},
+{"Name":"Final","Icon":"Set4/78.png"},
+{"Name":"FlowFinal","Icon":"Set4/77.png"},
+{"Name":"ForkJoin","Icon":"Set5/18.png"},
+{"Name":"Form","Icon":"Set4/5.png"},
+{"Name":"Fragment","Icon":"Set4/24.png"},
+{"Name":"Functional","Icon":"Set1/20.png"},
+{"Name":"FunctionalRequirements","Icon":"Set4/16.png"},
+{"Name":"Generalize","Icon":"Arrows/30.png"},
+{"Name":"Group","Icon":"Set1/16.png"},
+{"Name":"History","Icon":"Set4/80.png"},
+{"Name":"HorizontalLine","Icon":"Set4/5.png"},
+{"Name":"Hyperlink","Icon":"Set5/6.png"},
+{"Name":"Image","Icon":"Set5/14.png"},
+{"Name":"ImageAsset","Icon":"Set4/51.png"},
+{"Name":"Implementation","Icon":"Set1/20.png"},
+{"Name":"Implements","Icon":"Arrows/17.png"},
+{"Name":"Include","Icon":"Arrows/26.png"},
+{"Name":"Inerface","Icon":"Set4/1.png"},
+{"Name":"Information","Icon":"Set2/40.png"},
+{"Name":"InformationFlow","Icon":"Arrows/5.png"},
+{"Name":"InformationItem","Icon":"Set4/52.png"},
+{"Name":"Inheritance","Icon":"Arrows/30.png"},
+{"Name":"Initial","Icon":"Set2/1.png"},
+{"Name":"Interaction","Icon":"Set4/24.png"},
+{"Name":"Interface","Icon":"Set4/1.png"},
+{"Name":"InternalWorker","Icon":"Set4/7.png"},
+{"Name":"InterruptFlow","Icon":"Arrows/32.png"},
+{"Name":"Invokes","Icon":"Arrows/4.png"},
+{"Name":"Issue","Icon":"Set4/81.png"},
+{"Name":"Junction","Icon":"Set2/1.png"},
+{"Name":"Label","Icon":"Set4/5.png"},
+{"Name":"Lifeline","Icon":"Set4/9.png"},
+{"Name":"List","Icon":"Set4/5.png"},
+{"Name":"Manifest","Icon":"Arrows/27.png"},
+{"Name":"MasterDocument","Icon":"Set1/25.png"},
+{"Name":"MatrixSpecification","Icon":"Set4/51.png"},
+{"Name":"MDGTechnology","Icon":"Set1/25.png"},
+{"Name":"Merge","Icon":"Set2/73.png"},
+{"Name":"Message","Icon":"Arrows/34.png"},
+{"Name":"MessageEndpoint","Icon":"Set2/1.png"},
+{"Name":"MessageLabel","Icon":"Set4/26.png"},
+{"Name":"MessagePart","Icon":"Set1/27.png"},
+{"Name":"Metaclass","Icon":"Set1/16.png"},
+{"Name":"ModalDocument","Icon":"Set1/16.png"},
+{"Name":"ModalGroup","Icon":"Set1/16.png"},
+{"Name":"ModalView","Icon":"Set1/16.png"},
+{"Name":"Namespace","Icon":"Set5/11.png"},
+{"Name":"Nesting","Icon":"Arrows/38.png"},
+{"Name":"Node","Icon":"Set4/2.png"},
+{"Name":"NonFunctional","Icon":"Set1/20.png"},
+{"Name":"NonFunctionalRequirements","Icon":"Set4/16.png"},
+{"Name":"Note","Icon":"Set5/1.png"},
+{"Name":"NoteLink","Icon":"Arrows/1.png"},
+{"Name":"Object","Icon":"Set4/7.png"},
+{"Name":"ObjectFlow","Icon":"Arrows/31.png"},
+{"Name":"Occurrence","Icon":"Arrows/6.png"},
+{"Name":"OutputArtifact","Icon":"Set4/51.png"},
+{"Name":"Package","Icon":"Set1/25.png"},
+{"Name":"PackageImport","Icon":"Arrows/8.png"},
+{"Name":"PackageMerge","Icon":"Arrows/9.png"},
+{"Name":"PackagingComponent","Icon":"Set4/54.png"},
+{"Name":"Panel","Icon":"Set4/5.png"},
+{"Name":"Part","Icon":"Set4/42.png"},
+{"Name":"Partition","Icon":"Set1/28.png"},
+{"Name":"Port","Icon":"Set5/15.png"},
+{"Name":"PortType","Icon":"Set4/1.png"},
+{"Name":"PortTypeOperation","Icon":"Set1/26.png"},
+{"Name":"Precedes","Icon":"Arrows/7.png"},
+{"Name":"Primitive","Icon":"Set4/56.png"},
+{"Name":"Process","Icon":"Set2/43.png"},
+{"Name":"Profile","Icon":"Set1/25.png"},
+{"Name":"Radio","Icon":"Set4/5.png"},
+{"Name":"RadioLeft","Icon":"Set4/5.png"},
+{"Name":"ReadingList","Icon":"Set4/51.png"},
+{"Name":"Realize","Icon":"Arrows/17.png"},
+{"Name":"Receive","Icon":"Set4/6.png"},
+{"Name":"Recursion","Icon":"Arrows/37.png"},
+{"Name":"Region","Icon":"Set4/29.png"},
+{"Name":"Regulatory","Icon":"Set1/20.png"},
+{"Name":"ReportPackage","Icon":"Set1/25.png"},
+{"Name":"ReportSpecification","Icon":"Set4/51.png"},
+{"Name":"Representation","Icon":"Arrows/10.png"},
+{"Name":"Represents","Icon":"Arrows/10.png"},
+{"Name":"Requirement","Icon":"Set1/20.png"},
+{"Name":"RequirementsChecklist","Icon":"Set4/51.png"},
+{"Name":"Risk","Icon":"Set4/84.png"},
+{"Name":"RoleBinding","Icon":"Arrows/11.png"},
+{"Name":"Schema","Icon":"Set5/12.png"},
+{"Name":"Screen","Icon":"Set4/4.png"},
+{"Name":"Security","Icon":"Set1/20.png"},
+{"Name":"SelfMessage","Icon":"Arrows/35.png"},
+{"Name":"Send","Icon":"Set4/6.png"},
+{"Name":"Service","Icon":"Set4/1.png"},
+{"Name":"Signal","Icon":"Set4/48.png"},
+{"Name":"SimpleType","Icon":"Set1/16.png"},
+{"Name":"StandardChart","Icon":"Set1/16.png"},
+{"Name":"State","Icon":"Set2/45.png"},
+{"Name":"StateContinuation","Icon":"Set4/46.png"},
+{"Name":"StateLifeline","Icon":"Set4/44.png"},
+{"Name":"StateMachine","Icon":"Set2/66.png"},
+{"Name":"Stereotype","Icon":"Set4/35.png"},
+{"Name":"StructuredActivity","Icon":"Set2/66.png"},
+{"Name":"Substitution","Icon":"Arrows/12.png"},
+{"Name":"Synch","Icon":"Set4/79.png"},
+{"Name":"SysMLSimConfiguration","Icon":"Set4/51.png"},
+{"Name":"Table","Icon":"Set4/3.png"},
+{"Name":"TaggedValue","Icon":"Arrows/28.png"},
+{"Name":"Task","Icon":"Set4/85.png"},
+{"Name":"TemplateBinding","Icon":"Arrows/16.png"},
+{"Name":"Terminate","Icon":"Set5/16.png"},
+{"Name":"Test","Icon":"Set4/86.png"},
+{"Name":"TestCase","Icon":"Set1/18.png"},
+{"Name":"TestCut","Icon":"Set4/7.png"},
+{"Name":"TestSet","Icon":"Set1/18.png"},
+{"Name":"TestSuite","Icon":"Set1/18.png"},
+{"Name":"Text","Icon":"Set4/5.png"},
+{"Name":"TextElement","Icon":"Set5/3.png"},
+{"Name":"TimeSeries","Icon":"Set1/16.png"},
+{"Name":"TimeSeriesChart","Icon":"Set1/16.png"},
+{"Name":"TotalChanges","Icon":"Set1/16.png"},
+{"Name":"TotalRequirements","Icon":"Set1/16.png"},
+{"Name":"Trace","Icon":"Arrows/14.png"},
+{"Name":"Transition","Icon":"Arrows/29.png"},
+{"Name":"Trigger","Icon":"Set4/40.png"},
+{"Name":"UIControl","Icon":"Set4/5.png"},
+{"Name":"Union","Icon":"Set1/16.png"},
+{"Name":"UnrealizedRequirements","Icon":"Set1/16.png"},
+{"Name":"Usage","Icon":"Arrows/15.png"},
+{"Name":"Use","Icon":"Arrows/20.png"},
+{"Name":"UseCase","Icon":"Set1/18.png"},
+{"Name":"User","Icon":"Set1/20.png"},
+{"Name":"UserStory","Icon":"Set4/74.png"},
+{"Name":"ValueLifeline","Icon":"Set4/45.png"},
+{"Name":"VerticalLine","Icon":"Set4/5.png"},
+{"Name":"Worker","Icon":"Set4/7.png"},
+{"Name":"WorkingSet","Icon":"Set4/51.png"},
+{"Name":"WSDL","Icon":"Set5/13.png"},
+{"Name":"XMLFile","Icon":"Set4/51.png"},
+{"Name":"XMLTransform","Icon":"Set2/43.png"},
+{"Name":"XSD","Icon":"Set4/51.png"},
+{ "Name": "XSLT", "Icon": "Set4/51.png" }];
+
+			var dataArch3 = [{ "Name": "ApplicationComponent", "Icon": "Set6/1.png" },
+{ "Name": "ApplicationCollaboration", "Icon": "Set6/2.png" },
+{ "Name": "ApplicationInterface", "Icon": "Set6/3.png" },
+{ "Name": "ApplicationProcess", "Icon": "Set6/4.png" },
+{ "Name": "ApplicationFunction", "Icon": "Set6/5.png" },
+{ "Name": "ApplicationInteraction", "Icon": "Set6/6.png" },
+{ "Name": "ApplicationService", "Icon": "Set6/7.png" },
+{ "Name": "ApplicationEvent", "Icon": "Set6/8.png" },
+{ "Name": "DataObject", "Icon": "Set6/9.png" },
+{ "Name": "BusinessActor", "Icon": "Set6/10.png" },
+{ "Name": "BusinessRole", "Icon": "Set6/11.png" },
+{ "Name": "BusinessCollaboration", "Icon": "Set6/12.png" },
+{ "Name": "BusinessInterface", "Icon": "Set6/13.png" },
+{ "Name": "BusinessProcess", "Icon": "Set6/14.png" },
+{ "Name": "BusinessFunction", "Icon": "Set6/15.png" },
+{ "Name": "BusinessInteraction", "Icon": "Set6/16.png" },
+{ "Name": "BusinessService", "Icon": "Set6/17.png" },
+{ "Name": "BusinessEvent", "Icon": "Set6/18.png" },
+{ "Name": "BusinessObject", "Icon": "Set6/19.png" },
+{ "Name": "Contract", "Icon": "Set6/20.png" },
+{ "Name": "Representation", "Icon": "Set6/21.png" },
+{ "Name": "Product", "Icon": "Set6/22.png" },
+{ "Name": "WorkPackage", "Icon": "Set6/23.png" },
+{ "Name": "ImplementationEvent", "Icon": "Set6/24.png" },
+{ "Name": "Deliverable", "Icon": "Set6/25.png" },
+{ "Name": "Plateau", "Icon": "Set6/26.png" },
+{ "Name": "Gap", "Icon": "Set6/27.png" },
+{ "Name": "Stakeholder", "Icon": "Set6/28.png" },
+{ "Name": "Driver", "Icon": "Set6/29.png" },
+{ "Name": "Assessment", "Icon": "Set6/30.png" },
+{ "Name": "Value", "Icon": "Set6/31.png" },
+{ "Name": "Meaning", "Icon": "Set6/32.png" },
+{ "Name": "Goal", "Icon": "Set6/33.png" },
+{ "Name": "Outcome", "Icon": "Set6/34.png" },
+{ "Name": "Principle", "Icon": "Set6/35.png" },
+{ "Name": "Requirement", "Icon": "Set6/36.png" },
+{ "Name": "Constraint", "Icon": "Set6/37.png" },
+{ "Name": "Resource", "Icon": "Set6/38.png" },
+{ "Name": "Capability", "Icon": "Set6/39.png" },
+{ "Name": "CourseOfAction", "Icon": "Set6/40.png" },
+{ "Name": "Node", "Icon": "Set6/41.png" },
+{ "Name": "Device", "Icon": "Set6/42.png" },
+{ "Name": "SystemSoftware", "Icon": "Set6/43.png" },
+{ "Name": "TechnologyCollaboration", "Icon": "Set6/44.png" },
+{ "Name": "TechnologyInterface", "Icon": "Set6/45.png" },
+{ "Name": "Path", "Icon": "Set6/46.png" },
+{ "Name": "CommunicationNetwork", "Icon": "Set6/47.png" },
+{ "Name": "TechnologyProcess", "Icon": "Set6/48.png" },
+{ "Name": "TechnologyFunction", "Icon": "Set6/49.png" },
+{ "Name": "TechnologyInteraction", "Icon": "Set6/50.png" },
+{ "Name": "TechnologyService", "Icon": "Set6/51.png" },
+{ "Name": "TechnologyEvent", "Icon": "Set6/52.png" },
+{ "Name": "TechnologyObject", "Icon": "Set6/53.png" },
+{ "Name": "Artifact", "Icon": "Set6/54.png" },
+{ "Name": "Facility", "Icon": "Set6/55.png" },
+{ "Name": "Equipment", "Icon": "Set6/56.png" },
+{ "Name": "DistributionNetwork", "Icon": "Set6/57.png" },
+{ "Name": "Material", "Icon": "Set6/58.png" },
+{ "Name": "Location", "Icon": "Set6/59.png" },
+{ "Name": "Composition", "Icon": "Arrows/40.png" },
+{ "Name": "Aggregation", "Icon": "Arrows/39.png" },
+{ "Name": "Realization", "Icon": "Set2/74.png" },
+{ "Name": "Assignment", "Icon": "Set6/60.png" },
+{ "Name": "Serving", "Icon": "Arrows/21.png" },
+{ "Name": "Access", "Icon": "Arrows/2.png" },
+{ "Name": "Association", "Icon": "Set2/75.png" },
+{ "Name": "Influence", "Icon": "Arrows/4.png" },
+{ "Name": "Triggering", "Icon": "Arrows/33.png" },
+{ "Name": "Flow", "Icon": "Arrows/2.png" },
+{ "Name": "Specialization", "Icon": "Arrows/30.png" },
+{ "Name": "Junction", "Icon": "Set2/1.png" },
+{ "Name": "Grouping", "Icon": "Set2/53.png" }];
+
+
+
+            //format :: pbicon-Archimate_ArchiMate_
+            //format :: pbicon-Archimate2_ArchiMate_
+
+			var dataArch1And2 = [{ "Name": "BusinessActor", "Icon": "Set2/10.png" },
+{ "Name": "BusinessRole", "Icon": "Set2/18.png" },
+{ "Name": "BusinessCollaboration", "Icon": "Set2/11.png" },
+{ "Name": "BusinessInterface", "Icon": "Set2/15.png" },
+{ "Name": "Location", "Icon": "Set2/32.png" },
+{ "Name": "BusinessObject", "Icon": "Set2/16.png" },
+{ "Name": "BusinessProcess", "Icon": "Set2/17.png" },
+{ "Name": "BusinessFunction", "Icon": "Set2/13.png" },
+{ "Name": "BusinessInteraction", "Icon": "Set2/14.png" },
+{ "Name": "BusinessEvent", "Icon": "Set2/12.png" },
+{ "Name": "BusinessService", "Icon": "Set2/19.png" },
+{ "Name": "Representation", "Icon": "Set2/39.png" },
+{ "Name": "Meaning", "Icon": "Set2/33.png" },
+{ "Name": "ArchiMate_Value", "Icon": "Set2/43.png" },
+{ "Name": "ArchiMate_Product", "Icon": "Set2/38.png" },
+{ "Name": "ArchiMate_Contract", "Icon": "Set2/22.png" },
+{ "Name": "ArchiMate_Composition", "Icon": "Set2/78.png" },
+{ "Name": "ArchiMate_Aggregation", "Icon": "Set2/78.png" },
+{ "Name": "ArchiMate_Assignment", "Icon": "/" },
+{ "Name": "ArchiMate_Realization", "Icon": "Set2/74.png" },
+{ "Name": "ArchiMate_UsedBy", "Icon": "/" },
+{ "Name": "ArchiMate_Access", "Icon": "Set2/76.png" },
+{ "Name": "ArchiMate_Association", "Icon": "Set2/75.png" },
+{ "Name": "ArchiMate_Triggering", "Icon": "Set2/77.png" },
+{ "Name": "ArchiMate_Flow", "Icon": "Set2/74.png" },
+{ "Name": "ArchiMate_Grouping", "Icon": "Set2/53.png" },
+{ "Name": "ArchiMate_Junction", "Icon": "Set2/1.png" },
+{ "Name": "ArchiMate_Specialization", "Icon": "Set2/77.png" },
+{ "Name": "ArchiMate_ApplicationComponent", "Icon": "Set2/3.png" },
+{ "Name": "ArchiMate_ApplicationCollaboration", "Icon": "Set2/2.png" },
+{ "Name": "ArchiMate_DataObject", "Icon": "Set2/23.png" },
+{ "Name": "ArchiMate_ApplicationFunction", "Icon": "Set2/4.png" },
+{ "Name": "ArchiMate_ApplicationInteraction", "Icon": "Set2/5.png" },
+{ "Name": "ArchiMate_ApplicationService", "Icon": "Set2/7.png" },
+{ "Name": "ArchiMate_Node", "Icon": "Set2/35.png" },
+{ "Name": "ArchiMate_Device", "Icon": "Set2/25.png" },
+{ "Name": "ArchiMate_SystemSoftware", "Icon": "Set2/42.png" },
+{ "Name": "ArchiMate_InfrastructureInterface", "Icon": "Set2/30.png" },
+{ "Name": "ArchiMate_Network", "Icon": "Set2/34.png" },
+{ "Name": "ArchiMate_CommunicationPath", "Icon": "Set2/20.png" },
+{ "Name": "ArchiMate_InfrastructureFunction", "Icon": "Set2/29.png" },
+{ "Name": "ArchiMate_InfrastructureService", "Icon": "Set2/31.png" },
+{ "Name": "ArchiMate_Artifact", "Icon": "Set2/8.png" },
+{ "Name": "ArchiMate_Stakeholder", "Icon": "Set2/41.png" },
+{ "Name": "ArchiMate_Driver", "Icon": "Set2/26.png" },
+{ "Name": "ArchiMate_Assessment", "Icon": "Set2/9.png" },
+{ "Name": "ArchiMate_Goal", "Icon": "Set2/28.png" },
+{ "Name": "ArchiMate_Requirement", "Icon": "Set2/40.png" },
+{ "Name": "ArchiMate_Constraint", "Icon": "Set2/21.png" },
+{ "Name": "ArchiMate_Principle", "Icon": "Set2/37.png" },
+{ "Name": "ArchiMate_WorkPackage", "Icon": "Set2/44.png" },
+{ "Name": "ArchiMate_Deliverable", "Icon": "Set2/24.png" },
+{ "Name": "ArchiMate_Influence", "Icon": "Set2/74.png" },
+{ "Name": "ArchiMate_Plateau", "Icon": "Set2/36.png" },
+{ "Name": "ArchiMate_Gap", "Icon": "Set2/27.png" },
+{ "Name": "ArchiMate_ApplicationInterface", "Icon": "Set2/30.png" }];
+
+
+            //format :: pbicon-Archimate_ArchiMate_
+			var dataArch1 = [{ "Name": "Object", "Icon": "Set2/59.png" },
+{ "Name": "Process", "Icon": "Set2/60.png" },
+
+{ "Name": "Function", "Icon": "Set2/52.png" },
+{ "Name": "Interaction", "Icon": "Set2/54.png" },
+{ "Name": "Service", "Icon": "Set2/64.png" },
+{ "Name": "Event", "Icon": "Set2/51.png" },
+{ "Name": "Actor", "Icon": "Set2/46.png" },
+{ "Name": "Role", "Icon": "Set2/63.png" },
+{ "Name": "Collaboration", "Icon": "Set2/48.png" },
+{ "Name": "Interface", "Icon": "Set2/55.png" },
+{ "Name": "Component", "Icon": "Set2/49.png" },
+
+{ "Name": "Software", "Icon": "Set2/65.png" },
+{ "Name": "Specialisation", "Icon": "Set2/77.png" },
+{ "Name": "NetworkConnector", "Icon": "/" }];
+
+            //format :: pbicon-Archimate_
+
+			var dataSingleArch1 = [{ "Name": "Business_Diagram", "Icon": "Set1/1.png" },
+{ "Name": "Application_Diagram", "Icon": "Set1/1.png" },
+{ "Name": "Technology_Diagram", "Icon": "Set1/1.png" },
+{ "Name": "Motivation_Diagram", "Icon": "Set1/1.png" },
+{ "Name": "Implementation_Diagram", "Icon": "Set1/1.png" },
+{ "Name": "Archimate_Diagram", "Icon": "Set1/1.png" }]
+
+            //format :: pbicon-Whiteboard_ whiteBoard
+
+			var whiteBoard = [{ "Name": "circle", "Icon": "Set3/1.png" },
+{ "Name": "oval", "Icon": "Set3/10.png" },
+{ "Name": "square", "Icon": "Set3/15.png" },
+{ "Name": "rectangle", "Icon": "Set3/11.png" },
+{ "Name": "roundrect", "Icon": "Set3/14.png" },
+{ "Name": "triangle", "Icon": "Set3/16.png" },
+{ "Name": "cloud", "Icon": "Set3/2.png" },
+{ "Name": "diamond", "Icon": "Set3/5.png" },
+{ "Name": "cube", "Icon": "Set3/3.png" },
+{ "Name": "cylinder", "Icon": "Set3/4.png" },
+{ "Name": "uparrow", "Icon": "Set3/18.png" },
+{ "Name": "downarrow", "Icon": "Set3/7.png" },
+{ "Name": "leftarrow", "Icon": "Set3/9.png" },
+{ "Name": "rightarrow", "Icon": "Set3/13.png" },
+{ "Name": "uparrowthin", "Icon": "Set3/17.png" },
+{ "Name": "downarrowthin", "Icon": "Set3/6.png" },
+{ "Name": "leftarrowthin", "Icon": "Set3/8.png" },
+{ "Name": "rightarrowthin", "Icon": "Set3/12.png" },
+{ "Name": "callout", "Icon": "/" },
+{ "Name": "line", "Icon": "/" },
+{ "Name": "directedLine", "Icon": "/" },
+{ "Name": "dashedLine", "Icon": "/" },
+{ "Name": "directedDashedLine", "Icon": "/" },
+{ "Name": "curve", "Icon": "/" },
+{ "Name": "directedCurve", "Icon": "/" },
+{ "Name": "WhiteboardDiagram_Diagram", "Icon": "Set1/1.png" },
+{ "Name": "Hand-drawnDiagram_Diagram", "Icon": "Set1/1.png" }, ];
+            
+
+			var dataHTML = '', data = '';
+			var JsDataHTML = '', JsData = '';
+			
+            /*
+            // UML Full
+			for(i=0;i<dataJSON.length;i++){
+				data = dataJSON[i];
+				dataHTML += ".jstree-default li[data-pbicon^='pbicon-UML_" + data.Name + "'] > a .jstree-themeicon,";
+				dataHTML += "<br/>";
+				dataHTML += ".pbicon-UML_" + data.Name + " { background-image: url(img/" + data.Icon + "); }";
+				dataHTML += "<br/>";
+				dataHTML += ".pbicon-UML_" + data.Name + "_Full { background-image: url(img/full/" + data.Icon + "); }";
+				dataHTML += "<br/><br/>";
+			}
+
+            // Archimate 3 Default
+            j = 1;
+            for (i = 275; i < 335; i++) {
+                dataHTML += ".pbicon-" + i + " { background-image: url(img/Set6/" + j + ".png); }";
+                dataHTML += "<br/>";
+                j++;
+            }
+            */
+
+            /*// Archimate 3 Full
+            for (i = 0; i < dataArch3.length; i++) {
+                data = dataArch3[i];
+                dataHTML += ".jstree-default li[data-pbicon^='pbicon-ArchiMate3_ArchiMate_" + data.Name + "'] > a .jstree-themeicon,";
+                dataHTML += "<br/>";
+                dataHTML += ".pbicon-ArchiMate3_ArchiMate_" + data.Name + " { background-image: url(img/" + data.Icon + "); }";
+                dataHTML += "<br/>";
+                dataHTML += ".pbicon-ArchiMate3_ArchiMate_" + data.Name + "_Full { background-image: url(img/full/" + data.Icon + "); }";
+                dataHTML += "<br/><br/>";
+            }
+            */
+
+
+            // UML Full JAVASCRIPT
+			var Set = "", ImgName ="";
+			
+            JsDataHTML += " /* UML :: Icon */ <br/><br/>";
+           /* for (i = 0; i < dataJSON.length; i++) {
+                JsData = dataJSON[i];
+                Set = JsData.Icon.split('/')[0];
+                ImgName = JsData.Icon.split('/')[1];
+
+                JsDataHTML += "nodeIconLst['pbicon-UML_" + JsData.Name + "'] = ['" + Set + "', '" + ImgName  + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-UML_" + JsData.Name + "_Full'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/><br/>";
+            }*/
+            
+            // Archimate 3 Full JAVASCRIPT
+            JsDataHTML += " /* Archimate 3 :: Icon */ <br/><br/>";
+            /*for (i = 0; i < dataArch3.length; i++) {
+                JsData = dataArch3[i];
+                Set = JsData.Icon.split('/')[0];
+                ImgName = JsData.Icon.split('/')[1];
+
+                JsDataHTML += "nodeIconLst['pbicon-ArchiMate3_ArchiMate_" + JsData.Name + "'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-ArchiMate3_ArchiMate_" + JsData.Name + "_Full'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/><br/>";
+            }*/
+
+            // Archimate 3 Full JAVASCRIPT
+			JsDataHTML += " /* Archimate 1 And 2 :: Icon */ <br/><br/>";
+            /*for (i = 0; i < dataArch1And2.length; i++) {
+                JsData = dataArch1And2[i];
+                Set = JsData.Icon.split('/')[0];
+                ImgName = JsData.Icon.split('/')[1];
+
+                JsDataHTML += "nodeIconLst['pbicon-Archimate_ArchiMate_" + JsData.Name + "'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-Archimate2_ArchiMate_" + JsData.Name + "'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-Archimate_ArchiMate_" + JsData.Name + "_Full'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-Archimate2_ArchiMate_" + JsData.Name + "_Full'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/><br/>";
+            }*/
+
+            JsDataHTML += " /* Archimate 1 :: Icon */ <br/><br/>";
+            /*for (i = 0; i < dataArch1.length; i++) {
+                JsData = dataArch1[i];
+                Set = JsData.Icon.split('/')[0];
+                ImgName = JsData.Icon.split('/')[1];
+
+                JsDataHTML += "nodeIconLst['pbicon-Archimate_ArchiMate_" + JsData.Name + "'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-Archimate_ArchiMate_" + JsData.Name + "_Full'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/><br/>";
+            }*/
+
+            JsDataHTML += " /* Archimate Diagram :: Icon */ <br/><br/>";
+            /*for (i = 0; i < dataSingleArch1.length; i++) {
+                JsData = dataSingleArch1[i];
+                Set = JsData.Icon.split('/')[0];
+                ImgName = JsData.Icon.split('/')[1];
+
+                JsDataHTML += "nodeIconLst['pbicon-Archimate_" + JsData.Name + "'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-Archimate_" + JsData.Name + "_Full'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/><br/>";
+            }*/
+
+            //format :: pbicon-Whiteboard_ whiteBoard
+
+            JsDataHTML += " /* Whiteboard :: Icon */ <br/><br/>";
+            for (i = 0; i < whiteBoard.length; i++) {
+                JsData = whiteBoard[i];
+                Set = JsData.Icon.split('/')[0];
+                ImgName = JsData.Icon.split('/')[1];
+
+                JsDataHTML += "nodeIconLst['pbicon-Whiteboard_" + JsData.Name + "'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/>";
+                JsDataHTML += "nodeIconLst['pbicon-Whiteboard_" + JsData.Name + "_Full'] = ['" + Set + "', '" + ImgName + "'];";
+                JsDataHTML += "<br/><br/>";
+            }
+
+            //$('.main p').html(dataHTML);
+            $('.main p').html(JsDataHTML);
+		});
+	</script>
+
+</html>

@@ -1,0 +1,354 @@
+{namespace Confluence.Templates.SoyTutorial}
+/**
+*/
+{template .listSelectedAjsParams}
+<section id="demo-dialog" class="aui-dialog2 aui-dialog2-small aui-layer custom-dialog" role="dialog" aria-hidden="true" data-aui-modal="true"
+         role="dialog"
+         aria-hidden="true">
+   <header class="aui-dialog2-header">
+      <h2 class="aui-dialog2-header-main">
+         <span class="pro-logo"></span>
+      </h2>
+      <a class="aui-dialog2-header-close" id="ProlCustomDialogClose"><span class="aui-icon aui-icon-small aui-iconfont-close-dialog ProlCustomDialogClose">Close</span></a>
+   </header>
+   <div class="aui-dialog2-content" id="ProlCustomDialog">
+   
+	  <div class="field-group field-repository">
+		<label for="repository">Repository</label>
+		<select id="repository" name="repository" class="text">
+		</select>
+	  </div>
+   
+      <div class="aui-pbtabs aui-tabs horizontal-tabs">
+         <ul class="tabs-menu">
+            <li class="menu-item  active-tab">
+               <a href="#tabs-example-first"><span class="icon-diagram"></span> Diagrams</a>
+            </li>
+            <li class="menu-item">
+               <a href="#tabs-example-second"><span class="icon-folder"></span>Packages</a>
+            </li>
+            <li class="menu-item">
+               <a href="#tabs-example-third"><span class="icon-element"></span> Elements</a>
+            </li>
+         </ul>
+         <div class="tabs-pane active-pane  item-filter-result" id="tabs-example-first">
+            <form class="aui">
+               <div class="field-group label-name">
+                  <input class="text" placeholder="Enter diagram name and click on Find" id="diagram-name" type="text" name="text-input">
+               </div>
+               <div class="field-group">
+                  <select class="select" id="diagram-stereo-type" name="diagram-stereo-type">
+                     <option value="">Select Stereotype</option>
+                  </select>
+               </div>
+               <div class="field-group">
+                  <select class="select" id="diagram-type" name="diagram-type">
+                     <option  value="">Diagram Type</option>
+                     <option  value="Activity">Activity</option>
+                     <option  value="Analysis">Analysis</option>
+                     <option  value="Collaboration">Collaboration</option>
+                     <option  value="Component">Component</option>
+                     <option  value="CompositeStructure">CompositeStructure</option>
+                     <option  value="Custom">Custom</option>
+                     <option  value="Deployment">Deployment</option>
+                     <option  value="InteractionOverview">InteractionOverview</option>
+                     <option  value="Logical">Logical</option>
+                     <option  value="Object">Object</option>
+                     <option  value="Package">Package</option>
+                     <option  value="Sequence">Sequence</option>
+                     <option  value="Statechart">Statechart</option>
+                     <option  value="Timing">Timing</option>
+                     <option  value="Use Case">Use Case</option>
+                  </select>
+               </div>
+               <input type="button" class="btn btn-primary btn-find" id="btn-diagram" value="Find">
+            </form>
+            <div class="filter-item">
+               <p class="Diag-count search-count" style="display:none;">Displaying <span id=offsetCount>0</span> of  <span id=totalCount>0</span>  Records </p>
+               <div class="filter-list">
+                  <div class="diag-loader dialog-loader" style="display:none;">
+                     <figure></figure>
+                  </div>
+                  <div class="all-item" id="Diag-Detail">
+                     <h4>Search for any EA diagrams</h4>
+                     <p>You can search for any EA diagram using their names from the connected EA model.</p>
+                  </div>
+                  <ul id="diagram-filter-item">
+                  </ul>
+                  <div class="diag-more item-more" style="display:none;"> <button class="aui-button btn-primary" id="Diag-ViewMore"> View More Diagrams <span class="aui-icon aui-icon-small aui-iconfont-arrow-down-small">Insert meaningful text here for accessibility</span> </button> </div>
+               </div>
+            </div>
+           <footer class="aui-dialog2-footer">
+    <div class="check-item">
+       <div class="check-item-content">
+          <label class="check-wrap">Children table
+          <input type="checkbox" id="showDiagramObjects" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right dia-obj">Show the list of objects on the diagram in a Table view</span>
+         </div>
+       </div>
+       <div class="check-item-content">
+          <label class="check-wrap"> Prolaborate links
+          <input type="checkbox" id="enableDiagramLink" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Allow users to go to Prolaborate by clicking on the objects</span>
+         </div>
+       </div>
+       <div class="check-item-content"> <!--new check box added to show/hide FQpath -DJ -V1.11-->
+          <label class="check-wrap"> Diagram Path
+          <input type="checkbox" id="enableDiagramPath" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show the path of Diagrams</span>
+         </div>
+       </div>
+       <div class="check-item-content"> <!--new check box added to show/hide border -DJ -V1.11-->
+          <label class="check-wrap"> Border
+          <input type="checkbox" id="enableDiagramBorder" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show a grey border around the Published content</span>
+         </div>
+       </div>
+      
+    </div>
+    <div class="aui-dialog2-footer-actions footer-confluence">
+       <button id="diagram-submit-button" class="aui-button btn-primary">Add</button>
+       <button id="dialog-cancel-button" class="aui-button btn-cancel aui-dialog2-header-close">Cancel</button>
+    </div>
+ </footer>
+
+
+         </div>
+         <div class="tabs-pane item-filter-result" id="tabs-example-second">
+            <form class="aui">
+               <div class="field-group label-name text-package">
+                  <input class="text" placeholder="Enter package name and click on Find" type="text" id="package-name" name="text-input">
+               </div>
+               <input type="button" class="btn btn-primary btn-find" id="btn-package" value="Find">
+            </form>
+            <div class="filter-item">
+               <p class="pkg-count search-count" style="display:none;">Displaying <span id="pkgOffsetCount">0</span> of  <span id="pkgTotalCount">0</span>  Records </p>
+               <div class="filter-list">
+                  <div class="pkg-loader dialog-loader" style="display:none;">
+                     <figure></figure>
+                  </div>
+                  <div class="all-item" id="Pkg-Detail">
+                     <h4>Search for any EA packages</h4>
+                     <p>You can search for any EA package using their names from the connected EA model.</p>
+                  </div>
+                  <ul id="package-filter-item">
+                  </ul>
+                  <div class="pkg-more item-more" style="display:none;"> <button class="aui-button btn-primary" id="Pkg-ViewMore"> View More packages <span class="aui-icon aui-icon-small aui-iconfont-arrow-down-small">Insert meaningful text here for accessibility</span> </button> </div>
+               </div>
+            </div>
+            <footer class="aui-dialog2-footer">
+               <div class="check-item">
+       <div class="check-item-content">
+          <label class="check-wrap">Children table
+          <input type="checkbox" id="showPackageChildren" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show the list of objects on the diagram in a Table view</span>
+         </div>
+         
+       </div>
+       <div class="check-item-content">
+          <label class="check-wrap"> Prolaborate links
+          <input type="checkbox" id="enablePackageChildLink" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Allow users to go to Prolaborate by clicking on the objects</span>
+         </div>
+       </div> 
+       <div class="check-item-content"> <!--new check box added to show/hide FQpath -DJ -V1.11-->
+          <label class="check-wrap"> Package Path
+          <input type="checkbox" id="enablePackagePath" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show the path of Packages</span>
+         </div>
+       </div>
+       <div class="check-item-content"> <!--new check box added to show/hide boder -DJ -V1.11-->
+          <label class="check-wrap"> Border
+          <input type="checkbox" id="enablePackageBorder" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show a grey border around the Published content</span>
+         </div>
+       </div>
+    </div>
+               <div class="aui-dialog2-footer-actions footer-confluence">
+                  <button id="package-submit-button" class="aui-button btn-primary">Add</button>
+                  <button id="dialog-cancel-button" class="aui-button btn-cancel aui-dialog2-header-close">Cancel</button>
+               </div>
+            </footer>
+         </div>
+         <div class="tabs-pane item-filter-result" id="tabs-example-third">
+            <form class="aui">
+               <div class="field-group label-name">
+                  <input class="text" placeholder="Enter element name and click on Find" type="text" id="element-name" name="text-input">
+               </div>
+               <div class="field-group">
+                  <select class="select" id="element-stereo-type" name="element-stereo-type">
+                     <option value="">Select Stereotype </option>
+                  </select>
+               </div>
+               <div class="field-group">
+                  <select class="select"  id="element-type" name="element-type">
+                     <option value="">Element Type</option>
+					 <option value="Action">Action</option>
+					 <option value="ActionPin">ActionPin</option>
+					 <option value="Activity">Activity</option>
+					 <option value="ActivityParameter">ActivityParameter</option>
+					 <option value="ActivityPartition">ActivityPartition</option>
+					 <option value="ActivityRegion">ActivityRegion</option>
+					 <option value="Actor">Actor</option>
+					 <option value="Artifact">Artifact</option>
+					 <option value="Association">Association</option>
+					 <option value="Boundary">Boundary</option>
+					 <option value="CentralBufferNode">CentralBufferNode</option>
+					 <option value="Change">Change</option>
+					 <option value="Class">Class</option>
+					 <option value="Collaboration">Collaboration</option>
+					 <option value="CollaborationOccurrence">CollaborationOccurrence</option>
+					 <option value="Comment">Comment</option>
+					 <option value="Component">Component</option>
+					 <option value="ConditionalNode">ConditionalNode</option>
+					 <option value="Constraint">Constraint</option>
+					 <option value="DataStore">DataStore</option>
+					 <option value="DataType">DataType</option>
+					 <option value="Decision">Decision</option>
+					 <option value="Defect">Defect</option>
+					 <option value="DeploymentSpecification">DeploymentSpecification</option>
+					 <option value="Device">Device</option>
+					 <option value="DiagramFrame">DiagramFrame</option>
+					 <option value="Entity">Entity</option>
+					 <option value="EntryPoint">EntryPoint</option>
+					 <option value="Enumeration">Enumeration</option>
+					 <option value="Event">Event</option>
+					 <option value="ExceptionHandler">ExceptionHandler</option>
+					 <option value="ExecutionEnvironment">ExecutionEnvironment</option>
+					 <option value="ExitPoint">ExitPoint</option>
+					 <option value="ExpansionNode">ExpansionNode</option>
+					 <option value="ExpansionRegion">ExpansionRegion</option>
+					 <option value="Feature">Feature</option>
+					 <option value="GUIElement">GUIElement</option>
+					 <option value="InformationItem">InformationItem</option>
+					 <option value="Interaction">Interaction</option>
+					 <option value="InteractionFragment">InteractionFragment</option>
+					 <option value="InteractionOccurrence">InteractionOccurrence</option>
+					 <option value="InteractionState">InteractionState</option>
+					 <option value="Interface">Interface</option>
+					 <option value="InterruptibleActivityRegion">InterruptibleActivityRegion</option>
+					 <option value="Issue">Issue</option>
+					 <option value="Label">Label</option>
+					 <option value="LoopNode">LoopNode</option>
+					 <option value="MergeNode">MergeNode</option>
+					 <option value="MessageEndpoint">MessageEndpoint</option>
+					 <option value="Node">Node</option>
+					 <option value="Note">Note</option>
+					 <option value="Object">Object</option>
+					 <option value="ObjectNode">ObjectNode</option>
+					 <option value="Package">Package</option>
+					 <option value="Parameter">Parameter</option>
+					 <option value="Part">Part</option>
+					 <option value="Port">Port</option>
+					 <option value="PrimitiveType">PrimitiveType</option>
+					 <option value="ProtocolStateMachine">ProtocolStateMachine</option>
+					 <option value="ProvidedInterface">ProvidedInterface</option>
+					 <option value="Region">Region</option>
+					 <option value="Report">Report</option>
+					 <option value="RequiredInterface">RequiredInterface</option>
+					 <option value="Requirement">Requirement</option>
+					 <option value="Risk">Risk</option>
+					 <option value="Screen">Screen</option>
+					 <option value="Sequence">Sequence</option>
+					 <option value="Signal">Signal</option>
+					 <option value="State">State</option>
+					 <option value="StateMachine">StateMachine</option>
+					 <option value="StateNode">StateNode</option>
+					 <option value="Synchronization">Synchronization</option>
+					 <option value="Task">Task</option>
+					 <option value="Test">Test</option>
+					 <option value="Text">Text</option>					 
+					 <option value="TimeLine">TimeLine</option>
+					 <option value="Trigger">Trigger</option>
+					 <option value="UMLDiagram">UMLDiagram</option>
+					 <option value="UseCase">UseCase</option>
+					 <option value="User">User</option>
+                  </select>
+               </div>
+               <input type="button" class="btn btn-primary btn-find" id="btn-element" value="Find"> 
+            </form>
+            <div class="filter-item">
+               <p class="Elm-count search-count" style="display:none;">Displaying <span id="ElmOffsetCount">0</span> of  <span id="ElmTotalCount">0</span>  Records </p>
+               <div class="filter-list">
+                  <div class="Elm-loader dialog-loader" style="display:none;">
+                     <figure></figure>
+                  </div>
+                  <div class="all-item" id="Elm-Detail">
+                     <h4>Search for any EA elements</h4>
+                     <p>You can search for any EA element using their names from the connected EA model.</p>
+                  </div>
+                  <ul id="element-filter-item">
+                  </ul>
+                  <div class="Elm-more item-more" style="display:none;"> <button class="aui-button btn-primary" id="Elm-ViewMore"> View More Elements <span class="aui-icon aui-icon-small aui-iconfont-arrow-down-small">Insert meaningful text here for accessibility</span> </button> </div>
+               </div>
+            </div>
+            <footer class="aui-dialog2-footer">
+               <div class="check-item">
+       <div class="check-item-content">
+          <label class="check-wrap">Children table
+          <input type="checkbox" id="showElementChildren" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show the list of objects on the diagram in a Table view</span>
+         </div>
+       </div>
+       <div class="check-item-content">
+          <label class="check-wrap"> Prolaborate links
+          <input type="checkbox" id="enableElementChildLink" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Allow users to go to Prolaborate by clicking on the objects</span>
+         </div>
+       </div> 
+       <div class="check-item-content"> <!--new check box added to show/hide FQpath -DJ -V1.11-->
+          <label class="check-wrap"> Element Path
+          <input type="checkbox" id="enableElementPath" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show the path of Elements</span>
+         </div>
+       </div>
+       <div class="check-item-content"> <!--new check box added to show/hide border -DJ -V1.11-->
+          <label class="check-wrap"> Border
+          <input type="checkbox" id="enableElementBorder" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <div class="tooltip">
+             <span class="tooltiptext tooltip-right">Show a grey border around the Published content</span>
+         </div>
+       </div>
+    </div>
+               <div class="aui-dialog2-footer-actions footer-confluence"><button id="element-submit-button" class="aui-button btn-primary">Add</button><button id="dialog-cancel-button" class="aui-button btn-cancel aui-dialog2-header-close">Cancel</button></div>
+            </footer>
+         </div>
+      </div>
+   </div>
+</section>
+{/template}

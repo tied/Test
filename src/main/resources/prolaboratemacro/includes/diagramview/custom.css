@@ -1,0 +1,425 @@
+﻿
+.pdDiagram .text-success 	{ color:#25a825; }
+.pdDiagram .text-warning 	{ color:#ff8400; }
+.pdDiagram .text-error,
+.pdDiagram .text-danger 	{ color:#ED3D3D; }
+.pdDiagram .text-primary 	{ color:#3A5795; }
+.pdDiagram .text-info 		{ color:#55ACEE; }
+.pdDiagram .text-theme 	    { color:#08A2EE; }
+
+.pdDiagram h2       { margin: 10px 0; word-wrap: break-word; }
+			
+.pdDiagram .pb-icon { height: 13px; margin-right: 4px; position: relative; top: -1px; }
+
+.form-control { font-size:13px; border-radius:0; padding:5px 8px; height:28px; color:#333; }
+
+.no-m 	{ margin:0; 		}	.m-xs 	{ margin:5px; 		}	.m-sm 	{ margin:10px; 		}	.m-md 	{ margin:15px; 		}	
+.m-lg 	{ margin:20px; 		}	.m-xl 	{ margin:30px; 		}	.m-xxl 	{ margin:50px; 		}
+
+.no-mt 	{ margin-top:0; 	}	.mt-xs 	{ margin-top:5px; 	}	.mt-sm 	{ margin-top:10px; 	}	.mt-md 	{ margin-top:15px; 	}
+.mt-lg 	{ margin-top:20px; 	}	.mt-xl 	{ margin-top:30px; 	}	.mt-xxl { margin-top:50px; 	}
+
+.no-ml 	{ margin-left:0; 	}	.ml-xs 	{ margin-left:5px; 	}	.ml-sm 	{ margin-left:10px; }	.ml-md 	{ margin-left:15px; }
+.ml-lg 	{ margin-left:20px; }	.ml-xl 	{ margin-left:30px; }	.ml-xxl { margin-left:50px; }	
+
+.no-mb 	{ margin-bottom:0; 		}	.mb-xs 	{ margin-bottom:5px; 	}	.mb-sm 	{ margin-bottom:10px; 	}	.mb-md 	{ margin-bottom:15px; 	}
+.mb-lg 	{ margin-bottom:20px; 	}	.mb-xl 	{ margin-bottom:30px; 	}	.mb-xxl { margin-bottom:50px; 	}
+
+.no-mr 	{ margin-right:0; 		}	.mr-xs 	{ margin-right:5px; 	}	.mr-sm 	{ margin-right:10px; 	}	.mr-md 	{ margin-right:15px; 	}	
+.mr-lg 	{ margin-right:20px; 	}	.mr-xl 	{ margin-right:30px; 	}	.mr-xxl { margin-right:50px; 	}
+			
+/*************************************************************/
+/* Map Area Style
+/*************************************************************/
+			
+.pdDiagramWrap * { box-sizing: border-box; }
+.pdDiagramWrap { background-color: #f2f3f4; }
+.pdDiagram 	{ height: 100%; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 10px 12px; }
+
+.elementFQPath      { min-height: 35px; padding: 9px 12px 7px; background-color:#fff; color:#AAA; margin-bottom:1px; }
+.elementFQPath i    { color:#ccc; padding: 0 5px; }
+			
+.DMapWrap 	{ background-color: #ffffff; height: 100%; position:relative; }
+			
+.mapAreaContainer   { height:500px; position: relative; overflow: hidden; /*border: 1px solid rgba(0,0,0,0.15);*/ margin: 0 0 10px; background-color: #FFF; }
+			
+.mapAreaContent     { float: left; width: calc(100% - 31px); height: 100%; min-height: 350px; overflow: auto; position: relative; z-index: 0; }
+.mapAreaContent     { -webkit-overflow-scrolling:touch; border-left: 1px solid rgba(0, 0, 0, 0.075); background-color: #ffffff; }
+.mapAreaImage       { height:100%; }
+.mapAreaImage table { position:relative; width:100%; height:100%; }
+.mapAreaImage table tr,
+.mapAreaImage table td { height:100%; }
+										
+.mapAreaAction 		{ float: left; height: 100%; width: 30px; background-color: #ffffff; }
+.mapAreaAction a        { color: #08A2EE !important; font-size: 14px; cursor: pointer; }
+.mapAreaAction a 	    { display: block; height: 30px; line-height: 30px; width: 30px; text-align: center; }
+.mapAreaAction a:focus 	{ /*color: #666;*/ }
+.mapAreaAction a:hover,
+.mapAreaAction a:active { color: #FFF !important; background-color: #08A2EE; outline: none; text-decoration: none; }
+.mapAreaAction .group 	{ border-bottom: 2px dotted rgba(0,0,0,0.25); }
+
+.mapAreaAction .fa:before { line-height: 30px; }
+
+.fa-code-b:before,
+.fa-code-slash:before   { font-size: 15px; }
+.fa-code-b:before,
+.fa-code-slash:before,
+.fa-comment-b:before,
+.fa-comment-slash:before{ line-height: 32px; }
+.fa-expand-box:before   { line-height: 30px; }
+			
+.mapAreaLoading 	{ position:relative; }
+.mapAreaLoader 		{ position:absolute; top:-50px; left:30px; right:0; text-align:center; z-index:10; }
+.mapAreaLoaderContent 	{ display:inline-block; margin:0 auto; padding:4px 10px; background-color:#FCD057; color:#454545; }
+.mapAreaLoaderContent 	{ box-shadow:0 1px 0 rgba(0,0,0,0.25); border-radius:0 0 4px 4px; }
+			
+.mapAreaLoading .mapAreaLoader 	{ top:0; }
+.mapAreaLoading .mapAreaImage 	{  }
+
+.dataHeightFix { overflow: auto; }
+
+/*************************************************************/
+/* Comment Bubble
+/*************************************************************/
+
+#DMapCommentBubbleContainer     { /*position:absolute; left:0; top:0; margin: 0 auto;*/ }
+
+.DMapBubble                     { position: absolute; left: 0; top: 0; z-index: 1; white-space: nowrap; }
+        
+.DMapBubble > div               { cursor: pointer; width: 40px; margin-top: 4px; font-size: 10px; border-radius: 4px; }
+.DMapBubble > div               { background-color: #FFF; color: #000; border: 1px solid #777; display: inline-block; }
+.DMapBubble > div + div         { margin-left: 2px; }
+.DMapBubble > div > span        { display: inline-block; height: 16px; vertical-align: top; text-align: center; }
+.DMapBubble > div .logo         { width: 16px; background-color: #777; }
+.DMapBubble > div .logo img     { width: 12px; }
+.DMapBubble > div .logo i,
+.DMapBubble > div .logo i:hover,
+.DMapBubble > div .logo i:focus { color: #FFF !important; }
+.DMapBubble > div .counter      { width: calc(100% - 16px); }
+
+div.DMapCommentBubble           { border-color: #08A2EE; }
+div.DMapCommentBubble .logo     { background-color: #08A2EE; }
+
+div.DMapProlaborateBubble       { border-color: #08A2EE; }
+div.DMapProlaborateBubble .logo { background-color: #08A2EE; }
+
+div.DMapJiraBubble              { border-color: #274970; }
+div.DMapJiraBubble .logo        { background-color: #274970; }
+
+div.DMapJamaBubble              { border-color: #FC4001; }
+div.DMapJamaBubble .logo        { background-color: #FC4001; }
+
+/*************************************************************/
+/* Connection Bubble
+/*************************************************************/
+
+#DMapConnectionBubbleContainer { /*position:absolute; left:0; top:0; margin: 0 auto;*/ }
+.DMapConnectionBubble { white-space: nowrap; margin: -30px 0 0 -14px; padding:5px; position: absolute; left: 0; top: 0; display:none; }
+.DMapConnectionBubble { font-size: 10px; width: 30px; text-align: center; }
+
+.DMapConnectionBubble i { font-size: 20px; position: absolute; left: 6px; top: 3px; /*text-shadow: 0 0 1px #333333;*/ }
+.DMapConnectionBubble i { text-shadow: -2px -2px 0 #e21d38, 2px -2px 0 #e21d38, -2px 2px 0 #e21d38, 2px 2px 0 #e21d38; }
+.DMapConnectionBubble i,
+.DMapConnectionBubble:hover i,
+.DMapConnectionBubble:focus i { color: #fcd057; }
+
+.DMapConnectionBubble > a { font-size: 11px; display:block; position:relative; }
+.DMapConnectionBubble > a,
+.DMapConnectionBubble > a:hover,
+.DMapConnectionBubble > a:focus,
+.DMapConnectionBubble:hover > a:hover,
+.DMapConnectionBubble:hover > a:focus { color:#333333; }
+
+.DMapConnectionBubble .dropdown-menu { left: -1px; top: 20px; min-width:420px; }
+.DMapConnectionBubble .dropdown-menu li {  }
+.DMapConnectionBubble .dropdown-menu li a { display:inline-block; min-width:40px; padding-right:7px; padding-left:7px; }
+
+.DMapConnectorItem              { display:table; width:100%; }
+.DMapConnectorItem:hover,
+.DMapConnectorItem:focus        { background-color:#f6f6f6; }
+.DMapConnectorItem > a          { display:table-cell !important; }
+.DMapConnectorItem > a label    { cursor:pointer; }
+.DMapConnectorItemOverview      { padding-left:30px !important; cursor:default; }
+.DMapConnectorItemAttribute     { width:40px; }
+.DMapConnectorItemComments      { width:40px; }
+.DMapConnectorItemComments  .labelCommentCount {  }
+
+.DMapConnectionBubble.open { display:block !important; }
+
+.label-skyblue { background-color: #e2eff5; color: #333333; box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25); }
+
+
+/*************************************************************/
+/* Datatables
+/*************************************************************/
+    
+.dataListWrap { margin: 0 0 30px; }
+
+.dataTables_length,
+.dataTables_info { display: inline-block; margin-right: 20px; }
+
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting_asc::after,
+table.dataTable thead .sorting_desc::after,
+table.dataTable thead .sorting_asc_disabled::after,
+table.dataTable thead .sorting_desc_disabled::after { font-family: FontAwesome; }
+
+table.dataTable thead .sorting:after        { content: "\f0dc"; }
+table.dataTable thead .sorting_asc:after    { content: "\f160"; }
+table.dataTable thead .sorting_desc:after   { content: "\f161"; }
+
+.pagination > .active > a,
+.pagination > .active > span { background-color: #08A2EE; border-color: #08A2EE; }
+.pagination > .active > a,
+.pagination > .active > span { background-color: #08A2EE; border-color: #08A2EE; }
+
+    
+/*************************************************************/
+/* Document View
+/*************************************************************/
+
+#viewAllList        { position:relative; display: table; width: 100%; margin: 0 0 30px; }
+#viewAllListAction,
+#viewAllListItems   { padding: 15px 10px; min-height: 100%; display: table-cell; }
+#viewAllListAction  { width: 120px; border-right: 1px solid rgba(0,0,0,0.075); }
+#viewAllListItems   { margin: 0 0 0 120px; }
+
+.docViewListItem                { padding: 0 0 12px 45px; position: relative; }
+.docViewListItem + div          { margin: 15px 0 0; }
+.docViewListItem:before         { content: ''; position: absolute; left: -130px; bottom: 0; z-index: 10; }
+.docViewListItem:before         { width: calc(100% + 140px); border-bottom: 1px solid rgba(0,0,0,0.15); }
+
+.docViewListItemTitle           { font-size: 21px !important; margin: 0 0 8px !important; }
+.docViewListItemTitle a         { color:#08A2EE !important; }
+.docViewListItemTitle a:hover,
+.docViewListItemTitle a:focus   { color:#08A2EE !important; text-decoration:underline; }
+
+.docViewListItemNote            { color:#545454; display:block; }
+.docViewListItemNote + a        { margin-top: 10px; padding-right: 5px; text-align: right; }
+
+.docViewListItemIcon            { position:absolute; left: 6px; display: inline-block; overflow: hidden; margin-bottom: -5px; padding: 1px 4px 6px 0; }
+.docViewListItemIcon            { border: 1px solid rgba(0, 0, 0, 0.075); background-color:rgba(0, 0, 0, 0.03); }
+.docViewListItemIcon > .pbicon  { float:left; }
+.docViewListItemIcon > .fa      { float:left; position:relative; font-size: 18px; left: 1px; text-align: right; top: 2px; width: 20px; }
+    
+.docViewListItemAction          { position: absolute; left: -130px; top: 2px; text-align: right; }
+.docViewListItemAction .btn         { width: 20px; height: 20px; line-height: 19px; padding: 0; border: none; border-radius: 4px; }
+.docViewListItemAction .btn i       { font-size: 10px; }
+.docViewListItemAction .btn i:before{ line-height: 20px; }
+.docViewListItemAction .btn span    { position: absolute; right: 0; top: 0; height: 100%; width: calc(100% - 24px); text-align: center; }
+.docViewListItemAction .btn span    { font-size: 10px; color: #08a2ee; background-color: #FFF; border-radius: 0 4px 4px 0; border: 1px solid #08a2ee; }
+
+.docViewListItemAction .btn.btn-cmt { width: 50px; text-align: left; padding-left: 7px; position: relative; margin-right: 8px; }
+
+.docViewListItemAction .tooltip { white-space: nowrap; }
+.docViewListItemAction .tooltip .tooltip-inner { white-space:nowrap; max-width:none; }
+
+.btn        { background-image: none; box-shadow: none; text-shadow: none; border-radius: 0; padding-top: 5px; padding-bottom: 5px; font-size: 13px; }
+.btn-blue   { background-color: #08a2ee; color: #FFF; border: 1px solid rgba(0, 0, 0, 0.05); }
+.btn-blue:hover,
+.btn-blue:focus { background-color: #46B9F2; color: #FFF; }
+
+/*************************************************************/
+/* Overview Container : Collapse
+/*************************************************************/
+
+.childrenGrouping { position: relative; margin-bottom:10px; background-color: #ffffff; }
+
+.childrenGroupingValue { padding: 10px 12px; text-align:right; overflow:hidden; background-color: #f9f9f9; }
+.childrenGroupingValue { /*border-top: 1px solid rgba(0, 0, 0, 0.1);*/ border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.childrenGroupingValue button { background-color: #ffffff; border: 1px solid #cccccc; padding: 2px 8px; }
+.childrenGroupingValue button:hover,
+.childrenGroupingValue button:focus { border: 1px solid #08A2EE; color: #08A2EE; }
+.childrenGroupingValue button.selected,
+.childrenGroupingValue button.selected:hover,
+.childrenGroupingValue button.selected:focus { border: 1px solid #08A2EE; background-color: #08A2EE; color:#fff; }
+.childrenGroupingValue h5 { font-size: 13px; font-weight: 600; margin:0; float: left; }
+
+.childrenGroupingList { padding: 13px 13px 0; }
+.childrenGroupingList .panel { margin-bottom:13px; }
+
+.childrenGroupingCollapse .childrenGroupingValue { cursor:pointer; position:relative; }
+.childrenGroupingCollapse .childrenGroupingValue:before { font-size:24px; position:absolute; right:10px; top:1px; color:#08A2EE; }
+.childrenGroupingCollapse .childrenGroupingValue:before { content:"+"; }
+.childrenGroupingCollapse .childrenGroupingList { max-height:0; overflow:hidden; padding:0; }
+.childrenGroupingCollapse .childrenGroupingList {
+    -webkit-transition: max-height .4s; /* Safari */
+    -webkit-transition-timing-function: linear; /* Safari */
+    transition: max-height .4s;
+    transition-timing-function: linear;
+}
+.childrenGroupingCollapse .childrenGroupingList > div { margin: 13px 13px 0; }
+    
+.childrenGroupingCollapse.open .childrenGroupingValue {  }
+.childrenGroupingCollapse.open .childrenGroupingValue:before { content:"-"; font-size: 29px; right: 13px; top: -6px; }
+.childrenGroupingCollapse.open .childrenGroupingList { max-height:5000px; overflow:visible; }
+
+.childrenGroupingBy { margin: 0 0 13px; text-align: right; }
+
+.childrenGroupingAction { margin: -6px -6px -6px 0; }
+.childrenGroupingAction button { background-color: #ffffff; border: none; padding: 7px 12px 6px; }
+.childrenGroupingAction button:hover,
+.childrenGroupingAction button:focus { border: none; color:#FFF; }
+.childrenGroupingAction .btn-disabled           { background: #9E9FA0 !important; color:#FFF; }
+.childrenGroupingAction .btn-disabled:hover,
+.childrenGroupingAction .btn-disabled:focus     { background: #B8BABC !important; color:#FFF; }
+.childrenGroupingAction .btn-disabled.disabled  { background: #558908 !important; opacity:1; }
+
+.childrenGroupingAction .btn-default        { background-color: #EEE; }
+.childrenGroupingAction .btn-default:hover,
+.childrenGroupingAction .btn-default:focus  { background-color: #DDD; }
+
+.childrenElementTable                { min-height:150px; }
+.childrenElementTable.PosRel table   { display:none; }
+.childrenElementTable .loader        { top:0 !important; bottom:0 !important; }
+
+.elementTraceabilityDetails,
+.elementTraceabilityDetails .childrenGrouping       { margin-bottom:0; }
+.elementTraceabilityDetails .childrenGroupingList   { /*overflow: hidden;*/ }
+
+.elementTraceabilityDetails .childrenList           { position:relative; }
+.elementTraceabilityDetails .childrenList table.dataTable { margin:0; border-bottom: 0; }
+
+.childrenGrouping.childMax { position:fixed; top:0; right:0; bottom:0; left:0; z-index: 1021; margin:0; height:100%; }
+.childrenGrouping.childMax .childrenMaxMin i:before { content:'\f066'; }
+.childrenGrouping.childMax .childrenGroupingList    { height: calc(100% - 37px); }
+            
+.childrenGrouping.childMax .childrenElementList .childrenList   {  }
+.childrenGrouping.childMax .childrenElementTable .childrenTable { margin: 0 -13px 0 0; padding: 0 13px 0 0; }
+
+
+/*************************************************************/
+/* Dropdown
+/*************************************************************/
+
+.dropdown-menu 			{ 
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border:1px solid #BBB; 
+    border-radius: 3px;
+    padding:7px 0;
+    margin:10px 0 0;
+}
+.dropup .dropdown-menu  {
+    margin:0 0 10px;
+}
+.dropdown-menu:before 	{
+    border-bottom: 8px solid #FFF;
+	border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    content: "";
+    height: 0;
+    left: 7px;
+    position: absolute;
+    top: -8px;
+    width: 0;
+    z-index: 100;
+}
+.dropdown-menu:after 	{
+    border-bottom: 9px solid rgba(0,0,0,0.3);
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    height: 0;
+    left: 6px;
+    position: absolute;
+    top: -9px;
+    width: 0;
+    z-index: 80;
+}
+
+.dropup .dropdown-menu:before,
+.dropup .dropdown-menu:after {
+    border-width: 8px;
+    border-style: solid;
+    top: auto;
+}
+.dropup .dropdown-menu:before {
+    border-color: #FFF transparent transparent;
+    bottom: -16px;
+}
+.dropup .dropdown-menu:after {
+    border-color: rgba(0,0,0,0.3) transparent transparent;
+    bottom: -17px;
+}
+
+.headerOn:before    { border-bottom-color:#eeeeee; }
+.headerOn:after     { }
+
+.dropdown-menu.pull-right:before,
+.dropdown-menu.dropdown-menu-right:before   { right:7px; left:auto; }
+.dropdown-menu.pull-right:after,
+.dropdown-menu.dropdown-menu-right:after    { right:6px; left:auto; }
+
+.dropdown-menu .divider     { margin:5px 0; }
+.dropdown-menu > ul         { margin:0; }
+.dropdown-menu > ul li a    { margin:0 !important; }
+.dropdown-menu li 			{ border:0px; display: block; }
+.dropdown-menu li + li 		{ }
+.dropdown-menu li a 		{ color: #333; font-size: 13px; padding: 7px 15px; display:block; min-width:180px; }
+.dropdown-menu li a i 		{ margin: 0 8px 0 0; text-align: center; width: 14px; }
+
+.dropdown-menu li a:focus,
+.dropdown-menu li a:hover,
+.dropdown-menu li.active a,
+.dropdown-menu li.active a:focus,
+.dropdown-menu li.active a:hover   { background-color: #f6f6f6; }
+
+.dropdown-menu li a,
+.dropdown-menu li a:focus,
+.dropdown-menu li a:hover,
+.dropdown-menu li.active a,
+.dropdown-menu li.active a:focus,
+.dropdown-menu li.active a:hover    { background-image:none; }
+
+.dropdown-menu li a:focus,
+.dropdown-menu li a:hover,
+.dropdown-menu li a:hover small,
+.dropdown-menu li a:focus small,
+.dropdown-menu li.active a,
+.dropdown-menu li.active a:focus,
+.dropdown-menu li.active a:hover,
+.dropdown-menu li.active a small,
+.dropdown-menu li.active.disabled a,
+.dropdown-menu li.active.disabled a:focus,
+.dropdown-menu li.active.disabled a:hover,
+.dropdown-menu li.active.disabled a small,
+.bootstrap-select.btn-group .dropdown-menu li.active small   { color:#333; }
+
+.dropdown-menu li.disabled a,
+.dropdown-menu li.disabled a:focus,
+.dropdown-menu li.disabled a:hover          { color:#999; }
+
+.dropdown-menu li.active.disabled a,
+.dropdown-menu li.active.disabled a:focus,
+.dropdown-menu li.active.disabled a:hover   { background-color:#CCC; }
+
+.dropdown-menu li.disabled label     { display: block; font-size: 13px; min-width: 180px; padding: 7px 15px; }
+.dropdown-menu li.disabled label     { font-weight:normal; margin:0; color: #999; cursor: not-allowed; }
+
+/* Bootstrap Select */
+
+.bootstrap-select                       { }
+.bootstrap-select > .dropdown-menu      { width: 240px; max-height: 212px !important; }
+.bootstrap-select > .dropdown-menu ul   { max-height: 163px !important; }
+.bootstrap-select .dropdown-menu        { margin: 10px 0 0; z-index: 10; }
+.bootstrap-select .dropdown-menu:before { }
+.bootstrap-select .dropdown-menu:after  { }
+
+.bootstrap-select .dropdown-toggle              { background-color: #ffffff; border-color: #CCC; }
+.bootstrap-select .dropdown-toggle.btn-default,
+.bootstrap-select .dropdown-toggle:active,
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select .dropdown-toggle:hover        { border-color: #CCC; }
+
+.bootstrap-select.open .dropdown-menu           { display: block; left: auto; right: 0; }
+.bootstrap-select.open .dropdown-menu:before    { right: 14px; left: auto; }
+.bootstrap-select.open .dropdown-menu:after     { right: 13px; left: auto; }
+.bootstrap-select.open div.dropdown-menu        { overflow: visible !important; }
+.bootstrap-select.open div.dropdown-menu .bs-searchbox { padding: 0 8px 6px; }
+.bootstrap-select.open ul.dropdown-menu         { overflow-x: hidden; overflow-y: auto; }
+
+.bootstrap-select .dropdown-menu li a   { padding:7px 10px; }
+.bootstrap-select.show-tick .dropdown-menu li a { padding-right:35px; }
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option     {  }
+.bootstrap-select.btn-group .dropdown-toggle .filter-option i   { margin:0 4px 0 0; }
